@@ -1,0 +1,130 @@
+{
+  "timestamp": "2026-02-04T22:18:04.852240",
+  "todo_id": "ENG-101",
+  "patient_index": 0,
+  "patient_name": "Silvia Jones",
+  "detail_view": {
+    "task_title": "Schedule Telehealth Visit for High BG Management",
+    "patient_name": "Silvia Jones",
+    "patient_initial": "S",
+    "priority": "P1",
+    "ai_insight": {
+      "summary": "Silvia Jones has reported significant post-dinner hyperglycemic events, with blood glucose levels spiking over 400 mg/dL. Recent events include a severe episode on 11/19/25 with a BG of 425 mg/dL at 7:25 PM despite correction doses of Humalog. Her A1C as of 10/15/25 was 9.2%, indicating suboptimal glycemic control. Meal patterns and insulin management need urgent review.",
+      "key_points": [
+        "Severe post-dinner BG spikes noted, with recent events on 11/19 showing BG levels of 425 and 455 mg/dL.",
+        "Current A1C level at 9.2%, suggesting poor glycemic control.",
+        "Insulin regimen includes Humalog with meals; however, effectiveness is in question.",
+        "Patient expresses adherence to meal plan but struggles with high BG levels post-dinner."
+      ]
+    },
+    "participant_overview": {
+      "conditions": [
+        "Type 2 Diabetes",
+        "Hypertension",
+        "Hyperlipidemia"
+      ],
+      "devices": [
+        "OneTouch Ultra Mini",
+        "Omron BP7350",
+        "Dexcom G7"
+      ],
+      "clinic_member": "Yes",
+      "insulin_strategy": "Fixed dosing with Humalog",
+      "other_relevant_info": [
+        "Elevated lipids with LDL at 142 and triglycerides at 220"
+      ]
+    },
+    "clinical_incident": {
+      "title": "Hyperglycemic incidents: post-dinner challenges",
+      "timeline": [
+        {
+          "action": "BG spike reported",
+          "details": "Patient reported BG of 455 mg/dL post-meal without specific meal details, corrected with 8 units Humalog at 6:40 PM",
+          "timestamp": "2025-11-19T18:40:00"
+        },
+        {
+          "action": "Follow-up BG spike",
+          "details": "Second spike to 425 mg/dL after dinner (potato soup, tomato meatball pasta, garlic bread), attempted correction with 6 units Humalog at 7:28 PM",
+          "timestamp": "2025-11-19T19:25:00"
+        }
+      ]
+    },
+    "suggested_messages": [
+      {
+        "type": "patient_facing",
+        "category": "Education",
+        "message": "Hi Silvia, I've noticed your post-dinner blood glucose levels have been quite high recently, especially on 11/19. It's great that you're following your meal plan, but let's discuss some strategies to better manage these spikes. Can we schedule a telehealth visit to review your meal plan and insulin doses?",
+        "rationale": "Addressing post-dinner hyperglycemia by reviewing meal plans and insulin management."
+      },
+      {
+        "type": "care_team_note",
+        "category": "Plan",
+        "message": "Schedule telehealth visit to address Silvia's post-dinner hyperglycemia, review meal plans, and adjust insulin regimen as needed.",
+        "rationale": "Direct intervention needed for glycemic control improvement."
+      }
+    ],
+    "protocol_steps": [
+      "Offer phone call to discuss recent hyperglycemic events and management strategies.",
+      "Schedule a telehealth visit at a mutually agreed upon time to review meal patterns and insulin dosing.",
+      "Create custom to-do: \u2018Review Insulin Management and Meal Planning\u2019 for the day of the visit.",
+      "Update Google Calendar with scheduled telehealth visit details."
+    ],
+    "clinical_assessment": {
+      "severity": "Severe",
+      "urgency": "Urgent",
+      "trends": "Worsening post-dinner glycemic control, rising A1C",
+      "contributing_factors": [
+        "Inadequate post-prandial insulin dosing",
+        "Possible meal plan discrepancies"
+      ],
+      "recommendations": [
+        "Urgent telehealth visit for insulin regimen and meal plan review",
+        "Consider referral to RD for diet modification"
+      ]
+    },
+    "relevant_data_points": [
+      {
+        "category": "Glucose",
+        "item": "Post-dinner BG levels",
+        "value": "425-455 mg/dL",
+        "date": "2025-11-19",
+        "significance": "Indicates severe hyperglycemia post-dinner."
+      },
+      {
+        "category": "Medication",
+        "item": "Humalog",
+        "value": "Variable dosing with meals",
+        "date": "Recent",
+        "significance": "Current insulin management may be inadequate."
+      },
+      {
+        "category": "Lab",
+        "item": "A1C",
+        "value": "9.2%",
+        "date": "2025-10-15",
+        "significance": "Reflects poor overall glycemic control."
+      }
+    ],
+    "confidence": {
+      "decision": "show",
+      "internal_score": 85,
+      "caveats": [
+        "This summary may be missing information. VI could not find: Recent detailed meal logs. Please refresh or review protocol.",
+        "Summary based on data last updated on 02/04/2026. If you believe this is out of date, please check the patient profile."
+      ],
+      "suppression_reason": ""
+    },
+    "protocol": {
+      "task_code": "ENG-101",
+      "task_name": "SCHEDULE TELEHEALTH VISIT",
+      "priority": "P1",
+      "content": "Task: SCHEDULE TELEHEALTH VISIT\nCode: ENG-101\nPriority: P1\nProgram: lightpath\nTrigger: Verily Me App NUX\nCriteria: 14 days post enrollment \\+ a new member assigned to the care team.\nSteps (general): New Members:  Offer phone call (optional \\- highly encouraged if member is not engaging in the in app content or T1D) Schedule a call at a mutually agreed upon time Create custom to do: \u2018NUX Telehealth Visit\u2019 and schedule for the day of the visit Update your Google Calendar  [NUX Telehealth]() Onduo Members: Decline (archive) this TO DO",
+      "full_text": "| ENG-101 | SCHEDULE TELEHEALTH VISIT |\n| :---- | :---- |\n| PRIORITY | P1 |\n| TRIGGER | Verily Me App NUX |\n| TRIGGERING CRITERIA | 14 days post enrollment \\+ a new member assigned to the care team.  |\n| STEPS | New Members:  Offer phone call (optional \\- highly encouraged if member is not engaging in the in app content or T1D) Schedule a call at a mutually agreed upon time Create custom to do: \u2018NUX Telehealth Visit\u2019 and schedule for the day of the visit Update your Google Calendar  [NUX Telehealth]() Onduo Members: Decline (archive) this TO DO |\n"
+    },
+    "user_context": {
+      "role": "HC",
+      "clinic_context": "Clinic",
+      "clinic_member": "Yes"
+    }
+  }
+}

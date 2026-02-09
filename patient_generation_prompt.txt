@@ -1,0 +1,183 @@
+You are a clinical data generator for a diabetes care management program. Generate realistic synthetic patient profiles for testing and development purposes.
+
+For each patient, generate the following comprehensive data:
+
+## Patient Profile Structure
+
+### 1. Demographics
+- Full Name (diverse backgrounds)
+- Age (25-75 years)
+- Gender
+- Date of Birth
+- Contact Information (phone, email)
+- Address
+- Preferred Language
+- Emergency Contact
+
+### 2. Clinical Conditions
+- Primary Diagnosis (Type 1 or Type 2 Diabetes)
+- Secondary Conditions (Hypertension, Hyperlipidemia, Obesity, etc.)
+- Comorbidities with ICD-10 codes
+- Date of Diagnosis for each condition
+- Disease Severity/Stage
+
+### 3. Devices & Monitoring
+- Continuous Glucose Monitor (CGM) - brand, model, sensor number, installation date
+- Blood Glucose Meter (BGM) - brand, model, last calibration
+- Blood Pressure Monitor - brand, model
+- Weight Scale - brand, model, connectivity
+- Activity Tracker - type, brand
+- Other monitoring devices
+
+### 4. Recent Glucose Readings & Events
+Generate 7-14 days of realistic data:
+- CGM readings (every 5-15 minutes)
+- BGM fingerstick readings (2-6 per day)
+- Notable events:
+  - Hyperglycemic events (>180 mg/dL, >250 mg/dL, >400 mg/dL)
+  - Hypoglycemic events (<70 mg/dL, <54 mg/dL)
+  - Time in range statistics
+  - Patterns (post-meal spikes, overnight lows, etc.)
+- Include timestamps, glucose values, and context (before/after meals, exercise, etc.)
+
+### 5. Blood Pressure & Vitals
+- Recent BP readings (last 2 weeks, 2-3 times daily)
+- Heart rate data
+- Weight measurements (weekly)
+- Temperature readings if relevant
+- Include timestamps and any notable hypertensive or hypotensive events
+
+### 6. Medications
+- Current medications with:
+  - Medication name (brand and generic)
+  - Dosage
+  - Frequency
+  - Route of administration
+  - Start date
+  - Prescribing physician
+  - Purpose/indication
+- Include insulin types and regimens for insulin-dependent patients
+- Blood pressure medications
+- Cholesterol medications
+- Other relevant medications
+- Adherence notes (good, occasional missed doses, poor adherence)
+
+### 7. Laboratory Results
+- A1C results (last 3-6 readings over past year)
+  - Value, date, ordering provider, lab name
+- Lipid Panel (last 2 readings):
+  - Total cholesterol, LDL, HDL, Triglycerides
+  - Date and lab name
+- Kidney Function:
+  - Creatinine, eGFR
+- Liver Function:
+  - ALT, AST
+- Other relevant labs:
+  - TSH (thyroid)
+  - Vitamin D
+  - Microalbumin/Creatinine ratio
+
+### 8. Health Information Exchange (HIE) Data
+Simulate data from Zus or similar HIE:
+- Recent ER visits (last 6 months)
+  - Date, reason, facility, discharge diagnosis
+- Hospital admissions (last year)
+  - Admission/discharge dates, reason, DRG codes
+- Specialist visits:
+  - Endocrinologist, Cardiologist, Ophthalmologist, Podiatrist
+  - Visit dates, providers, notes summary
+- External lab results
+- Medication fills from external pharmacies
+- Immunization records
+
+### 9. Care Team Messages
+Generate realistic message exchanges (last 30 days):
+- Patient-initiated messages:
+  - Questions about readings
+  - Medication questions
+  - Symptom reports
+  - Request for supplies
+  - Technical issues with devices
+- Care team responses:
+  - Guidance and education
+  - Medication adjustments
+  - Appointment scheduling
+  - Device troubleshooting
+- Include timestamps, sender, message content, and context
+
+### 10. Survey Responses
+Generate responses to:
+- **Diabetes Distress Assessment Scale (DDAS)**:
+  - 17 items on 6-point scale
+  - Include total score and subscale scores
+  - Date completed
+- **PROMIS-29**:
+  - Physical function
+  - Anxiety
+  - Depression
+  - Fatigue
+  - Sleep disturbance
+  - Social roles
+  - Pain interference
+  - Pain intensity
+  - Include T-scores
+  - Date completed
+- **PHQ-9** (depression screening):
+  - 9 items, total score
+  - Date completed
+- **Medication Adherence**:
+  - Self-reported adherence scale
+  - Barriers to adherence
+- **Diabetes Self-Care Activities**:
+  - Diet, exercise, blood sugar testing, foot care, medication taking
+
+### 11. Social Determinants of Health
+- Employment status
+- Insurance coverage
+- Food security status
+- Transportation access
+- Housing stability
+- Health literacy level
+- Technology access
+- Social support system
+
+### 12. Clinical Notes Summary
+- Last clinical encounter date
+- Provider name
+- Assessment and plan summary
+- Current goals of care
+- Barriers to care
+
+## Variability Requirements
+
+Create diverse patients with varying:
+- Control levels (well-controlled, moderately controlled, poorly controlled)
+- Complication presence (retinopathy, neuropathy, nephropathy, CVD)
+- Engagement levels (highly engaged, moderately engaged, disengaged)
+- Adherence patterns (excellent, good, poor)
+- Socioeconomic backgrounds
+- Age ranges and life stages
+- Technology proficiency
+- Cultural backgrounds
+
+## Realism Requirements
+
+- Use realistic medical values and ranges
+- Create coherent clinical pictures (medications should match conditions)
+- Generate believable event patterns (hyperglycemia after high-carb meals, etc.)
+- Include realistic timestamps and temporal patterns
+- Make survey responses consistent with clinical presentation
+- Include realistic barriers and challenges patients face
+
+## Output Format
+
+Return data as a JSON array with 20 patient objects. Each patient object should have all the fields above properly structured and nested.
+
+Generate patients with a mix of:
+- 8 patients with primarily hyperglycemia issues
+- 4 patients with hypoglycemia issues
+- 4 patients with hypertension
+- 2 patients with hypotension
+- 2 patients with mixed issues (e.g., both hyper/hypoglycemia)
+
+Make each patient unique and realistic. Include sufficient clinical detail to support AI-powered clinical decision support.

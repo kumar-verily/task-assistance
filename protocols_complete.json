@@ -1,0 +1,1562 @@
+[
+  {
+    "task_code": "TODO-100",
+    "task_name": "CUSTOM TO DO",
+    "program": "lightpath",
+    "priority": "P3",
+    "trigger": "NA",
+    "triggering_criteria": "Manually added by the Care Team",
+    "steps": {
+      "general": "By default assigned to the user who creates custom to do Manually select/ reassign to another user, if needed Can be scheduled but can’t be rescheduled If you need to reschedule \\- resolve TO DO and add a new one CUSTOM TO DO Titles (add \\+ Note with details, if needed)  For VUS team (set as P1) (Until reassigning to dos to VUS team is fixed, report LP todos for VUS here: [Lightpath ToDos for VUS](https://docs.google.com/spreadsheets/d/1eKKIuVCF8AbT3ELo6Af6ZLYGBx558b59p3zXPF1P0r0/edit?gid=0#gid=0)):  Ship BGM Ship Lancets Ship Test Strips Troubleshoot BGM Troubleshoot A1c Troubleshoot App  Troubleshoot Console Complaint Phone Out of Service/ Engagement Email Engagement email/see note  Disenrollment letter Stop marketing emails  For RN: Review RN’s name (and reason for escalation or a Note if larger explanation is needed)  RN’s name CGM review/ sensor \\#  For Pharmacy: Review Denise For RD: Review Robin For Admin Coordinator Find A1c Tidepool Keri From Clinic MD Visit –/–/– PC Visit completed –/–/– A1c ordered CGM ordered Review New Encounter Summary \\- CGM For HC: Check-in with Participant (set every 2-4 weeks) CGM sensor \\# –/–/– Sensor \\# ends –/–/– **Clinical note Onboarding** (this is when the RN greets member first)  BETA Escalations and VUS tickets: Add to the spreadsheet: [VUS - LP Beta Tickets & Clinical Escalations ](https://docs.google.com/spreadsheets/d/1QVjDzS7aA1_ztGMjArSYysgcGxFyfKZkn870pwOYbQY/edit?gid=0#gid=0)"
+    },
+    "message_templates": [
+      {
+        "language": "en",
+        "template": "Clinical note Onboarding",
+        "placeholders": []
+      }
+    ],
+    "links": [
+      {
+        "title": "Lightpath ToDos for VUS",
+        "url": "https://docs.google.com/spreadsheets/d/1eKKIuVCF8AbT3ELo6Af6ZLYGBx558b59p3zXPF1P0r0/edit?gid=0#gid=0"
+      },
+      {
+        "title": "VUS - LP Beta Tickets & Clinical Escalations ",
+        "url": "https://docs.google.com/spreadsheets/d/1QVjDzS7aA1_ztGMjArSYysgcGxFyfKZkn870pwOYbQY/edit?gid=0#gid=0"
+      }
+    ],
+    "roles": [
+      "Admin",
+      "HC",
+      "RD",
+      "RN"
+    ],
+    "full_text": "| TODO-100 | CUSTOM TO DO  |\n| :---- | :---- |\n| PRIORITY | P3 |\n| TRIGGER | NA |\n| TRIGGERING CRITERIA | Manually added by the Care Team |\n| STEPS Reassign to: VUS team: Tanya Westfall  Krupa Parikh or Dominique Morris  Benise  Taylor (1/1/2026) RN: Kimberly Caswell Karisha Pruitt Maudie Roberts  Pharmacy: Denise MacKenzie RD: Robin Redd Admin Coordinator: Keri Patterson Alexia Thomson MA Belinda Taylor Jasmine Symonds Emily Sabacinski   | By default assigned to the user who creates custom to do Manually select/ reassign to another user, if needed Can be scheduled but can’t be rescheduled If you need to reschedule \\- resolve TO DO and add a new one CUSTOM TO DO Titles (add \\+ Note with details, if needed)  For VUS team (set as P1) (Until reassigning to dos to VUS team is fixed, report LP todos for VUS here: [Lightpath ToDos for VUS](https://docs.google.com/spreadsheets/d/1eKKIuVCF8AbT3ELo6Af6ZLYGBx558b59p3zXPF1P0r0/edit?gid=0#gid=0)):  Ship BGM Ship Lancets Ship Test Strips Troubleshoot BGM Troubleshoot A1c Troubleshoot App  Troubleshoot Console Complaint Phone Out of Service/ Engagement Email Engagement email/see note  Disenrollment letter Stop marketing emails  For RN: Review RN’s name (and reason for escalation or a Note if larger explanation is needed)  RN’s name CGM review/ sensor \\#  For Pharmacy: Review Denise For RD: Review Robin For Admin Coordinator Find A1c Tidepool Keri From Clinic MD Visit –/–/– PC Visit completed –/–/– A1c ordered CGM ordered Review New Encounter Summary \\- CGM For HC: Check-in with Participant (set every 2-4 weeks) CGM sensor \\# –/–/– Sensor \\# ends –/–/– **Clinical note Onboarding** (this is when the RN greets member first)  BETA Escalations and VUS tickets: Add to the spreadsheet: [VUS - LP Beta Tickets & Clinical Escalations ](https://docs.google.com/spreadsheets/d/1QVjDzS7aA1_ztGMjArSYysgcGxFyfKZkn870pwOYbQY/edit?gid=0#gid=0) |",
+    "chunk_id": "lightpath_TODO-100_0"
+  },
+  {
+    "task_code": "TODO-100",
+    "task_name": "CUSTOM TO DO: A1C REVIEW NEW RESULT",
+    "program": "lightpath",
+    "priority": "P1-P3",
+    "trigger": "New A1c has been manually added",
+    "triggering_criteria": "",
+    "steps": {
+      "general": "HC Create custom to do: ‘Follow up A1c due’ and schedule for 90 days since the collection date If new result is from LGC home kit: send a message to the participant with A1c results and instructions to log into the Athena Portal: *Thank you for completing the home A1c kit. Your A1c is (...).  You will receive a notification from our clinic team to view your result in your Athena patient portal. Note that variations in laboratory test results can occur from one lab to another so please let me know if you have any questions or concerns.  What are your thoughts about this A1c? You can access your Athena patient portal on your smartphone or your computer at [**16616.portal.athenahealth.com**](https://16616.portal.athenahealth.com/). When you first log in on your computer, don’t forget to bookmark the page so it’s easy to find next time.  Here’s how to use your Athena patient portal on your computer: To See Test Results Click My Health on the top left. Click Test Results in the top menu.* If A1c ≥ 8% create custom to do: A1c ≥ 8% and reassign to RN (Review RN’s name A1c ≥ 8% ) If Beta, document here: [VUS - LP Beta Tickets & Clinical Escalations ](https://docs.google.com/spreadsheets/d/1QVjDzS7aA1_ztGMjArSYysgcGxFyfKZkn870pwOYbQY/edit?gid=0#gid=0)"
+    },
+    "message_templates": [
+      {
+        "language": "en",
+        "template": "Thank you for completing the home A1c kit. Your A1c is (...).  You will receive a notification from our clinic team to view your result in your Athena patient portal. Note that variations in laboratory test results can occur from one lab to another so please let me know if you have any questions or concerns.  What are your thoughts about this A1c? You can access your Athena patient portal on your smartphone or your computer at [",
+        "placeholders": [
+          "(...)"
+        ]
+      },
+      {
+        "language": "en",
+        "template": "16616.portal.athenahealth.com",
+        "placeholders": []
+      },
+      {
+        "language": "en",
+        "template": "](https://16616.portal.athenahealth.com/). When you first log in on your computer, don’t forget to bookmark the page so it’s easy to find next time.  Here’s how to use your Athena patient portal on your computer: To See Test Results Click My Health on the top left. Click Test Results in the top menu.",
+        "placeholders": []
+      }
+    ],
+    "links": [
+      {
+        "title": "**16616.portal.athenahealth.com**",
+        "url": "https://16616.portal.athenahealth.com/"
+      },
+      {
+        "title": "VUS - LP Beta Tickets & Clinical Escalations ",
+        "url": "https://docs.google.com/spreadsheets/d/1QVjDzS7aA1_ztGMjArSYysgcGxFyfKZkn870pwOYbQY/edit?gid=0#gid=0"
+      }
+    ],
+    "roles": [
+      "HC",
+      "RN"
+    ],
+    "full_text": "| TODO-100 | CUSTOM TO DO: A1C REVIEW NEW RESULT |\n| :---- | :---- |\n| PRIORITY | P1-P3 |\n| TRIGGER | New A1c has been manually added |\n| STEPS | HC Create custom to do: ‘Follow up A1c due’ and schedule for 90 days since the collection date If new result is from LGC home kit: send a message to the participant with A1c results and instructions to log into the Athena Portal: *Thank you for completing the home A1c kit. Your A1c is (...).  You will receive a notification from our clinic team to view your result in your Athena patient portal. Note that variations in laboratory test results can occur from one lab to another so please let me know if you have any questions or concerns.  What are your thoughts about this A1c? You can access your Athena patient portal on your smartphone or your computer at [**16616.portal.athenahealth.com**](https://16616.portal.athenahealth.com/). When you first log in on your computer, don’t forget to bookmark the page so it’s easy to find next time.  Here’s how to use your Athena patient portal on your computer: To See Test Results Click My Health on the top left. Click Test Results in the top menu.* If A1c ≥ 8% create custom to do: A1c ≥ 8% and reassign to RN (Review RN’s name A1c ≥ 8% ) If Beta, document here: [VUS - LP Beta Tickets & Clinical Escalations ](https://docs.google.com/spreadsheets/d/1QVjDzS7aA1_ztGMjArSYysgcGxFyfKZkn870pwOYbQY/edit?gid=0#gid=0) |",
+    "chunk_id": "lightpath_TODO-100_1"
+  },
+  {
+    "task_code": "TODO-100",
+    "task_name": "CUSTOM TO DO: NO A1C FOUND",
+    "program": "lightpath",
+    "priority": "P1-P3",
+    "trigger": "No A1c has been found",
+    "triggering_criteria": "",
+    "steps": {
+      "general": "[A1c & A1c LGC kit]() → A1c LGC kit"
+    },
+    "message_templates": [],
+    "links": [],
+    "roles": [],
+    "full_text": "| TODO-100 | CUSTOM TO DO: NO A1C FOUND |\n| :---- | :---- |\n| PRIORITY | P1-P3 |\n| TRIGGER | No A1c has been found |\n| STEPS | [A1c & A1c LGC kit]() → A1c LGC kit |",
+    "chunk_id": "lightpath_TODO-100_2"
+  },
+  {
+    "task_code": "TODO-100",
+    "task_name": "CUSTOM TO DO: A1c ordered",
+    "program": "lightpath",
+    "priority": "P1-P3",
+    "trigger": "Manually added by admin to let the HC know that A1c kit has been ordered",
+    "triggering_criteria": "",
+    "steps": {
+      "general": "To Do: A1c ordered \\- [A1c & A1c LGC kit]()"
+    },
+    "message_templates": [],
+    "links": [],
+    "roles": [],
+    "full_text": "| TODO-100 | CUSTOM TO DO: A1c ordered |\n| :---- | :---- |\n| PRIORITY | P1-P3 |\n| TRIGGER | Manually added by admin to let the HC know that A1c kit has been ordered |\n| STEPS | To Do: A1c ordered \\- [A1c & A1c LGC kit]() |",
+    "chunk_id": "lightpath_TODO-100_3"
+  },
+  {
+    "task_code": "TODO-100",
+    "task_name": "CUSTOM TO DO: Check-in",
+    "program": "lightpath",
+    "priority": "P1-P3",
+    "trigger": "Manually scheduled every 14 days (during Onboarding) and 30 days (post Onboarding)",
+    "triggering_criteria": "",
+    "steps": {
+      "general": "All: Answer participant messages Review Surveys (and document any relevant info in the Care Plan/ Notes) Look for Custom TO DOs from MAs/ VUS/ A1c share result, A1c needed Follow up on goals/ progress Provide education, if needed Follow re-engagement protocol, if needed (add link)  T1D Software reviews (check partners account list for who to manage in these software programs): Tidepool Glooko Carelink BioTel/ Philips  Libre Tconnect Check Athena for cases to address Prep Visit cases in Athena"
+    },
+    "message_templates": [],
+    "links": [],
+    "roles": [],
+    "full_text": "| TODO-100 | CUSTOM TO DO: Check-in |\n| :---- | :---- |\n| PRIORITY | P1-P3 |\n| TRIGGER | Manually scheduled every 14 days (during Onboarding) and 30 days (post Onboarding) |\n| STEPS | All: Answer participant messages Review Surveys (and document any relevant info in the Care Plan/ Notes) Look for Custom TO DOs from MAs/ VUS/ A1c share result, A1c needed Follow up on goals/ progress Provide education, if needed Follow re-engagement protocol, if needed (add link)  T1D Software reviews (check partners account list for who to manage in these software programs): Tidepool Glooko Carelink BioTel/ Philips  Libre Tconnect Check Athena for cases to address Prep Visit cases in Athena |",
+    "chunk_id": "lightpath_TODO-100_4"
+  },
+  {
+    "task_code": "TODO-100",
+    "task_name": "CUSTOM TO DO: BGM Ordered",
+    "program": "lightpath",
+    "priority": "P1-P3",
+    "trigger": "Manually created by the VUS team to notify Care Team that BGM has been shipped. Tracking \\# should be added in the Notes section.",
+    "triggering_criteria": "",
+    "steps": {
+      "general": "Let the participant know BGM has been shipped: *We have shipped your blood glucose monitor (BGM). It will be automatically paired with your Verily Me app so once you start using it you will see readings in the app as well. To preserve the battery life in your Philips meter, turn the device off when not in use and charge every 1-2 days. And don’t forget that you can ask me for more test strips whenever you’re running low\\!  Here is tracking information for this shipment:* (Include tracking info from VUS team, documented in the note)"
+    },
+    "message_templates": [
+      {
+        "language": "en",
+        "template": "We have shipped your blood glucose monitor (BGM). It will be automatically paired with your Verily Me app so once you start using it you will see readings in the app as well. To preserve the battery life in your Philips meter, turn the device off when not in use and charge every 1-2 days. And don’t forget that you can ask me for more test strips whenever you’re running low\\!  Here is tracking information for this shipment:",
+        "placeholders": []
+      }
+    ],
+    "links": [],
+    "roles": [],
+    "full_text": "| TODO-100 | CUSTOM TO DO: BGM Ordered  |\n| :---- | :---- |\n| PRIORITY | P1-P3 |\n| TRIGGER | Manually created by the VUS team to notify Care Team that BGM has been shipped. Tracking \\# should be added in the Notes section.  |\n| STEPS | Let the participant know BGM has been shipped: *We have shipped your blood glucose monitor (BGM). It will be automatically paired with your Verily Me app so once you start using it you will see readings in the app as well. To preserve the battery life in your Philips meter, turn the device off when not in use and charge every 1-2 days. And don’t forget that you can ask me for more test strips whenever you’re running low\\!  Here is tracking information for this shipment:* (Include tracking info from VUS team, documented in the note) |",
+    "chunk_id": "lightpath_TODO-100_5"
+  },
+  {
+    "task_code": "TODO-100",
+    "task_name": "CUSTOM TO DO: Test supplies Ordered",
+    "program": "lightpath",
+    "priority": "P1-P3",
+    "trigger": "Manually created by the VUS team to notify Care Team that BGM supplies have been shipped. Tracking \\# should be added in the Notes section.",
+    "triggering_criteria": "",
+    "steps": {
+      "general": "HC Notify the member that their test supplies are on the way"
+    },
+    "message_templates": [],
+    "links": [],
+    "roles": [
+      "HC"
+    ],
+    "full_text": "| TODO-100 | CUSTOM TO DO: Test supplies Ordered  |\n| :---- | :---- |\n| PRIORITY | P1-P3 |\n| TRIGGER | Manually created by the VUS team to notify Care Team that BGM supplies have been shipped. Tracking \\# should be added in the Notes section.  |\n| STEPS | HC Notify the member that their test supplies are on the way |",
+    "chunk_id": "lightpath_TODO-100_6"
+  },
+  {
+    "task_code": "TODO-100",
+    "task_name": "CUSTOM TO DO: BP Cuff Ordered",
+    "program": "lightpath",
+    "priority": "P1-P3",
+    "trigger": "Manually created by the VUS team to notify Care Team that BGM has been shipped. Tracking \\# should be added in the Notes section.",
+    "triggering_criteria": "",
+    "steps": {
+      "general": "Send content card: How often should I check my blood pressure?  Let the participant know BP has been shipped: *Your blood pressure monitor has been shipped\\! Please follow the instructions included with the monitor to connect it with the Verily Me app so your readings go to the app automatically. That way, we can look at your readings together, learn more about your blood pressure patterns, and keep track of your progress. Please let me know when your monitor arrives. As you get ready to start monitoring at home, please read this quick article above. It talks about how often to check blood pressure and what the numbers mean.*  [Omron Blood Pressure Monitor for Lightpath/Verily Me–Approved content](https://docs.google.com/document/d/1eoZQ0I9l_-O7stkOU1zni7S7v9kmvgAXqrEoEJ_rl7M/edit?tab=t.0#heading=h.slfb8zytgzm3) *Here is tracking information for this shipment:* (Include tracking info from VUS team, documented in the note) *If you run into any issues please email care1support@verily.com or call 1-833-603-6667. Our support team is here Monday-Friday 9am \\- 6pm EST.*"
+    },
+    "message_templates": [
+      {
+        "language": "es",
+        "template": "Your blood pressure monitor has been shipped\\! Please follow the instructions included with the monitor to connect it with the Verily Me app so your readings go to the app automatically. That way, we can look at your readings together, learn more about your blood pressure patterns, and keep track of your progress. Please let me know when your monitor arrives. As you get ready to start monitoring at home, please read this quick article above. It talks about how often to check blood pressure and what the numbers mean.",
+        "placeholders": []
+      },
+      {
+        "language": "en",
+        "template": "Here is tracking information for this shipment:",
+        "placeholders": []
+      },
+      {
+        "language": "en",
+        "template": "If you run into any issues please email care1support@verily.com or call 1-833-603-6667. Our support team is here Monday-Friday 9am \\- 6pm EST.",
+        "placeholders": []
+      }
+    ],
+    "links": [
+      {
+        "title": "Omron Blood Pressure Monitor for Lightpath/Verily Me–Approved content",
+        "url": "https://docs.google.com/document/d/1eoZQ0I9l_-O7stkOU1zni7S7v9kmvgAXqrEoEJ_rl7M/edit?tab=t.0#heading=h.slfb8zytgzm3"
+      }
+    ],
+    "roles": [],
+    "full_text": "| TODO-100 | CUSTOM TO DO: BP Cuff Ordered |\n| :---- | :---- |\n| PRIORITY | P1-P3 |\n| TRIGGER | Manually created by the VUS team to notify Care Team that BGM has been shipped. Tracking \\# should be added in the Notes section.  |\n| STEPS | Send content card: How often should I check my blood pressure?  Let the participant know BP has been shipped: *Your blood pressure monitor has been shipped\\! Please follow the instructions included with the monitor to connect it with the Verily Me app so your readings go to the app automatically. That way, we can look at your readings together, learn more about your blood pressure patterns, and keep track of your progress. Please let me know when your monitor arrives. As you get ready to start monitoring at home, please read this quick article above. It talks about how often to check blood pressure and what the numbers mean.*  [Omron Blood Pressure Monitor for Lightpath/Verily Me–Approved content](https://docs.google.com/document/d/1eoZQ0I9l_-O7stkOU1zni7S7v9kmvgAXqrEoEJ_rl7M/edit?tab=t.0#heading=h.slfb8zytgzm3) *Here is tracking information for this shipment:* (Include tracking info from VUS team, documented in the note) *If you run into any issues please email care1support@verily.com or call 1-833-603-6667. Our support team is here Monday-Friday 9am \\- 6pm EST.* |",
+    "chunk_id": "lightpath_TODO-100_7"
+  },
+  {
+    "task_code": "TODO-100",
+    "task_name": "CUSTOM TO DO: A1c follow up due",
+    "program": "lightpath",
+    "priority": "P1-P3",
+    "trigger": "Manually created to collect A1c every 90 days.",
+    "triggering_criteria": "",
+    "steps": {
+      "general": "[A1c & A1c LGC Kit]()"
+    },
+    "message_templates": [],
+    "links": [],
+    "roles": [],
+    "full_text": "| TODO-100 | CUSTOM TO DO: A1c follow up due |\n| :---- | :---- |\n| PRIORITY | P1-P3 |\n| TRIGGER | Manually created to collect A1c every 90 days.  |\n| STEPS | [A1c & A1c LGC Kit]() |",
+    "chunk_id": "lightpath_TODO-100_8"
+  },
+  {
+    "task_code": "TODO-100",
+    "task_name": "CUSTOM TO DO: Follow up on trigger",
+    "program": "lightpath",
+    "priority": "P1-P3",
+    "trigger": "Manually created to follow up on glycemic triggers",
+    "triggering_criteria": "",
+    "steps": {
+      "general": "RN Review information provided by the participant Created Patient Case (follow instructions under initial trigger)"
+    },
+    "message_templates": [],
+    "links": [],
+    "roles": [
+      "RN"
+    ],
+    "full_text": "| TODO-100 | CUSTOM TO DO: Follow up on trigger |\n| :---- | :---- |\n| PRIORITY | P1-P3 |\n| TRIGGER | Manually created to follow up on glycemic triggers |\n| STEPS | RN Review information provided by the participant Created Patient Case (follow instructions under initial trigger)  |",
+    "chunk_id": "lightpath_TODO-100_9"
+  },
+  {
+    "task_code": "TODO-100",
+    "task_name": "CUSTOM TO DO: CGM Ordered",
+    "program": "lightpath",
+    "priority": "P1-P3",
+    "trigger": "Manually created by the admin to notify the HC that CGM trial has been prescribed/ ordered (admin team will run CGM Rx report daily in Athena and will place order in SF)",
+    "triggering_criteria": "",
+    "steps": {
+      "general": "CGM Ordered \\- [CGM Trial]()"
+    },
+    "message_templates": [],
+    "links": [],
+    "roles": [],
+    "full_text": "| TODO-100 | CUSTOM TO DO: CGM Ordered |\n| :---- | :---- |\n| PRIORITY | P1-P3 |\n| TRIGGER | Manually created by the admin to notify the HC that CGM trial has been prescribed/ ordered (admin team will run CGM Rx report daily in Athena and will place order in SF) |\n| STEPS | CGM Ordered \\- [CGM Trial]() |",
+    "chunk_id": "lightpath_TODO-100_10"
+  },
+  {
+    "task_code": "TODO-100",
+    "task_name": "CUSTOM TO DO: PC visit completed (mm/dd/yy)",
+    "program": "lightpath",
+    "priority": "P3",
+    "trigger": "Manually added by admin/ clinic to let the HC know that Onduo PC visit has been completed (no new Rx) w/Note on any lifestyle recommendation from the visit",
+    "triggering_criteria": "",
+    "steps": {
+      "general": "HC Review the lifestyle goals recommended by the MD (Notes) Under Care Team Goals section of the care plan add  ‘MD lifestyle recommendations: (list recs)’  Message member to review and start goal setting conversation  *I hope your video visit went well. I noticed that* (insert MD’s name) *recommended* (insert lifestyle recommendations)*. I am here to support you. Are these things you would be willing to work on? If so, what would you like to start with for this next week? Esperamos que la videollamada haya sido de ayuda. Notamos que* (insert MD’s name) *le recomendó* (insert lifestyle recommendations)*. Estamos aquí para ayudar. ¿Cree que puede seguir estas recomendaciones? Si es así, ¿con cuál de ellas le gustaría comenzar la próxima semana?*"
+    },
+    "message_templates": [
+      {
+        "language": "en",
+        "template": "I hope your video visit went well. I noticed that",
+        "placeholders": []
+      },
+      {
+        "language": "es",
+        "template": "(insert lifestyle recommendations)",
+        "placeholders": [
+          "(insert lifestyle recommendations)"
+        ]
+      },
+      {
+        "language": "en",
+        "template": "(insert MD’s name)",
+        "placeholders": [
+          "(insert MD’s name)"
+        ]
+      },
+      {
+        "language": "es",
+        "template": "(insert lifestyle recommendations)",
+        "placeholders": [
+          "(insert lifestyle recommendations)"
+        ]
+      }
+    ],
+    "links": [],
+    "roles": [
+      "HC"
+    ],
+    "full_text": "| TODO-100 | CUSTOM TO DO: PC visit completed (mm/dd/yy) |\n| :---- | :---- |\n| PRIORITY | P3 |\n| TRIGGER | Manually added by admin/ clinic to let the HC know that Onduo PC visit has been completed (no new Rx) w/Note on any lifestyle recommendation from the visit |\n| STEPS | HC Review the lifestyle goals recommended by the MD (Notes) Under Care Team Goals section of the care plan add  ‘MD lifestyle recommendations: (list recs)’  Message member to review and start goal setting conversation  *I hope your video visit went well. I noticed that* (insert MD’s name) *recommended* (insert lifestyle recommendations)*. I am here to support you. Are these things you would be willing to work on? If so, what would you like to start with for this next week? Esperamos que la videollamada haya sido de ayuda. Notamos que* (insert MD’s name) *le recomendó* (insert lifestyle recommendations)*. Estamos aquí para ayudar. ¿Cree que puede seguir estas recomendaciones? Si es así, ¿con cuál de ellas le gustaría comenzar la próxima semana?* |",
+    "chunk_id": "lightpath_TODO-100_11"
+  },
+  {
+    "task_code": "TODO-100",
+    "task_name": "CUSTOM TO DO: Sensor Day 10",
+    "program": "lightpath",
+    "priority": "P1-P3",
+    "trigger": "Manually created by HC to track sensor use",
+    "triggering_criteria": "",
+    "steps": {
+      "general": "Sensor day 10  \\- [CGM Trial]()"
+    },
+    "message_templates": [],
+    "links": [],
+    "roles": [],
+    "full_text": "| TODO-100 | CUSTOM TO DO: Sensor Day 10 |\n| :---- | :---- |\n| PRIORITY | P1-P3 |\n| TRIGGER | Manually created by HC to track sensor use |\n| STEPS | Sensor day 10  \\- [CGM Trial]() |",
+    "chunk_id": "lightpath_TODO-100_12"
+  },
+  {
+    "task_code": "TODO-100",
+    "task_name": "CUSTOM TO DO: CGM Review/ Sensor \\# RN Name",
+    "program": "lightpath",
+    "priority": "P1-P3",
+    "trigger": "Manually created by the HC after each 10 day sensor wear is completed",
+    "triggering_criteria": "",
+    "steps": {
+      "general": "HC Reassign to RN RN CGM Review/ Sensor \\# \\- [CGM Trial]()"
+    },
+    "message_templates": [],
+    "links": [],
+    "roles": [
+      "HC",
+      "RN"
+    ],
+    "full_text": "| TODO-100 | CUSTOM TO DO: CGM Review/ Sensor \\# RN Name |\n| :---- | :---- |\n| PRIORITY | P1-P3 |\n| TRIGGER | Manually created by the HC after each 10 day sensor wear is completed  |\n| STEPS | HC Reassign to RN RN CGM Review/ Sensor \\# \\- [CGM Trial]() |",
+    "chunk_id": "lightpath_TODO-100_13"
+  },
+  {
+    "task_code": "TODO-100",
+    "task_name": "CUSTOM TO DO: Review New Encounter Summary \\- CGM",
+    "program": "lightpath",
+    "priority": "P1-P3",
+    "trigger": "Manually created by the Clinic team to notify the HC that CGM sensor review has been completed",
+    "triggering_criteria": "",
+    "steps": {
+      "general": "HC Review New Encounter Summary \\- [CGM Trial]()"
+    },
+    "message_templates": [],
+    "links": [],
+    "roles": [
+      "HC"
+    ],
+    "full_text": "| TODO-100 | CUSTOM TO DO: Review New Encounter Summary \\- CGM |\n| :---- | :---- |\n| PRIORITY | P1-P3 |\n| TRIGGER | Manually created by the Clinic team to notify the HC that CGM sensor review has been completed |\n| STEPS | HC Review New Encounter Summary \\- [CGM Trial]() |",
+    "chunk_id": "lightpath_TODO-100_14"
+  },
+  {
+    "task_code": "TODO-100",
+    "task_name": "CUSTOM TO DO: Review Robin",
+    "program": "lightpath",
+    "priority": "P1-P3",
+    "trigger": "Manually created by the HC if RD referral criteria are met",
+    "triggering_criteria": "",
+    "steps": {
+      "general": "RD [Registered Dietitian]()"
+    },
+    "message_templates": [],
+    "links": [],
+    "roles": [
+      "RD"
+    ],
+    "full_text": "| TODO-100 | CUSTOM TO DO: Review Robin |\n| :---- | :---- |\n| PRIORITY | P1-P3 |\n| TRIGGER | Manually created by the HC if RD referral criteria are met  |\n| STEPS | RD [Registered Dietitian]()  |",
+    "chunk_id": "lightpath_TODO-100_15"
+  },
+  {
+    "task_code": "TODO-100",
+    "task_name": "CUSTOM TO DO: MD visit –/–/–",
+    "program": "lightpath",
+    "priority": "P1-P3",
+    "trigger": "Manually created and scheduled for 1-2 weeks prior to doctor’s visit",
+    "triggering_criteria": "",
+    "steps": {
+      "general": "**For External Visits:**  If not already noted, can ask the participant what type of doctor they are seeing (endo, PCP, cardiologist, etc).  Address the participant’s upcoming visit and provide them with support to prepare for it. This to do can be resolved once you have messaged to address this with the participant. *Is there anything in particular that you are hoping to discuss at this appointment?  Is there anything that you’d like to get out of this appointment?* Create a custom to do and schedule for the day after the visit to follow up and see how the appointment went/any new lifestyle goals to work on (do not ask about medications)  Add a note with with any information shared from member about appointment  Include date of appointment, what goals were discussed"
+    },
+    "message_templates": [
+      {
+        "language": "en",
+        "template": "For External Visits:",
+        "placeholders": []
+      },
+      {
+        "language": "en",
+        "template": "If not already noted, can ask the participant what type of doctor they are seeing (endo, PCP, cardiologist, etc).  Address the participant’s upcoming visit and provide them with support to prepare for it. This to do can be resolved once you have messaged to address this with the participant.",
+        "placeholders": []
+      }
+    ],
+    "links": [],
+    "roles": [],
+    "full_text": "| TODO-100 | CUSTOM TO DO: MD visit –/–/– |\n| :---- | :---- |\n| PRIORITY | P1-P3 |\n| TRIGGER | Manually created and scheduled for 1-2 weeks prior to doctor’s visit |\n| STEPS | **For External Visits:**  If not already noted, can ask the participant what type of doctor they are seeing (endo, PCP, cardiologist, etc).  Address the participant’s upcoming visit and provide them with support to prepare for it. This to do can be resolved once you have messaged to address this with the participant. *Is there anything in particular that you are hoping to discuss at this appointment?  Is there anything that you’d like to get out of this appointment?* Create a custom to do and schedule for the day after the visit to follow up and see how the appointment went/any new lifestyle goals to work on (do not ask about medications)  Add a note with with any information shared from member about appointment  Include date of appointment, what goals were discussed |",
+    "chunk_id": "lightpath_TODO-100_16"
+  },
+  {
+    "task_code": "TODO-100",
+    "task_name": "CUSTOM TO DO: Disenrollment",
+    "program": "lightpath",
+    "priority": "P1-P3",
+    "trigger": "Manually scheduled when member should be disenrolled",
+    "triggering_criteria": "",
+    "steps": {
+      "general": "[Disenrollment]() \\- Step 2: Final disenrollment steps"
+    },
+    "message_templates": [],
+    "links": [],
+    "roles": [],
+    "full_text": "| TODO-100 | CUSTOM TO DO: Disenrollment |\n| :---- | :---- |\n| PRIORITY | P1-P3 |\n| TRIGGER | Manually scheduled when member should be disenrolled |\n| STEPS | [Disenrollment]() \\- Step 2: Final disenrollment steps  |",
+    "chunk_id": "lightpath_TODO-100_17"
+  },
+  {
+    "task_code": "TODO-100",
+    "task_name": "CUSTOM TO DO: Review RN/ RD/ PharmD Name \\+  Note",
+    "program": "lightpath",
+    "priority": "P1-P3",
+    "trigger": "Manually created by RN, RD, PharmD or MA to notify the HC to review a clinical note",
+    "triggering_criteria": "",
+    "steps": {
+      "general": "Follow steps in the clinical note"
+    },
+    "message_templates": [],
+    "links": [],
+    "roles": [],
+    "full_text": "| TODO-100 | CUSTOM TO DO: Review RN/ RD/ PharmD Name \\+  Note |\n| :---- | :---- |\n| PRIORITY | P1-P3 |\n| TRIGGER | Manually created by RN, RD, PharmD or MA to notify the HC to review a clinical note |\n| STEPS | Follow steps in the clinical note |",
+    "chunk_id": "lightpath_TODO-100_18"
+  },
+  {
+    "task_code": "TODO-100",
+    "task_name": "CUSTOM TO DO: CGM Sensor 1, 2,3",
+    "program": "lightpath",
+    "priority": "P1-P3",
+    "trigger": "Manually scheduled to keep track of sensor use and to remind the member when to insert sensors",
+    "triggering_criteria": "",
+    "steps": {
+      "general": "Remind member to start their CGM sensor Once you confirm that member is wearing CGM, reference: [Tidepool Migration Tracking Sheet](https://docs.google.com/spreadsheets/d/1Gw9cjuOG6YY6rahQLHKF36LDn7H1e06wy0AM4wSmQrI/edit?gid=0#gid=0) (accessible only in the Onduo workspace) to check if the member is connected to Tidepool and if data is flowing in. If data is not flowing, escalate to RN."
+    },
+    "message_templates": [],
+    "links": [
+      {
+        "title": "Tidepool Migration Tracking Sheet",
+        "url": "https://docs.google.com/spreadsheets/d/1Gw9cjuOG6YY6rahQLHKF36LDn7H1e06wy0AM4wSmQrI/edit?gid=0#gid=0"
+      }
+    ],
+    "roles": [
+      "RN"
+    ],
+    "full_text": "| TODO-100 | CUSTOM TO DO: CGM Sensor 1, 2,3 |\n| :---- | :---- |\n| PRIORITY | P1-P3 |\n| TRIGGER | Manually scheduled to keep track of sensor use and to remind the member when to insert sensors |\n| STEPS | Remind member to start their CGM sensor Once you confirm that member is wearing CGM, reference: [Tidepool Migration Tracking Sheet](https://docs.google.com/spreadsheets/d/1Gw9cjuOG6YY6rahQLHKF36LDn7H1e06wy0AM4wSmQrI/edit?gid=0#gid=0) (accessible only in the Onduo workspace) to check if the member is connected to Tidepool and if data is flowing in. If data is not flowing, escalate to RN.  |",
+    "chunk_id": "lightpath_TODO-100_19"
+  },
+  {
+    "task_code": "ENG-100",
+    "task_name": "GREET NEW MEMBER",
+    "program": "lightpath",
+    "priority": "P1",
+    "trigger": "Verily Me App NUX",
+    "triggering_criteria": "New member assigned to the Care Team",
+    "steps": {
+      "general": "Send welcome message, include:  Your name Role Working hours Program overview Open-ended question re: motivation, goals or what kind of support they are looking for from the Lightpath program Example:  **Thread: Welcome to the Lightpath Program** *Hi, thank you for joining\\! My name is (insert name) and I am looking forward to working with you.      Welcome to the Lightpath Program\\! I will be your coach. I’m available Monday \\- Friday and I usually respond within a couple business days.  Our program gives you access to tools and coaching to help you reach your health goals. A great way to start is by completing the surveys and missions on the home screen of your Verily Me app. This will help me to get to know you better and offer feedback. I’d also love to hear back from you here in the chat tab, what motivated you to join our program, and what would you like to focus on first? If you run into any issues please email care1support@verily.com or call 1-833-603-6667. Our support team is here Monday-Friday 9am \\- 6pm EST.*   Complete onboarding steps: [Onboarding]() RN If you greet new member (and you are not assigned as a HC) \\- create a custom to do for the HC: continue onboarding HC name"
+    },
+    "message_templates": [
+      {
+        "language": "en",
+        "template": "Thread: Welcome to the Lightpath Program",
+        "placeholders": []
+      },
+      {
+        "language": "es",
+        "template": "Hi, thank you for joining\\! My name is (insert name) and I am looking forward to working with you.      Welcome to the Lightpath Program\\! I will be your coach. I’m available Monday \\- Friday and I usually respond within a couple business days.  Our program gives you access to tools and coaching to help you reach your health goals. A great way to start is by completing the surveys and missions on the home screen of your Verily Me app. This will help me to get to know you better and offer feedback. I’d also love to hear back from you here in the chat tab, what motivated you to join our program, and what would you like to focus on first? If you run into any issues please email care1support@verily.com or call 1-833-603-6667. Our support team is here Monday-Friday 9am \\- 6pm EST.",
+        "placeholders": [
+          "(insert name)"
+        ]
+      }
+    ],
+    "links": [],
+    "roles": [
+      "HC",
+      "RN"
+    ],
+    "full_text": "| ENG-100 | GREET NEW MEMBER |\n| :---- | :---- |\n| PRIORITY | P1 |\n| TRIGGER | Verily Me App NUX |\n| TRIGGERING CRITERIA | New member assigned to the Care Team |\n| STEPS | Send welcome message, include:  Your name Role Working hours Program overview Open-ended question re: motivation, goals or what kind of support they are looking for from the Lightpath program Example:  **Thread: Welcome to the Lightpath Program** *Hi, thank you for joining\\! My name is (insert name) and I am looking forward to working with you.      Welcome to the Lightpath Program\\! I will be your coach. I’m available Monday \\- Friday and I usually respond within a couple business days.  Our program gives you access to tools and coaching to help you reach your health goals. A great way to start is by completing the surveys and missions on the home screen of your Verily Me app. This will help me to get to know you better and offer feedback. I’d also love to hear back from you here in the chat tab, what motivated you to join our program, and what would you like to focus on first? If you run into any issues please email care1support@verily.com or call 1-833-603-6667. Our support team is here Monday-Friday 9am \\- 6pm EST.*   Complete onboarding steps: [Onboarding]() RN If you greet new member (and you are not assigned as a HC) \\- create a custom to do for the HC: continue onboarding HC name |",
+    "chunk_id": "lightpath_ENG-100_20"
+  },
+  {
+    "task_code": "ENG-101",
+    "task_name": "SCHEDULE TELEHEALTH VISIT",
+    "program": "lightpath",
+    "priority": "P1",
+    "trigger": "Verily Me App NUX",
+    "triggering_criteria": "14 days post enrollment \\+ a new member assigned to the care team.",
+    "steps": {
+      "general": "New Members:  Offer phone call (optional \\- highly encouraged if member is not engaging in the in app content or T1D) Schedule a call at a mutually agreed upon time Create custom to do: ‘NUX Telehealth Visit’ and schedule for the day of the visit Update your Google Calendar  [NUX Telehealth]() Onduo Members: Decline (archive) this TO DO"
+    },
+    "message_templates": [],
+    "links": [],
+    "roles": [],
+    "full_text": "| ENG-101 | SCHEDULE TELEHEALTH VISIT |\n| :---- | :---- |\n| PRIORITY | P1 |\n| TRIGGER | Verily Me App NUX |\n| TRIGGERING CRITERIA | 14 days post enrollment \\+ a new member assigned to the care team.  |\n| STEPS | New Members:  Offer phone call (optional \\- highly encouraged if member is not engaging in the in app content or T1D) Schedule a call at a mutually agreed upon time Create custom to do: ‘NUX Telehealth Visit’ and schedule for the day of the visit Update your Google Calendar  [NUX Telehealth]() Onduo Members: Decline (archive) this TO DO |",
+    "chunk_id": "lightpath_ENG-101_21"
+  },
+  {
+    "task_code": "PHQ-100",
+    "task_name": "REVIEW PHQ-9 Question 9",
+    "program": "lightpath",
+    "priority": "P1",
+    "trigger": "Verily Me App:  Mission: Tell us about your general health: Step 1: Reflect on your mood",
+    "triggering_criteria": "System generated when member completes Reflect on your mood survey AND selects answer 1, 2, or 3 on PHQ-9, question 9 self harm.",
+    "steps": {
+      "general": "HC Escalate to RN  [Medical / Mental Health Emergency Protocol](https://docs.google.com/document/d/1_64E5wRsRIt6fsUYOqyfnOoyMVsk9EBozwBXjwH4GaM/edit?tab=t.0)"
+    },
+    "message_templates": [],
+    "links": [
+      {
+        "title": "Medical / Mental Health Emergency Protocol",
+        "url": "https://docs.google.com/document/d/1_64E5wRsRIt6fsUYOqyfnOoyMVsk9EBozwBXjwH4GaM/edit?tab=t.0"
+      }
+    ],
+    "roles": [
+      "HC",
+      "RN"
+    ],
+    "full_text": "| PHQ-100 | REVIEW PHQ-9 Question 9 |\n| :---- | :---- |\n| PRIORITY | P1 |\n| TRIGGER | Verily Me App:  Mission: Tell us about your general health: Step 1: Reflect on your mood |\n| TRIGGERING CRITERIA | System generated when member completes Reflect on your mood survey AND selects answer 1, 2, or 3 on PHQ-9, question 9 self harm.  |\n| STEPS | HC Escalate to RN  [Medical / Mental Health Emergency Protocol](https://docs.google.com/document/d/1_64E5wRsRIt6fsUYOqyfnOoyMVsk9EBozwBXjwH4GaM/edit?tab=t.0) |",
+    "chunk_id": "lightpath_PHQ-100_22"
+  },
+  {
+    "task_code": "PHQ-101",
+    "task_name": "REVIEW PHQ-9 \\>/=10",
+    "program": "lightpath",
+    "priority": "P3",
+    "trigger": "T1D-DDAS",
+    "triggering_criteria": "Prt has completed Diabetes Distress Score and ALL subscale score \\<= 2.0",
+    "steps": {
+      "general": "Coach Review DDAS Survey Document any ‘serious/ very serious’ responses in the Care Plan and follow up with participant, as needed Average score \\< 2.0 \\= indicates little or no distress Average score between 2.0 and 2.9 \\= indicates moderate distress Average score \\> 3.0 \\= indicates high distress Any total of subscale score \\> 2.0 is considered clinically significant. Follow up in any categories \\> 2.0 (i.e., moderate distress) Management Difficulties Hypoglycemia Concerns Interpersonal Challenges Healthcare Quality Shame Worries About Complications Financial Worries Lack of Diabetes Resources Technology Challenges Burden To Others [Lightpath Educational Content](https://docs.google.com/document/d/1-b5-XWl0l0HY1ly7AoBwX1jGzedOZ-PXXPNTH9KgbyU/edit?tab=t.t83fcms54zrx) [Health Plan Client Referrals](https://docs.google.com/spreadsheets/d/12UV9-cxXxKW-h8d2rbJ9GZNCY400hz6_A0oSB6_UdSs/edit?gid=1174979338#gid=1174979338)"
+    },
+    "message_templates": [],
+    "links": [
+      {
+        "title": "Medical / Mental Health Emergency Protocol",
+        "url": "https://docs.google.com/document/d/1_64E5wRsRIt6fsUYOqyfnOoyMVsk9EBozwBXjwH4GaM/edit?tab=t.0"
+      },
+      {
+        "title": "Lightpath Educational Content",
+        "url": "https://docs.google.com/document/d/1-b5-XWl0l0HY1ly7AoBwX1jGzedOZ-PXXPNTH9KgbyU/edit?tab=t.t83fcms54zrx"
+      },
+      {
+        "title": "Health Plan Client Referrals",
+        "url": "https://docs.google.com/spreadsheets/d/12UV9-cxXxKW-h8d2rbJ9GZNCY400hz6_A0oSB6_UdSs/edit?gid=1174979338#gid=1174979338"
+      }
+    ],
+    "roles": [
+      "HC",
+      "RN"
+    ],
+    "full_text": "| PHQ-101 | REVIEW PHQ-9 \\>/=10 |\n| :---- | :---- |\n| PRIORITY | P1 |\n| TRIGGER | Verily Me App:  Mission: Tell us about your general health: Step 1: Reflect on your mood |\n| TRIGGERING CRITERIA | System generated when member completes Reflect on your mood survey AND overall score is \\>/=10 |\n| STEPS | HC Escalate to RN  [Medical / Mental Health Emergency Protocol](https://docs.google.com/document/d/1_64E5wRsRIt6fsUYOqyfnOoyMVsk9EBozwBXjwH4GaM/edit?tab=t.0) |\n| SRV-100 | REVIEW DDAS \\- T1D |\n| :---- | :---- |\n| PRIORITY | P3 |\n| TRIGGER | T1D-DDAS |\n| TRIGGERING CRITERIA | Prt has completed Diabetes Distress Score and ALL subscale score \\<= 2.0 |\n| STEPS | Coach Review DDAS Survey Document any ‘serious/ very serious’ responses in the Care Plan and follow up with participant, as needed Average score \\< 2.0 \\= indicates little or no distress Average score between 2.0 and 2.9 \\= indicates moderate distress Average score \\> 3.0 \\= indicates high distress Any total of subscale score \\> 2.0 is considered clinically significant. Follow up in any categories \\> 2.0 (i.e., moderate distress) Management Difficulties Hypoglycemia Concerns Interpersonal Challenges Healthcare Quality Shame Worries About Complications Financial Worries Lack of Diabetes Resources Technology Challenges Burden To Others [Lightpath Educational Content](https://docs.google.com/document/d/1-b5-XWl0l0HY1ly7AoBwX1jGzedOZ-PXXPNTH9KgbyU/edit?tab=t.t83fcms54zrx) [Health Plan Client Referrals](https://docs.google.com/spreadsheets/d/12UV9-cxXxKW-h8d2rbJ9GZNCY400hz6_A0oSB6_UdSs/edit?gid=1174979338#gid=1174979338) |",
+    "chunk_id": "lightpath_PHQ-101_23"
+  },
+  {
+    "task_code": "SRV-101",
+    "task_name": "REVIEW DDAS \\- T2D",
+    "program": "lightpath",
+    "priority": "P1",
+    "trigger": "Title or NA",
+    "triggering_criteria": "A1c for prt \\> 7.0%",
+    "steps": {
+      "general": "RN Review BG data, if available  Ask about medication adherence Educate/ review: lifestyle factors impacting BG readings and hyperglycemia Determine if patient case is needed:  **No** patient case needed if: Participant has a visit scheduled with Onduo MD or Pharmacist in the next 7 days  Participant had a visit with Onduo MD or Pharmacist in the last 14 days and meds were adjusted  If a participant shares that they have not filled their Rx yet, no patient case is needed If single reading of greater than 400 but there is a repeat reading within 5 minutes of \\<180 in range Resolve the to do (no note needed). **Yes** patient case is needed: create a ‘custom to do: follow up on trigger’ and schedule out 3 days  Once info has been collected from participant or it has been 3 days create the patient case in Athena and include any details you have for the MD If participant responded with info (re: medication): Add to the ‘Current Medications’ section of patient case (within the macro) If member does not respond with info: Add to the ‘Current medications’ section of the patient case ‘No response from member about meds’ or ‘Member is not responding to messages’  Add a Note in Lightpath S: Symptoms/ causes O: BG:  A: NA P: Indicate that an Athena patient case was created and no action needed or a ‘plan’ for the HC with specific recommendations. [CS Athena Job Aid ](https://docs.google.com/document/d/1WwTMOMVY5IQw83Karzoj7158AnFFQx7CzpLULdBMXQc/edit#)"
+    },
+    "message_templates": [
+      {
+        "language": "en",
+        "template": "\"somewhat confident\" or \"not at all confident\"",
+        "placeholders": []
+      },
+      {
+        "language": "en",
+        "template": "How confident are you about making food choices",
+        "placeholders": []
+      },
+      {
+        "language": "en",
+        "template": "to manage your weight”",
+        "placeholders": []
+      },
+      {
+        "language": "en",
+        "template": "“I eat out most of my meals",
+        "placeholders": []
+      },
+      {
+        "language": "es",
+        "template": "We would like to support you with getting your glucose in a safe range. What do you feel may have caused the low blood glucose readings? Nos gustaría ayudar a que mantenga sus niveles de glucosa en un rango seguro. ¿A qué cree que se debieron los bajos niveles de glucosa?",
+        "placeholders": []
+      },
+      {
+        "language": "en",
+        "template": "patient case needed if: Confirmation of false low- participant re-checked within 5 minutes and reading was \\>70  Resolve the TO DO (no note needed)",
+        "placeholders": []
+      },
+      {
+        "language": "es",
+        "template": "We would like to support you with getting your glucose in a safe range. What do you feel may have caused the low blood glucose readings? Nos gustaría ayudar a que mantenga sus niveles de glucosa en un rango seguro. ¿A qué cree que se debieron los bajos niveles de glucosa?",
+        "placeholders": []
+      },
+      {
+        "language": "en",
+        "template": "patient case needed if: Confirmation of false low- participant re-checked within 5 minutes and reading was \\>70  Resolve the TO DO (no note needed)",
+        "placeholders": []
+      },
+      {
+        "language": "en",
+        "template": "We would like to support you with getting your glucose readings into range. Can you share with me if you ever forget to take your medications? If yes, how often have you missed a dose in the last week?",
+        "placeholders": []
+      },
+      {
+        "language": "es",
+        "template": "patient case needed if: Participant has a visit scheduled with Onduo MD or Pharmacist in the next 7 days  Participant had a visit with Onduo MD or Pharmacist in the last 14 days and meds were adjusted  If a participant shares that they have not filled their Rx yet, no patient case is needed If single reading of greater than 400 but there is a repeat reading within 5 minutes of \\<180 in range Resolve the to do (no note needed).",
+        "placeholders": []
+      },
+      {
+        "language": "es",
+        "template": "It looks like your blood glucose numbers may be going up. I am here to support you with this\\!  When looking at BG patterns it can be helpful to check your BG every day and two hours after meals or snacks. What times of the day would you be willing to check your BG for the next week? Parece que sus niveles de glucemia están subiendo. Estamos aquí para brindarle ayuda.",
+        "placeholders": []
+      },
+      {
+        "language": "es",
+        "template": "Cuando observa patrones de glucemia, puede ser útil revisarla todos los días y dos horas después de las comidas o de un bocadillo",
+        "placeholders": []
+      },
+      {
+        "language": "es",
+        "template": "¿A qué horas del día prefiere controlar su glucemia durante la próxima semana?",
+        "placeholders": []
+      },
+      {
+        "language": "es",
+        "template": "It looks like your blood glucose numbers may be going up. I am here to support you with this\\!  When looking at BG patterns it can be helpful to check your BG every day and two hours after meals or snacks. What times of the day would you be willing to check your BG for the next week? Parece que sus niveles de glucemia están subiendo. Estamos aquí para brindarle ayuda.",
+        "placeholders": []
+      },
+      {
+        "language": "es",
+        "template": "Cuando observa patrones de glucemia, puede ser útil revisarla todos los días y dos horas después de las comidas o de un bocadillo",
+        "placeholders": []
+      },
+      {
+        "language": "es",
+        "template": "¿A qué horas del día prefiere controlar su glucemia durante la próxima semana?",
+        "placeholders": []
+      },
+      {
+        "language": "es",
+        "template": "I noticed your recent blood glucose readings have been higher than usual. Can you think of anything that may be impacting your readings lately? OR  Have you noticed any patterns in your blood glucose readings lately? Noté que sus mediciones de glucemia recientes fueron más altas de lo habitual. ¿Tiene alguna idea de lo que podría estar influyendo en sus mediciones? OR  ¿Notó algún patrón en sus mediciones de glucemia últimamente?",
+        "placeholders": []
+      },
+      {
+        "language": "es",
+        "template": "Changes in your diet, exercise, and medications can cause increases in blood glucose. Your blood glucose can also increase when you are not feeling well or are stressed. Have you had any recent changes that you think may be impacting your blood glucose?  Los cambios en su dieta, el ejercicio y los medicamentos pueden aumentar la glucemia. Esta también puede incrementarse cuando no se siente bien o se estresa. ¿Tuvo algún cambio reciente que podría influir en su glucemia?",
+        "placeholders": []
+      },
+      {
+        "language": "en",
+        "template": "We would like to support you with getting your glucose readings into range. Can you share with me if you ever forget to take your medications? If yes, how often have you missed a dose in the last week?",
+        "placeholders": []
+      },
+      {
+        "language": "es",
+        "template": "patient case needed if: Participant has a visit scheduled with Onduo MD or Pharmacist in the next 7 days  Participant had a visit with Onduo MD or Pharmacist in the last 14 days and meds were adjusted  If a participant shares that they have not filled their Rx yet, no patient case is needed If single reading of greater than 400 but there is a repeat reading within 5 minutes of \\<180 in range Resolve the to do (no note needed).",
+        "placeholders": []
+      },
+      {
+        "language": "es",
+        "template": "I see you haven't taken your first blood pressure reading yet. Regular self-monitoring is an essential component of managing hypertension. Once you start monitoring, I’ll be able to see your progress instantly in the app, which means I can give you personalized tips and education exactly when you need it. Would you be open to taking your first reading today?",
+        "placeholders": []
+      },
+      {
+        "language": "es",
+        "template": "Great job checking your blood pressure\\!  Little things can make a big difference in getting accurate readings. Here are some things to double check to support your efforts.  1 )  Are you sitting for 5 minutes before checking?  Gift yourself 5 minutes of calm breathing to thank yourself for your hard work  2\\) Is your arm with the cuff at heart height, such as on a pillow on a table in front of you? \\",
+        "placeholders": []
+      },
+      {
+        "language": "en",
+        "template": "3\\) Are both feet on the floor? Is your back supported? 4\\) Is the tube on the inside of your arm?  Are any of these new for you?",
+        "placeholders": []
+      },
+      {
+        "language": "es",
+        "template": "Ha hecho un gran trabajo en la medición de su presión arterial",
+        "placeholders": []
+      },
+      {
+        "language": "es",
+        "template": "Las acciones pequeñas pueden hacer una gran diferencia en la obtención de lecturas precisas. Estos son algunos aspectos a los que debe prestar atención para que sus esfuerzos tengan buenos resultados.",
+        "placeholders": []
+      },
+      {
+        "language": "es",
+        "template": "1\\)  ¿Se sienta durante 5 minutos antes de medir su presión?  Dedique 5 minutos a respirar con calma y agradecerse por su gran trabajo.",
+        "placeholders": []
+      },
+      {
+        "language": "es",
+        "template": "2\\) ¿Tiene el brazo con el brazalete puesto a la altura del corazón, por ejemplo, sobre una almohada en una mesa frente a usted?",
+        "placeholders": []
+      },
+      {
+        "language": "es",
+        "template": "(no está con el brazo al lado).\\",
+        "placeholders": []
+      },
+      {
+        "language": "es",
+        "template": "3\\) ¿Tiene ambos pies en el suelo? ¿Tiene la espalda apoyada en el respaldo?",
+        "placeholders": []
+      },
+      {
+        "language": "es",
+        "template": "4\\) ¿El tubo está en el lado interior de su brazo?",
+        "placeholders": []
+      },
+      {
+        "language": "es",
+        "template": "¿No conocía alguna de estas sugerencias?",
+        "placeholders": []
+      },
+      {
+        "language": "es",
+        "template": "Great job checking your blood pressure\\!  Little things can make a big difference in getting accurate readings. Here are some things to double check to support your efforts.  1 )  Are you sitting for 5 minutes before checking?  Gift yourself 5 minutes of calm breathing to thank yourself for your hard work  2\\) Is your arm with the cuff at heart height, such as on a pillow on a table in front of you? \\",
+        "placeholders": []
+      },
+      {
+        "language": "en",
+        "template": "3\\) Are both feet on the floor? Is your back supported? 4\\) Is the tube on the inside of your arm?  Are any of these new for you?",
+        "placeholders": []
+      },
+      {
+        "language": "es",
+        "template": "Ha hecho un gran trabajo en la medición de su presión arterial",
+        "placeholders": []
+      },
+      {
+        "language": "es",
+        "template": "Las acciones pequeñas pueden hacer una gran diferencia en la obtención de lecturas precisas. Estos son algunos aspectos a los que debe prestar atención para que sus esfuerzos tengan buenos resultados.",
+        "placeholders": []
+      },
+      {
+        "language": "es",
+        "template": "1\\)  ¿Se sienta durante 5 minutos antes de medir su presión?  Dedique 5 minutos a respirar con calma y agradecerse por su gran trabajo.",
+        "placeholders": []
+      },
+      {
+        "language": "es",
+        "template": "2\\) ¿Tiene el brazo con el brazalete puesto a la altura del corazón, por ejemplo, sobre una almohada en una mesa frente a usted?",
+        "placeholders": []
+      },
+      {
+        "language": "es",
+        "template": "(no está con el brazo al lado).\\",
+        "placeholders": []
+      },
+      {
+        "language": "es",
+        "template": "3\\) ¿Tiene ambos pies en el suelo? ¿Tiene la espalda apoyada en el respaldo?",
+        "placeholders": []
+      },
+      {
+        "language": "es",
+        "template": "4\\) ¿El tubo está en el lado interior de su brazo?",
+        "placeholders": []
+      },
+      {
+        "language": "es",
+        "template": "¿No conocía alguna de estas sugerencias?",
+        "placeholders": []
+      },
+      {
+        "language": "es",
+        "template": "Great work checking your blood pressure. Based on your readings, we recommend a doctor's visit for your blood pressure.  One easy way to do this is a video visit with the doctor from our affiliated clinic \\- Onduo. We have availability this week and can get you scheduled. They can help you with lifestyle changes and medication to manage your blood pressure. The American Heart Association recommends treating Stage 2 high blood pressure (140/90 or greater). Please let me know: Would you like to meet with the Onduo doctor by video call? Or are you already working with your primary care doctor on blood pressure in the next 2-4 weeks? (If so, please let me know the date of your next appointment.) Both are good options. We’re here to support you on either path\\! What are your thoughts?",
+        "placeholders": []
+      },
+      {
+        "language": "en",
+        "template": "The recent BP averages have been ….",
+        "placeholders": []
+      },
+      {
+        "language": "en",
+        "template": "I am connecting with you about the readings of …. Los promedios de las mediciones recientes de presión arterial han sido…",
+        "placeholders": []
+      },
+      {
+        "language": "es",
+        "template": "Me comunico con usted debido a las mediciones de…",
+        "placeholders": []
+      },
+      {
+        "language": "en",
+        "template": "Hi, my name is \\_\\_\\_\\_\\_.  I am a Registered Nurse on your Care team and an extra layer of support. Thank you for taking your blood pressures so you can monitor your trends.",
+        "placeholders": []
+      },
+      {
+        "language": "en",
+        "template": "The reading of \\_\\_\\_ is very high.  We are concerned about you. When is the soonest you can recheck your blood pressure to see if it is still high?  If you are having unusual symptoms, such as a severe headache, chest pain, shortness of breath, difficulty speaking or thinking, call 911 or your local emergency response team.  If you don’t have any symptoms, please let your primary care provider know about your high readings  Do you have any heart conditions? What are your thoughts or questions? Please let us know that you received this message. I may be calling you from 1-833-446-6386 if I don’t hear from you. Please save this number in your phone.",
+        "placeholders": []
+      },
+      {
+        "language": "es",
+        "template": "Hola, soy \\_\\_\\_\\_\\_,  especialista en atención médica y le brindaré asistencia adicional. Gracias por realizar mediciones de su presión arterial para supervisar sus tendencias.",
+        "placeholders": []
+      },
+      {
+        "language": "es",
+        "template": "La medición de \\_\\_\\_ es muy alta.  Nos preocupa su salud. ¿Qué tan pronto puede volver a medir su presión arterial para ver si continúa siendo alta?",
+        "placeholders": []
+      },
+      {
+        "language": "en",
+        "template": "Si experimenta síntomas atípicos, como dolor de cabeza intenso, dolor de pecho o dificultad para respirar, hablar o pensar, llame al 911 o al equipo local de servicios de emergencia.",
+        "placeholders": []
+      },
+      {
+        "language": "es",
+        "template": "Si no tiene síntomas, informe a su proveedor de atención primaria sobre sus mediciones altas.",
+        "placeholders": []
+      },
+      {
+        "language": "es",
+        "template": "¿Tiene alguna enfermedad cardíaca?",
+        "placeholders": []
+      },
+      {
+        "language": "es",
+        "template": "¿Tiene alguna inquietud o pregunta?",
+        "placeholders": []
+      },
+      {
+        "language": "es",
+        "template": "Indíquenos si recibió este mensaje. Es posible que me comunique con usted desde el número 1-833-446-6386 si no recibo una respuesta suya. Guarde este número en su teléfono.",
+        "placeholders": []
+      },
+      {
+        "language": "es",
+        "template": "Hi, my name is \\_\\_\\_\\_\\_.  I am a Care Specialist and an extra layer of support. Thank you for taking your blood pressures so you can monitor your trends. If you are seeing one of the Onduo providers, we will make them aware of your readings. The reading of \\_\\_\\_ is very high and we are concerned about you. When is the soonest you can recheck your blood pressure to see if it is still high?              If you ARE having unusual symptoms, such as a severe headache, chest pain, shortness of breath, difficulty speaking or thinking, call 911 or your local emergency response team.  If your recheck number is still out of range and you do NOT have any symptoms, I will update our clinic team. What are your thoughts or questions? Please let us know that you received this message. I may be calling you from 1-833-446-6386 if I don’t hear from you. Please save this number in your phone.  \u000bHola, soy \\_\\_\\_\\_\\_,  especialista en atención médica y le brindaré asistencia adicional. Gracias por realizar mediciones de su presión arterial para supervisar sus tendencias.",
+        "placeholders": []
+      },
+      {
+        "language": "es",
+        "template": "Si se atiende con alguno de los proveedores de Onduo, le informaremos a este sobre sus mediciones.",
+        "placeholders": []
+      },
+      {
+        "language": "es",
+        "template": "La medición de \\_\\_\\_ es muy alta.  Nos preocupa su salud. ¿Qué tan pronto puede volver a medir su presión arterial para ver si continúa siendo alta?",
+        "placeholders": []
+      },
+      {
+        "language": "en",
+        "template": "Si experimenta síntomas atípicos, como dolor de cabeza intenso, dolor de pecho o dificultad para respirar, hablar o pensar, llame al 911 o al equipo local de servicios de emergencia.",
+        "placeholders": []
+      },
+      {
+        "language": "es",
+        "template": "Si el número que indica su nueva medición todavía se encuentra fuera de rango y NO tiene ningún síntoma, informaré a nuestro equipo clínico.",
+        "placeholders": []
+      },
+      {
+        "language": "es",
+        "template": "¿Tiene alguna inquietud o pregunta?",
+        "placeholders": []
+      },
+      {
+        "language": "es",
+        "template": "Indíquenos si recibió este mensaje.\u000bEs posible que me comunique con usted desde el número 1-833-446-6386 si no recibo una respuesta suya. Guarde este número en su teléfono.",
+        "placeholders": []
+      },
+      {
+        "language": "es",
+        "template": "Hi, my name is \\_\\_\\_\\_. I am a Registered Nurse and an extra layer of care. Thank you for checking blood pressures.  When the readings are below 90/60, we message to make sure you are feeling well. I am messaging about the recent low blood pressure reading of \\_\\_\\_\\_\\_\\_\\_\\_  If this is a sudden change in your blood pressure and you have symptoms such as dizziness, being too weak to stand, lightheadedness, having cold pale or clammy skin, confusion or a fast pulse, call",
+        "placeholders": []
+      },
+      {
+        "language": "en",
+        "template": "911 or your local emergency medical response team",
+        "placeholders": []
+      },
+      {
+        "language": "en",
+        "template": ".  If you don’t have any symptoms, please let your primary care provider know about your low blood pressure readings and please recheck your blood pressure as soon as you are able.\u000b Tip: Please make sure the gray tube is on the inside of the arm. Do you have any heart conditions? What are your thoughts or questions? Please let us know that you received this message. I may be calling you from 1-833-446-6386 if I don’t hear from you. Please save this number in your phone.",
+        "placeholders": []
+      },
+      {
+        "language": "es",
+        "template": "Hola, soy \\_\\_\\_\\_\\_, especialista en atención médica y le brindaré asistencia adicional. Gracias por medir su presión arterial. Cuando las mediciones estén por debajo de 90/60 mmHg, nos comunicaremos con usted para asegurarnos de que se sienta bien.",
+        "placeholders": []
+      },
+      {
+        "language": "es",
+        "template": "Nos comunicamos con usted debido a su medición reciente de presión arterial de \\_\\_\\_\\_\\_\\_\\_\\_.",
+        "placeholders": []
+      },
+      {
+        "language": "es",
+        "template": "Si se trata de una disminución repentina de su presión arterial y tiene síntomas como mareos, dificultades para ponerse de pie, sensación de frío, palidez o piel sudorosa, confusión o pulso acelerado, llame al",
+        "placeholders": []
+      },
+      {
+        "language": "en",
+        "template": "911 o al equipo local de servicios de emergencia",
+        "placeholders": []
+      },
+      {
+        "language": "es",
+        "template": "Si no tiene síntomas, informe a su proveedor de atención primaria sobre sus mediciones bajas de presión arterial y vuelva a medirla en cuanto sea posible.\u000b Sugerencia: Asegúrese de que el tubo gris esté en la parte interior del brazo.",
+        "placeholders": []
+      },
+      {
+        "language": "es",
+        "template": "¿Tiene alguna enfermedad cardíaca?",
+        "placeholders": []
+      },
+      {
+        "language": "es",
+        "template": "¿Tiene alguna inquietud o pregunta?",
+        "placeholders": []
+      },
+      {
+        "language": "es",
+        "template": "Indíquenos si recibió este mensaje. \u000bEs posible que me comunique con usted desde el número 1-833-446-6386 si no recibo una respuesta suya. Guarde este número en su teléfono.",
+        "placeholders": []
+      },
+      {
+        "language": "en",
+        "template": "What to Do If Your Blood Pressure Is Too Low",
+        "placeholders": []
+      },
+      {
+        "language": "es",
+        "template": "Hi, my name is \\_\\_\\_\\_. I am a Registered Nurse and an extra layer of care. Thank you for checking blood pressures.  When the readings are below 90/60, we message to make sure you are feeling well. I am messaging about the recent low blood pressure reading of \\_\\_\\_\\_\\_\\_\\_\\_ If this is a sudden change in your blood pressure and you have symptoms such as dizziness, being too weak to stand, lightheadedness, having cold pale or clammy skin, confusion or a fast pulse, call",
+        "placeholders": []
+      },
+      {
+        "language": "en",
+        "template": "911 or your local emergency medical response team",
+        "placeholders": []
+      },
+      {
+        "language": "es",
+        "template": ".  If you don’t have any symptoms, please let me know and I can update our clinic team. Please recheck your blood pressure as soon as you are able. \u000bTip: Please make sure the gray tube is on the inside of the arm. What are your thoughts or questions? Please let us know that you received this message. I may be calling you from 1-833-446-6386 if I don’t hear from you. Please save this number in your phone.  \u000bHola, soy \\_\\_\\_\\_\\_, especialista en atención médica y le brindaré asistencia adicional. Gracias por medir su presión arterial. Cuando las mediciones estén por debajo de 90/60 mmHg, nos comunicaremos con usted para asegurarnos de que se sienta bien.",
+        "placeholders": []
+      },
+      {
+        "language": "es",
+        "template": "Nos comunicamos con usted debido a su medición reciente de presión arterial de \\_\\_\\_\\_\\_\\_\\_\\_.",
+        "placeholders": []
+      },
+      {
+        "language": "es",
+        "template": "Si se trata de una disminución repentina de su presión arterial y tiene síntomas como mareos, dificultades para ponerse de pie, sensación de frío, palidez o piel sudorosa, confusión o pulso acelerado, llame al",
+        "placeholders": []
+      },
+      {
+        "language": "en",
+        "template": "911 o al equipo local de servicios de emergencia",
+        "placeholders": []
+      },
+      {
+        "language": "es",
+        "template": "Avíseme si no tiene síntomas y yo lo informaré al equipo clínico.  Vuelva a medir su presión arterial en cuanto sea posible.\u000b Sugerencia: Asegúrese de que el tubo gris esté en la parte interior del brazo.",
+        "placeholders": []
+      },
+      {
+        "language": "es",
+        "template": "¿Tiene alguna inquietud o pregunta? Indíquenos si recibió este mensaje.  Es posible que me comunique con usted desde el número 1-833-446-6386 si no recibo una respuesta suya. Guarde este número en su teléfono.",
+        "placeholders": []
+      },
+      {
+        "language": "en",
+        "template": "What to Do If Your Blood Pressure Is Too Low",
+        "placeholders": []
+      },
+      {
+        "language": "es",
+        "template": "patient case needed if: Participant has a visit scheduled with Onduo MD or Pharmacist in the next 7 days  Participant had a visit with Onduo MD or Pharmacist in the last 14 days and meds were adjusted  If a participant shares that they have not filled their Rx yet, no patient case is needed If single reading of greater than 400 but there is a repeat reading within 5 minutes of \\<180 in range Resolve the to do (no note needed).",
+        "placeholders": []
+      }
+    ],
+    "links": [
+      {
+        "title": "Lightpath Educational Content",
+        "url": "https://docs.google.com/document/d/1-b5-XWl0l0HY1ly7AoBwX1jGzedOZ-PXXPNTH9KgbyU/edit?tab=t.t83fcms54zrx"
+      },
+      {
+        "title": "Health Plan Client Referrals",
+        "url": "https://docs.google.com/spreadsheets/d/12UV9-cxXxKW-h8d2rbJ9GZNCY400hz6_A0oSB6_UdSs/edit?gid=1174979338#gid=1174979338"
+      },
+      {
+        "title": "Lightpath Educational Content",
+        "url": "https://docs.google.com/document/d/1-b5-XWl0l0HY1ly7AoBwX1jGzedOZ-PXXPNTH9KgbyU/edit?tab=t.apiow2k0fbej#heading=h.g7og2l6j0jwi"
+      },
+      {
+        "title": "Lightpath Educational Content",
+        "url": "https://docs.google.com/document/d/1-b5-XWl0l0HY1ly7AoBwX1jGzedOZ-PXXPNTH9KgbyU/edit?tab=t.rcfd7kpyzwr#heading=h.ml7uxljkdmtc"
+      },
+      {
+        "title": "CS Athena Job Aid ",
+        "url": "https://docs.google.com/document/d/1WwTMOMVY5IQw83Karzoj7158AnFFQx7CzpLULdBMXQc/edit#"
+      },
+      {
+        "title": "NEW Draft Lightpath Educational Content",
+        "url": "https://docs.google.com/document/d/1-b5-XWl0l0HY1ly7AoBwX1jGzedOZ-PXXPNTH9KgbyU/edit?tab=t.cx0jez7pifvh"
+      },
+      {
+        "title": "A1c & A1c LGC Kit",
+        "url": "https://docs.google.com/document/d/1qB4IHB-eePakH4R3tdjrxQMcM6CZDPs20YfkPMo8Yg0/edit?pli=1&tab=t.xu8hpvpc97rk"
+      },
+      {
+        "title": "Offer CGM",
+        "url": "https://docs.google.com/document/d/1qB4IHB-eePakH4R3tdjrxQMcM6CZDPs20YfkPMo8Yg0/edit?pli=1&tab=t.988lmkgpa188"
+      },
+      {
+        "title": "Content card",
+        "url": "https://drive.google.com/drive/folders/1UIT5rtycZ2FGuBKMEXFMKUCU7vGrxret"
+      },
+      {
+        "title": "Lightpath Educational Content",
+        "url": "https://docs.google.com/document/d/1-b5-XWl0l0HY1ly7AoBwX1jGzedOZ-PXXPNTH9KgbyU/edit?tab=t.rcfd7kpyzwr"
+      },
+      {
+        "title": "VUS - LP Beta Tickets & Clinical Escalations ",
+        "url": "https://docs.google.com/spreadsheets/d/1QVjDzS7aA1_ztGMjArSYysgcGxFyfKZkn870pwOYbQY/edit?gid=0#gid=0"
+      }
+    ],
+    "roles": [
+      "HC",
+      "PharmD",
+      "RD",
+      "RN"
+    ],
+    "full_text": "| SRV-101 | REVIEW DDAS \\- T2D |\n| :---- | :---- |\n| PRIORITY | P3 |\n| TRIGGER | T2-DDAS |\n| TRIGGERING CRITERIA | Prt has completed Diabetes Distress Score and ALL subscale score \\<= 2.0 |\n| STEPS | Coach Review DDAS Survey Document any ‘serious/ very serious’ responses in the Care Plan and follow up with participant, as needed Average score \\< 2.0 \\= indicates little or no distress Average score between 2.0 and 2.9 \\= indicates moderate distress Average score \\> 3.0 \\= indicates high distress Any total of subscale score \\> 2.0 is considered clinically significant. Follow up in any categories \\> 2.0 (i.e., moderate distress) Management Demands Hypoglycemia Interpersonal Issues Healthcare Provider Shame/ Stigma Long-term Health Healthcare Access  [Lightpath Educational Content](https://docs.google.com/document/d/1-b5-XWl0l0HY1ly7AoBwX1jGzedOZ-PXXPNTH9KgbyU/edit?tab=t.t83fcms54zrx) [Health Plan Client Referrals](https://docs.google.com/spreadsheets/d/12UV9-cxXxKW-h8d2rbJ9GZNCY400hz6_A0oSB6_UdSs/edit?gid=1174979338#gid=1174979338) |\n| SRV-102 | REVIEW PROMIS-10 |\n| :---- | :---- |\n| PRIORITY | P3 |\n| TRIGGER | Promis-Global Verily Me App:  Mission: Tell us about your general health: Step 2: Tell us about your quality of life |\n| TRIGGERING CRITERIA | Member has completed ‘Tell us about your quality of life’ survey |\n| STEPS | HC Resolve to do |\n| SRV-103 | REVIEW NUTRITION BASELINE |\n| :---- | :---- |\n| PRIORITY | P3 |\n| TRIGGER | Verily Me App:  Mission: Tell us about your nutrition: Step 1: Share your eating habits |\n| TRIGGERING CRITERIA | Member has completed Share your eating habits survey |\n| STEPS | Coach Review Nutrition baseline survey Document any relevant information in the Care Plan If someone answers:  **\"somewhat confident\" or \"not at all confident\"** to “**How confident are you about making food choices** to manage your weight”  **AND**  if they answer **“I eat out most of my meals**”  create a custom to do: RD referral and reassign to RD (if she is listed under member’s Care team) |\n| PRM-101 | REVIEW PROMIS-10 Question 4 |\n| :---- | :---- |\n| PRIORITY | P3 |\n| TRIGGER | Promis-Global Verily Me App:  Mission: Tell us about your general health: Step 2: Tell us about your quality of life |\n| TRIGGERING CRITERIA | Member answers: ‘poor’ to question 4 (in general, how would you rate your mental health, including your ability to think?) |\n| STEPS | HC [Lightpath Educational Content](https://docs.google.com/document/d/1-b5-XWl0l0HY1ly7AoBwX1jGzedOZ-PXXPNTH9KgbyU/edit?tab=t.apiow2k0fbej#heading=h.g7og2l6j0jwi)ePROs |\n| PRM-102 | REVIEW PROMIS-10 Question 8 |\n| :---- | :---- |\n| PRIORITY | P3 |\n| TRIGGER | Promis-Global Verily Me App:  Mission: Tell us about your general health: Step 2: Tell us about your quality of life |\n| TRIGGERING CRITERIA | A Member responds: \"often\" or \"always\" to ‘In the past 7 days, how often have you been bothered by emotional problems such as feeling anxious, depressed or irritable?’ |\n| STEPS | HC [Lightpath Educational Content](https://docs.google.com/document/d/1-b5-XWl0l0HY1ly7AoBwX1jGzedOZ-PXXPNTH9KgbyU/edit?tab=t.apiow2k0fbej#heading=h.g7og2l6j0jwi)ePROs |\n| PRM-103 | REVIEW PROMIS-10 Question 7 |\n| :---- | :---- |\n| PRIORITY | P3 |\n| TRIGGER | Promis-Global Verily Me App:  Mission: Tell us about your general health: Step 2: Tell us about your quality of life |\n| TRIGGERING CRITERIA | A member responds: “not at all” to ‘To what extent are you able to carry out your everyday physical activities such as walking, climbing stairs, carrying groceries, or moving a chair?’ |\n| STEPS | HC [Lightpath Educational Content](https://docs.google.com/document/d/1-b5-XWl0l0HY1ly7AoBwX1jGzedOZ-PXXPNTH9KgbyU/edit?tab=t.apiow2k0fbej#heading=h.g7og2l6j0jwi)ePROs |\n| PRM-104 | REVIEW PROMIS-10 Question 10 |\n| :---- | :---- |\n| PRIORITY | P3 |\n| TRIGGER | Promis-Global Verily Me App:  Mission: Tell us about your general health: Step 2: Tell us about your quality of life |\n| TRIGGERING CRITERIA | A member responds 8 or higher to question 10: ‘In the past 7 days, how would you rate your pain on average?’ |\n| STEPS | HC [Lightpath Educational Content](https://docs.google.com/document/d/1-b5-XWl0l0HY1ly7AoBwX1jGzedOZ-PXXPNTH9KgbyU/edit?tab=t.apiow2k0fbej#heading=h.g7og2l6j0jwi)ePROs |\n| BGM-100 | REVIEW BG \\< 54 |\n| :---- | :---- |\n| PRIORITY | P0 |\n| TRIGGER | BGM  |\n| TRIGGERING CRITERIA | Triggered when a member has had 1 or more \\[BGM \\< 54 mg/dL in the last 24 hours |\n| STEPS | HC: RNs will search for this to do daily If RN hasn’t message the participant yet and the Rule of 15 has not been shared with participant yet, please send the Rule of 15 content card via separate message thread titled: Hypoglycemia Education  RN Review BG data, if available If confirmation on false low: participant re-checked within 5 minutes and reading was \\>70, no action needed. Resolve to do.  Find out what might have caused hypos that can be avoided in the future. *We would like to support you with getting your glucose in a safe range. What do you feel may have caused the low blood glucose readings? Nos gustaría ayudar a que mantenga sus niveles de glucosa en un rango seguro. ¿A qué cree que se debieron los bajos niveles de glucosa?* Provide education on hypoglycemia symptoms and treatment  If wearing Dexcom instruct the participant to make sure the fall rate alarm is turned ON  [Lightpath Educational Content](https://docs.google.com/document/d/1-b5-XWl0l0HY1ly7AoBwX1jGzedOZ-PXXPNTH9KgbyU/edit?tab=t.rcfd7kpyzwr#heading=h.ml7uxljkdmtc) \\- Monitoring → Hypoglycemia If PharmD is assigned to participant’s Care Team \\- consider escalating for medication review |\n| STEPS \\- Non Clinic | RN Refer participant to local MD or offer Onduo PC visit if participant had no appointments within the past 2 weeks and no upcoming appointment within the next 2 weeks (especially if participant is on hypoglycemia causing medications) Add a Note in Lightpath: S: Symptoms/ causes O: BG:  A: NA P: No action needed OR plan/ goals for the HC |\n| STEPS \\- Clinic  | RN Determine if Patient Case in Athena is needed: **No** patient case needed if: Confirmation of false low- participant re-checked within 5 minutes and reading was \\>70  Resolve the TO DO (no note needed) **YES** Patient case in Athena is needed Check in about medications (is participant on Insulin/ Sulfonylurea):  If participant responded with info: Add to the ‘Current Medications’ section of patient case (within the macro)  If participant does not respond with info: Add to the ‘Current medications’ section of the patient case ‘No response from member about meds’ or ‘Member is not responding to messages’  [CS Athena Job Aid ](https://docs.google.com/document/d/1WwTMOMVY5IQw83Karzoj7158AnFFQx7CzpLULdBMXQc/edit#) Add a Note in Lightpath S: Symptoms/ causes O: BG:  A: NA P: Indicate that an Athena patient case was created \\+ plan for HC (if applicable) |\n| BGM-101 | REVIEW BG \\< 70 |\n| :---- | :---- |\n| PRIORITY | P1 |\n| TRIGGER | BGM |\n| TRIGGERING CRITERIA | Triggered when a member has had 1 or more \\[70 \\> BGM \\>/= 54 mg/dL in the last 24 hours\\]  |\n| STEPS | HC: RNs will search for this to do daily If RN hasn’t message the participant yet and the Rule of 15 has not been shared with participant yet, please send the Rule of 15 content card via separate message thread titled: Hypoglycemia Education  RN Review BG data, if available If confirmation on false low: participant re-checked within 5 minutes and reading was \\>70, no action needed. Resolve to do.  Find out what might have caused hypos that can be avoided in the future. *We would like to support you with getting your glucose in a safe range. What do you feel may have caused the low blood glucose readings? Nos gustaría ayudar a que mantenga sus niveles de glucosa en un rango seguro. ¿A qué cree que se debieron los bajos niveles de glucosa?* Provide education on hypoglycemia symptoms and treatment  If wearing Dexcom instruct the participant to make sure the fall rate alarm is turned ON  [Lightpath Educational Content](https://docs.google.com/document/d/1-b5-XWl0l0HY1ly7AoBwX1jGzedOZ-PXXPNTH9KgbyU/edit?tab=t.rcfd7kpyzwr#heading=h.ml7uxljkdmtc) \\- Monitoring → Hypoglycemia If PharmD is assigned to participant’s Care Team \\- consider escalating for medication review |\n| STEPS \\- Non Clinic | RN Refer participant to local MD or offer Onduo PC visit if participant had no appointments within the past 2 weeks and no upcoming appointment within the next 2 weeks (especially if participant is on hypoglycemia causing medications) Add a Note in Lightpath: S: Symptoms/ causes O: BG:  A: NA P: No action needed OR plan/ goals for the HC |\n| STEPS \\- Clinic | RN Determine if Patient Case in Athena is needed: **No** patient case needed if: Confirmation of false low- participant re-checked within 5 minutes and reading was \\>70  Resolve the TO DO (no note needed) **YES** Patient case in Athena is needed Check in about medications (is participant on Insulin/ Sulfonylurea):  If participant responded with info: Add to the ‘Current Medications’ section of patient case (within the macro)  If participant does not respond with info: Add to the ‘Current medications’ section of the patient case ‘No response from member about meds’ or ‘Member is not responding to messages’  [CS Athena Job Aid ](https://docs.google.com/document/d/1WwTMOMVY5IQw83Karzoj7158AnFFQx7CzpLULdBMXQc/edit#) Add a Note in Lightpath S: Symptoms/ causes O: BG:  A: NA P: Indicate that an Athena patient case was created \\+ plan for HC (if applicable) |\n| BGM-102 | REVIEW BG \\> 180 |\n| :---- | :---- |\n| PRIORITY | P3 |\n| TRIGGER | BGM |\n| TRIGGERING CRITERIA | Triggered when a member has had 1 or more \\[BGM \\> 180 mg/dL in the last 24 hours\\]  |\n| STEPS | HC Check for any higher priority BG triggers (BGM \\- 100, 101, 104\\) \\- if these exists \\- reassign this to do to RN If no higher BG triggers, follow the steps below: Educate participant about hyperglycemia, assess what might be causing high BG and set goals to lower BG, if applicable Encourage logging meals If no A1c \\- [A1c & A1c LGC Kit]() [Offer CGM]() (if not offered yet) Set goals once identified specific time/ food/ activity when BG is high [NEW Draft Lightpath Educational Content](https://docs.google.com/document/d/1-b5-XWl0l0HY1ly7AoBwX1jGzedOZ-PXXPNTH9KgbyU/edit?tab=t.cx0jez7pifvh) |\n| BGM-103 | REVIEW BG \\> 250 |\n| :---- | :---- |\n| PRIORITY | P2 |\n| TRIGGER | BGM |\n| TRIGGERING CRITERIA | Triggered when a member has had 1 or more \\[BGM \\> 250 mg/dL in the last 24 hours\\]  |\n| STEPS | HC Check for any higher priority BG triggers (BGM \\- 100, 101, 104\\) \\- if these exists \\- reassign this to do to RN If no higher BG triggers, follow the steps below: Educate participant about hyperglycemia, assess what might be causing high BG and set goals to lower BG, if applicable Encourage logging meals If no A1c \\- [A1c & A1c LGC Kit](https://docs.google.com/document/d/1qB4IHB-eePakH4R3tdjrxQMcM6CZDPs20YfkPMo8Yg0/edit?pli=1&tab=t.xu8hpvpc97rk) [Offer CGM](https://docs.google.com/document/d/1qB4IHB-eePakH4R3tdjrxQMcM6CZDPs20YfkPMo8Yg0/edit?pli=1&tab=t.988lmkgpa188) (if not offered yet) Set goals once identified specific time/ food/ activity when BG is high [NEW Draft Lightpath Educational Content](https://docs.google.com/document/d/1-b5-XWl0l0HY1ly7AoBwX1jGzedOZ-PXXPNTH9KgbyU/edit?tab=t.cx0jez7pifvh) |\n| BGM-104 | REVIEW BG \\> 400 |\n| :---- | :---- |\n| PRIORITY | P1 |\n| TRIGGER | BGM |\n| TRIGGERING CRITERIA | Triggered when a member has had 1 or more \\[BGM \\> 400 mg/dL in the last 24 hours\\] |\n| STEPS | HC NA (RNs will search for this to do daily) |\n| STEPS \\- Non Clinic | RN If a single reading is greater than 400 but there is a repeat reading within 5 minutes of \\<180 in range no need to create a note. This task can be resolved. Educate on lifestyle factors impacting BG readings & hyperglycemia [NEW Draft Lightpath Educational Content](https://docs.google.com/document/d/1-b5-XWl0l0HY1ly7AoBwX1jGzedOZ-PXXPNTH9KgbyU/edit?tab=t.cx0jez7pifvh) Refer to local MD or offer MD Ref visit if needed |\n| STEPS \\- Clinic | RN Review BG data, if available  Ask about medication adherence *We would like to support you with getting your glucose readings into range. Can you share with me if you ever forget to take your medications? If yes, how often have you missed a dose in the last week?* Educate on lifestyle factors impacting BG readings & hyperglycemia [NEW Draft Lightpath Educational Content](https://docs.google.com/document/d/1-b5-XWl0l0HY1ly7AoBwX1jGzedOZ-PXXPNTH9KgbyU/edit?tab=t.cx0jez7pifvh) Review readings and check to see if member had a recent visit with Onduo MD to determine if a patient case is needed **No** patient case needed if: Participant has a visit scheduled with Onduo MD or Pharmacist in the next 7 days  Participant had a visit with Onduo MD or Pharmacist in the last 14 days and meds were adjusted  If a participant shares that they have not filled their Rx yet, no patient case is needed If single reading of greater than 400 but there is a repeat reading within 5 minutes of \\<180 in range Resolve the to do (no note needed). **Yes** patient case is needed: create a ‘custom to do: follow up on trigger’ and schedule out 3 days  Once info has been collected from participant or it has been 3 days create the patient case in Athena and include any details you have for the MD If participant responded with info: Add to the ‘Current Medications’ section of patient case (within the macro) If member does not respond with info: Add to the ‘Current medications’ section of the patient case ‘No response from member about meds’ or ‘Member is not responding to messages’  Add a Note in Lightpath S: Symptoms/ causes O: BG:  A: NA P: Indicate that an Athena patient case was created and no action needed or a ‘plan’ for the HC with specific recommendations. [CS Athena Job Aid ](https://docs.google.com/document/d/1WwTMOMVY5IQw83Karzoj7158AnFFQx7CzpLULdBMXQc/edit#) |\n| BGM-105 | REVIEW BG AVERAGE \\> 170 for 2 weeks (A1c\\<7) |\n| :---- | :---- |\n| PRIORITY | P2 |\n| TRIGGER | BGM |\n| TRIGGERING CRITERIA | Triggered when a member has average BG \\> 170 for the past 2 weeks and most recent verified A1c \\< 7% |\n| STEPS | HC First trigger: follow up with the member about numbers trending up and then resolve the task  *It looks like your blood glucose numbers may be going up. I am here to support you with this\\!  When looking at BG patterns it can be helpful to check your BG every day and two hours after meals or snacks. What times of the day would you be willing to check your BG for the next week? Parece que sus niveles de glucemia están subiendo. Estamos aquí para brindarle ayuda.*  *Cuando observa patrones de glucemia, puede ser útil revisarla todos los días y dos horas después de las comidas o de un bocadillo* *¿A qué horas del día prefiere controlar su glucemia durante la próxima semana? * Second trigger or more:  Help the participant figure out what might be causing their numbers to go up Follow up on goals  [NEW Draft Lightpath Educational Content](https://docs.google.com/document/d/1-b5-XWl0l0HY1ly7AoBwX1jGzedOZ-PXXPNTH9KgbyU/edit?tab=t.cx0jez7pifvh) |\n| BGM-106 | REVIEW BG AVERAGE \\> 190 for 2 weeks (A1c 7-7.9) |\n| :---- | :---- |\n| PRIORITY | P2 |\n| TRIGGER | BGM |\n| TRIGGERING CRITERIA | Triggered when a member has average BG \\> 190 for the past 2 weeks and most recent verified A1c 7-7.9% |\n| STEPS | HC First trigger: follow up with the member about numbers trending up and then resolve the task  *It looks like your blood glucose numbers may be going up. I am here to support you with this\\!  When looking at BG patterns it can be helpful to check your BG every day and two hours after meals or snacks. What times of the day would you be willing to check your BG for the next week? Parece que sus niveles de glucemia están subiendo. Estamos aquí para brindarle ayuda.*  *Cuando observa patrones de glucemia, puede ser útil revisarla todos los días y dos horas después de las comidas o de un bocadillo* *¿A qué horas del día prefiere controlar su glucemia durante la próxima semana? * Second trigger or more:  Help the participant figure out what might be causing their numbers to go up Follow up on goals  [NEW Draft Lightpath Educational Content](https://docs.google.com/document/d/1-b5-XWl0l0HY1ly7AoBwX1jGzedOZ-PXXPNTH9KgbyU/edit?tab=t.cx0jez7pifvh) |\n| BGM-107 | REVIEW BG AVERAGE \\> 220 for 2 weeks (A1c 8-8.9) |\n| :---- | :---- |\n| PRIORITY | P2 |\n| TRIGGER | BGM |\n| TRIGGERING CRITERIA | Triggered when a member has average BG \\> 220 for the past 2 weeks and most recent verified A1c 8-8.9% |\n| STEPS | HC NA (RNs will search for this to do daily) |\n| STEPS \\- Non Clinic | RN Review readings Guide the member to figure out what may be causing the higher blood glucose readings *I noticed your recent blood glucose readings have been higher than usual. Can you think of anything that may be impacting your readings lately? OR  Have you noticed any patterns in your blood glucose readings lately? Noté que sus mediciones de glucemia recientes fueron más altas de lo habitual. ¿Tiene alguna idea de lo que podría estar influyendo en sus mediciones? OR  ¿Notó algún patrón en sus mediciones de glucemia últimamente?* If member needs ideas to what may be causing the higher readings: *Changes in your diet, exercise, and medications can cause increases in blood glucose. Your blood glucose can also increase when you are not feeling well or are stressed. Have you had any recent changes that you think may be impacting your blood glucose?  Los cambios en su dieta, el ejercicio y los medicamentos pueden aumentar la glucemia. Esta también puede incrementarse cuando no se siente bien o se estresa. ¿Tuvo algún cambio reciente que podría influir en su glucemia?* Educate on lifestyle factors impacting BG readings & hyperglycemia [NEW Draft Lightpath Educational Content](https://docs.google.com/document/d/1-b5-XWl0l0HY1ly7AoBwX1jGzedOZ-PXXPNTH9KgbyU/edit?tab=t.cx0jez7pifvh) Refer to local MD or offer MD Ref visit if needed |\n| STEPS \\- Clinic | RN Review BG data, if available  Ask about medication adherence *We would like to support you with getting your glucose readings into range. Can you share with me if you ever forget to take your medications? If yes, how often have you missed a dose in the last week?* Educate on lifestyle factors impacting BG readings & hyperglycemia [NEW Draft Lightpath Educational Content](https://docs.google.com/document/d/1-b5-XWl0l0HY1ly7AoBwX1jGzedOZ-PXXPNTH9KgbyU/edit?tab=t.cx0jez7pifvh) Review readings and check to see if member had a recent visit with Onduo MD to determine if a patient case is needed **No** patient case needed if: Participant has a visit scheduled with Onduo MD or Pharmacist in the next 7 days  Participant had a visit with Onduo MD or Pharmacist in the last 14 days and meds were adjusted  If a participant shares that they have not filled their Rx yet, no patient case is needed If single reading of greater than 400 but there is a repeat reading within 5 minutes of \\<180 in range Resolve the to do (no note needed). **Yes** patient case is needed: create a ‘custom to do: follow up on trigger’ and schedule out 3 days  Once info has been collected from participant or it has been 3 days create the patient case in Athena and include any details you have for the MD If participant responded with info: Add to the ‘Current Medications’ section of patient case (within the macro) If member does not respond with info: Add to the ‘Current medications’ section of the patient case ‘No response from member about meds’ or ‘Member is not responding to messages’  Add a Note in Lightpath S: Symptoms/ causes O: BG:  A: NA P: Indicate that an Athena patient case was created and no action needed or a ‘plan’ for the HC with specific recommendations. [CS Athena Job Aid ](https://docs.google.com/document/d/1WwTMOMVY5IQw83Karzoj7158AnFFQx7CzpLULdBMXQc/edit#) |\n| STEPS | HC |\n| BP-100 | REMIND MEMBER TO TAKE INITIAL BP READING |\n| :---- | :---- |\n| PRIORITY | P3 |\n| TRIGGER | Title or NA |\n| TRIGGERING CRITERIA |  |\n| STEPS | Send message *I see you haven't taken your first blood pressure reading yet. Regular self-monitoring is an essential component of managing hypertension. Once you start monitoring, I’ll be able to see your progress instantly in the app, which means I can give you personalized tips and education exactly when you need it. Would you be open to taking your first reading today?*  Content card options:  Tips for Taking Your Blood Pressure Troubleshooting: Reasons Your Blood Pressure Reading Might Not Be Right |\n| BP-101 | REVIEW BP READINGS: BP over 130/80 |\n| :---- | :---- |\n| PRIORITY | P2 |\n| TRIGGER | BP Monitor |\n| TRIGGERING CRITERIA | 3 or more BP readings ≥130/80 in the past 14 days |\n| STEPS | Review Technique (send suggested wording or content card from below) Send message: *Great job checking your blood pressure\\!  Little things can make a big difference in getting accurate readings. Here are some things to double check to support your efforts.  1 )  Are you sitting for 5 minutes before checking?  Gift yourself 5 minutes of calm breathing to thank yourself for your hard work  2\\) Is your arm with the cuff at heart height, such as on a pillow on a table in front of you? \\* (not arm at your side)\\* 3\\) Are both feet on the floor? Is your back supported? 4\\) Is the tube on the inside of your arm?  Are any of these new for you?*  *Ha hecho un gran trabajo en la medición de su presión arterial* *Las acciones pequeñas pueden hacer una gran diferencia en la obtención de lecturas precisas. Estos son algunos aspectos a los que debe prestar atención para que sus esfuerzos tengan buenos resultados.*   *1\\)  ¿Se sienta durante 5 minutos antes de medir su presión?  Dedique 5 minutos a respirar con calma y agradecerse por su gran trabajo.*  *2\\) ¿Tiene el brazo con el brazalete puesto a la altura del corazón, por ejemplo, sobre una almohada en una mesa frente a usted?* *\\*(no está con el brazo al lado).\\** *3\\) ¿Tiene ambos pies en el suelo? ¿Tiene la espalda apoyada en el respaldo?* *4\\) ¿El tubo está en el lado interior de su brazo?*  *¿No conocía alguna de estas sugerencias?*   [Content card](https://drive.google.com/drive/folders/1UIT5rtycZ2FGuBKMEXFMKUCU7vGrxret) options:  Tips for Taking Your Blood Pressure Troubleshooting: Reasons Your Blood Pressure Reading Might Not Be Right If the task continues to trigger it can be resolved but continue to follow up on: Technique  Lifestyle (DASH, FITT Plan, etc) [Lightpath Educational Content](https://docs.google.com/document/d/1-b5-XWl0l0HY1ly7AoBwX1jGzedOZ-PXXPNTH9KgbyU/edit?tab=t.rcfd7kpyzwr) Goal setting  Discussing when their next doctor's visit is and/or encouraging them to reach out to doctor  \\*Note: Members should not be offered an MD Ref visit at this point. 130/80 does not make them eligible for an MD Ref visit.  |\n| BP-102 | REVIEW BP READINGS: BP over 140/90 |\n| :---- | :---- |\n| PRIORITY | P1 |\n| TRIGGER | BP Monitor |\n| TRIGGERING CRITERIA | 3 or more BP readings ≥140/90 in the past 14 days |\n| STEPS | HC RNs will search for this to do daily HC Review Technique (send suggested wording or content card from below) Send message: *Great job checking your blood pressure\\!  Little things can make a big difference in getting accurate readings. Here are some things to double check to support your efforts.  1 )  Are you sitting for 5 minutes before checking?  Gift yourself 5 minutes of calm breathing to thank yourself for your hard work  2\\) Is your arm with the cuff at heart height, such as on a pillow on a table in front of you? \\* (not arm at your side)\\* 3\\) Are both feet on the floor? Is your back supported? 4\\) Is the tube on the inside of your arm?  Are any of these new for you?*  *Ha hecho un gran trabajo en la medición de su presión arterial* *Las acciones pequeñas pueden hacer una gran diferencia en la obtención de lecturas precisas. Estos son algunos aspectos a los que debe prestar atención para que sus esfuerzos tengan buenos resultados.*   *1\\)  ¿Se sienta durante 5 minutos antes de medir su presión?  Dedique 5 minutos a respirar con calma y agradecerse por su gran trabajo.*  *2\\) ¿Tiene el brazo con el brazalete puesto a la altura del corazón, por ejemplo, sobre una almohada en una mesa frente a usted?* *\\*(no está con el brazo al lado).\\** *3\\) ¿Tiene ambos pies en el suelo? ¿Tiene la espalda apoyada en el respaldo?* *4\\) ¿El tubo está en el lado interior de su brazo?*  *¿No conocía alguna de estas sugerencias?*  [Content card](https://drive.google.com/drive/folders/1UIT5rtycZ2FGuBKMEXFMKUCU7vGrxret) options:  Tips for Taking Your Blood Pressure Troubleshooting: Reasons Your Blood Pressure Reading Might Not Be Right Here’s How Much Small Things Can Change Your Blood Pressure Readings Confirm member’s understanding on the importance of proper technique Education: [Lightpath Educational Content](https://docs.google.com/document/d/1-b5-XWl0l0HY1ly7AoBwX1jGzedOZ-PXXPNTH9KgbyU/edit?tab=t.rcfd7kpyzwr) Offer Telemedicine visit with Onduo PC or local PCP This can be offered if the participant averages stage 2 readings for 2 weeks in a 2-4 week period. *Great work checking your blood pressure. Based on your readings, we recommend a doctor's visit for your blood pressure.  One easy way to do this is a video visit with the doctor from our affiliated clinic \\- Onduo. We have availability this week and can get you scheduled. They can help you with lifestyle changes and medication to manage your blood pressure. The American Heart Association recommends treating Stage 2 high blood pressure (140/90 or greater). Please let me know: Would you like to meet with the Onduo doctor by video call? Or are you already working with your primary care doctor on blood pressure in the next 2-4 weeks? (If so, please let me know the date of your next appointment.) Both are good options. We’re here to support you on either path\\! What are your thoughts?* Offer [Telemedicine]() visit with Onduo PC or local PCP |\n| BP-103 | REVIEW BP READINGS: BP over 150/90 |\n| :---- | :---- |\n| PRIORITY | P1 |\n| TRIGGER | BP Monitor |\n| TRIGGERING CRITERIA | 3 or more BP readings ≥150/90 in the past 14 days |\n| STEPS | Follow instructions for BP-102 |\n| BP-104 | REVIEW BP READINGS: BP over 160/100 |\n| :---- | :---- |\n| PRIORITY | P1 |\n| TRIGGER | BP Monitor |\n| TRIGGERING CRITERIA | 3 or more BP readings ≥160/100 in the past 14 days |\n| STEPS  | HC NA (RNs will search for this to do daily) |\n| STEPS \\- Non Clinic | RN Consider referring the member for an Onduo PC visit Message member about trends  *The recent BP averages have been ….* or  *I am connecting with you about the readings of …. Los promedios de las mediciones recientes de presión arterial han sido…*o  *Me comunico con usted debido a las mediciones de…* Consider if readings are part of BP variation or average is above 160/100 Variation- start with technique language Trend- offer Telemedicine with Onduo PC  If high Stage 2/hx crisis- consider calling if no response with 3 days Calls: If no response: Call 2X asking member to see messages in app If talk on the phone:\t Inquire about technique Inquire about next MD visit Discuss severity of readings at categories if member seems unaware Lifestyle- inquire about goal |\n| STEPS \\- Clinic | RN Review readings and check to see if member had a recent visit with Onduo MD to determine if a patient case is needed **No** patient case needed if: Member has a visit scheduled with Onduo MD or Pharmacist in the next 7 days  Member had a visit with Onduo MD or Pharmacist in the last 14 days and meds were adjusted  If a member shares that they have not filled their Rx yet, no patient case is needed If a patient case is not needed resolve the task and add a note: O: BP trigger \\[to do name\\], note that this will not be sent to clinic \\- visit on dd/mm/yy If a patient case is needed create in Athena and add a note: O: Name of clinical trigger task P: Indicate that an Athena patient case was created and no action needed or a ‘plan’ for the HC with specific recommendations. |\n| BP-105 | REVIEW BP READINGS (high): BP over 180/120 |\n| :---- | :---- |\n| PRIORITY | P0 |\n| TRIGGER | BP Monitor |\n| TRIGGERING CRITERIA | Any 1 reading \\> 180/120 |\n| STEPS  | HC NA (RNs will search for this to do daily) |\n| STEPS \\- Non Clinic | RN Send safety message  *Hi, my name is \\_\\_\\_\\_\\_.  I am a Registered Nurse on your Care team and an extra layer of support. Thank you for taking your blood pressures so you can monitor your trends.*  *The reading of \\_\\_\\_ is very high.  We are concerned about you. When is the soonest you can recheck your blood pressure to see if it is still high?  If you are having unusual symptoms, such as a severe headache, chest pain, shortness of breath, difficulty speaking or thinking, call 911 or your local emergency response team.  If you don’t have any symptoms, please let your primary care provider know about your high readings  Do you have any heart conditions? What are your thoughts or questions? Please let us know that you received this message. I may be calling you from 1-833-446-6386 if I don’t hear from you. Please save this number in your phone.*  \u000b*Hola, soy \\_\\_\\_\\_\\_,  especialista en atención médica y le brindaré asistencia adicional. Gracias por realizar mediciones de su presión arterial para supervisar sus tendencias.*  *La medición de \\_\\_\\_ es muy alta.  Nos preocupa su salud. ¿Qué tan pronto puede volver a medir su presión arterial para ver si continúa siendo alta?*  *Si experimenta síntomas atípicos, como dolor de cabeza intenso, dolor de pecho o dificultad para respirar, hablar o pensar, llame al 911 o al equipo local de servicios de emergencia.*  *Si no tiene síntomas, informe a su proveedor de atención primaria sobre sus mediciones altas.*   *¿Tiene alguna enfermedad cardíaca?* *¿Tiene alguna inquietud o pregunta?* *Indíquenos si recibió este mensaje. Es posible que me comunique con usted desde el número 1-833-446-6386 si no recibo una respuesta suya. Guarde este número en su teléfono.* \u000b If member read message, no to need to call them Document as a note If member did not view message, phone call is needed Your choice to call immediately or in 2 hours Document call details as a note Note if a member has a PCP listed or unlisted if member is not responding or resistant to care  If member cannot get a “sick day” appt at either PCP or Cardiology- consider calling cardiology or PCP to leave message that member needs assistance and the related BP readings This is particularly a step to consider if repeat crisis readings over days that are verified for technique and you have been in communication with the member who has not been able to get care Document time of call to cardiology/PCP and the nurse/employee you spoke with Optional: Send content card Your Blood Pressure: When to Call 911 Consider reviewing BP technique |\n| STEPS \\- Clinic | RN Send safety message   *Hi, my name is \\_\\_\\_\\_\\_.  I am a Care Specialist and an extra layer of support. Thank you for taking your blood pressures so you can monitor your trends. If you are seeing one of the Onduo providers, we will make them aware of your readings. The reading of \\_\\_\\_ is very high and we are concerned about you. When is the soonest you can recheck your blood pressure to see if it is still high?              If you ARE having unusual symptoms, such as a severe headache, chest pain, shortness of breath, difficulty speaking or thinking, call 911 or your local emergency response team.  If your recheck number is still out of range and you do NOT have any symptoms, I will update our clinic team. What are your thoughts or questions? Please let us know that you received this message. I may be calling you from 1-833-446-6386 if I don’t hear from you. Please save this number in your phone.  \u000bHola, soy \\_\\_\\_\\_\\_,  especialista en atención médica y le brindaré asistencia adicional. Gracias por realizar mediciones de su presión arterial para supervisar sus tendencias.*  *Si se atiende con alguno de los proveedores de Onduo, le informaremos a este sobre sus mediciones.* *La medición de \\_\\_\\_ es muy alta.  Nos preocupa su salud. ¿Qué tan pronto puede volver a medir su presión arterial para ver si continúa siendo alta?*  *Si experimenta síntomas atípicos, como dolor de cabeza intenso, dolor de pecho o dificultad para respirar, hablar o pensar, llame al 911 o al equipo local de servicios de emergencia.*  \u000b*Si el número que indica su nueva medición todavía se encuentra fuera de rango y NO tiene ningún síntoma, informaré a nuestro equipo clínico.*  *¿Tiene alguna inquietud o pregunta?* *Indíquenos si recibió este mensaje.\u000bEs posible que me comunique con usted desde el número 1-833-446-6386 si no recibo una respuesta suya. Guarde este número en su teléfono.*  If member read message, no to need to call them Document asa note If member did not view message, phone call is needed Your choice to call immediately or in 2 hours Document call details as a note Create patient case in Athena to notify the Onduo MD If the member is not responding to message please note in the case  Optional: Send content card Your Blood Pressure: When to Call 911 Add a note: Name of trigger Msg member in app:  Phone call time: Member response: Indicate if ‘plan for HC’ is needed  Consider reviewing BP technique |\n| BP-106 | REVIEW BP READINGS (low): BP 90/60 |\n| :---- | :---- |\n| PRIORITY | P0 |\n| TRIGGER | BP Monitor |\n| TRIGGERING CRITERIA | Any 1 reading \\< 90/60 |\n| STEPS  | HC NA (RNs will search for this to do daily) |\n| STEPS \\- Non Clinic | RN Only need to address if both systolic and diastolic are low below 90/60.  If both are below 90/60:  Send safety message to member  *Hi, my name is \\_\\_\\_\\_. I am a Registered Nurse and an extra layer of care. Thank you for checking blood pressures.  When the readings are below 90/60, we message to make sure you are feeling well. I am messaging about the recent low blood pressure reading of \\_\\_\\_\\_\\_\\_\\_\\_  If this is a sudden change in your blood pressure and you have symptoms such as dizziness, being too weak to stand, lightheadedness, having cold pale or clammy skin, confusion or a fast pulse, call **911 or your local emergency medical response team**.  If you don’t have any symptoms, please let your primary care provider know about your low blood pressure readings and please recheck your blood pressure as soon as you are able.\u000b Tip: Please make sure the gray tube is on the inside of the arm. Do you have any heart conditions? What are your thoughts or questions? Please let us know that you received this message. I may be calling you from 1-833-446-6386 if I don’t hear from you. Please save this number in your phone.*   \u000b*Hola, soy \\_\\_\\_\\_\\_, especialista en atención médica y le brindaré asistencia adicional. Gracias por medir su presión arterial. Cuando las mediciones estén por debajo de 90/60 mmHg, nos comunicaremos con usted para asegurarnos de que se sienta bien.* *Nos comunicamos con usted debido a su medición reciente de presión arterial de \\_\\_\\_\\_\\_\\_\\_\\_.*   *Si se trata de una disminución repentina de su presión arterial y tiene síntomas como mareos, dificultades para ponerse de pie, sensación de frío, palidez o piel sudorosa, confusión o pulso acelerado, llame al** 911 o al equipo local de servicios de emergencia**.*   *Si no tiene síntomas, informe a su proveedor de atención primaria sobre sus mediciones bajas de presión arterial y vuelva a medirla en cuanto sea posible.\u000b Sugerencia: Asegúrese de que el tubo gris esté en la parte interior del brazo.*  *¿Tiene alguna enfermedad cardíaca?* *¿Tiene alguna inquietud o pregunta?*  *Indíquenos si recibió este mensaje. \u000bEs posible que me comunique con usted desde el número 1-833-446-6386 si no recibo una respuesta suya. Guarde este número en su teléfono.*  Encourage member to share with local MD Consider sending technique if BP variation Consider content card if needed for repeat readings: **What to Do If Your Blood Pressure Is Too Low** Add a Note:  Hypotension readings details: Technique sent if reading variation to various stages in one sitting: Member response if available RN Plan: Sent safety message HC Plan:  Document member answer about low BP  Escalate if member mentions MD aware, meds or other factors affecting pulse Continue lifestyle coaching: DASH, salt, FITT  |\n| STEPS \\- Clinic | RN Only need to address if both systolic and diastolic are low below 90/60: If both are below 90/60:  Send safety message to member  *Hi, my name is \\_\\_\\_\\_. I am a Registered Nurse and an extra layer of care. Thank you for checking blood pressures.  When the readings are below 90/60, we message to make sure you are feeling well. I am messaging about the recent low blood pressure reading of \\_\\_\\_\\_\\_\\_\\_\\_ If this is a sudden change in your blood pressure and you have symptoms such as dizziness, being too weak to stand, lightheadedness, having cold pale or clammy skin, confusion or a fast pulse, call **911 or your local emergency medical response team**.  If you don’t have any symptoms, please let me know and I can update our clinic team. Please recheck your blood pressure as soon as you are able. \u000bTip: Please make sure the gray tube is on the inside of the arm. What are your thoughts or questions? Please let us know that you received this message. I may be calling you from 1-833-446-6386 if I don’t hear from you. Please save this number in your phone.  \u000bHola, soy \\_\\_\\_\\_\\_, especialista en atención médica y le brindaré asistencia adicional. Gracias por medir su presión arterial. Cuando las mediciones estén por debajo de 90/60 mmHg, nos comunicaremos con usted para asegurarnos de que se sienta bien.* *Nos comunicamos con usted debido a su medición reciente de presión arterial de \\_\\_\\_\\_\\_\\_\\_\\_.*   *Si se trata de una disminución repentina de su presión arterial y tiene síntomas como mareos, dificultades para ponerse de pie, sensación de frío, palidez o piel sudorosa, confusión o pulso acelerado, llame al** 911 o al equipo local de servicios de emergencia**.*   *Avíseme si no tiene síntomas y yo lo informaré al equipo clínico.  Vuelva a medir su presión arterial en cuanto sea posible.\u000b Sugerencia: Asegúrese de que el tubo gris esté en la parte interior del brazo.*  *¿Tiene alguna inquietud o pregunta? Indíquenos si recibió este mensaje.  Es posible que me comunique con usted desde el número 1-833-446-6386 si no recibo una respuesta suya. Guarde este número en su teléfono.*  If frequent lows: create an Athena patient case to notify the MD Consider sending technique if BP variation Consider content card if needed for repeat readings: **What to Do If Your Blood Pressure Is Too Low** Add a note  Hypotension readings details: Technique sent if reading variation to various stages in one sitting: Member response if available: RN Plan: Sent safety message, created Athena patient case (if applicable) HC Plan:  Document member answer about low BP  Escalate if member mentions MD aware, meds or other factors affecting pulse Continue lifestyle coaching: DASH, salt, FITT |\n| A1c-101 | REVIEW A1c ingested \\> 7.0% |\n| :---- | :---- |\n| PRIORITY | P1 |\n| TRIGGER | Title or NA |\n| TRIGGERING CRITERIA | A1c for prt \\> 7.0% |\n| STEPS | HC A1c \\>7% \\<9% Educate on ADA A1c guidelines for people with diabetes  Educate on lifestyle factors impacting BG readings & hyperglycemia [NEW Draft Lightpath Educational Content](https://docs.google.com/document/d/1-b5-XWl0l0HY1ly7AoBwX1jGzedOZ-PXXPNTH9KgbyU/edit?tab=t.cx0jez7pifvh) A1c \\> 9 reassign to RN (Review RN’s name A1c \\>9) beta :[VUS - LP Beta Tickets & Clinical Escalations ](https://docs.google.com/spreadsheets/d/1QVjDzS7aA1_ztGMjArSYysgcGxFyfKZkn870pwOYbQY/edit?gid=0#gid=0) |\n| STEPS \\- Non Clinic | RN Educate on lifestyle factors impacting BG readings & hyperglycemia [NEW Draft Lightpath Educational Content](https://docs.google.com/document/d/1-b5-XWl0l0HY1ly7AoBwX1jGzedOZ-PXXPNTH9KgbyU/edit?tab=t.cx0jez7pifvh) Refer to local MD or offer MD Ref visit if needed |\n| STEPS \\- Clinic | RN Review BG data, if available  Ask about medication adherence Educate/ review: lifestyle factors impacting BG readings and hyperglycemia Determine if patient case is needed:  **No** patient case needed if: Participant has a visit scheduled with Onduo MD or Pharmacist in the next 7 days  Participant had a visit with Onduo MD or Pharmacist in the last 14 days and meds were adjusted  If a participant shares that they have not filled their Rx yet, no patient case is needed If single reading of greater than 400 but there is a repeat reading within 5 minutes of \\<180 in range Resolve the to do (no note needed). **Yes** patient case is needed: create a ‘custom to do: follow up on trigger’ and schedule out 3 days  Once info has been collected from participant or it has been 3 days create the patient case in Athena and include any details you have for the MD If participant responded with info (re: medication): Add to the ‘Current Medications’ section of patient case (within the macro) If member does not respond with info: Add to the ‘Current medications’ section of the patient case ‘No response from member about meds’ or ‘Member is not responding to messages’  Add a Note in Lightpath S: Symptoms/ causes O: BG:  A: NA P: Indicate that an Athena patient case was created and no action needed or a ‘plan’ for the HC with specific recommendations. [CS Athena Job Aid ](https://docs.google.com/document/d/1WwTMOMVY5IQw83Karzoj7158AnFFQx7CzpLULdBMXQc/edit#) |",
+    "chunk_id": "lightpath_SRV-101_24"
+  },
+  {
+    "task_code": "TODO-100",
+    "task_name": "CUSTOM TO DO",
+    "program": "lightpath",
+    "priority": "P3",
+    "trigger": "NA",
+    "triggering_criteria": "Manually added by the Care Team",
+    "steps": {
+      "general": "By default assigned to the user who creates custom to do Manually select/ reassign to another user, if needed Can be scheduled but can’t be rescheduled If you need to reschedule \\- resolve TO DO and add a new one CUSTOM TO DO Titles (add \\+ Note with details, if needed)  For VUS team (set as P1) (Until reassigning to dos to VUS team is fixed, report LP todos for VUS here: [Lightpath ToDos for VUS](https://docs.google.com/spreadsheets/d/1eKKIuVCF8AbT3ELo6Af6ZLYGBx558b59p3zXPF1P0r0/edit?gid=0#gid=0)):  Ship scale Troubleshoot scale Troubleshoot Console Complaint Phone Out of Service/ Engagement Email Engagement email/see note  Disenrollment letter Stop marketing emails  For RN: Review RN’s name (and reason for escalation or a Note if larger explanation is needed)   For Pharmacy: Review Denise For RD: Review Robin From MA MD visit PC visit completed AOM prescribed For HC: Check-in with Participant (set every 2-4 weeks) **Clinical note Onboarding** (this is when the RN greets member first)"
+    },
+    "message_templates": [
+      {
+        "language": "en",
+        "template": "Clinical note Onboarding",
+        "placeholders": []
+      }
+    ],
+    "links": [
+      {
+        "title": "Lightpath ToDos for VUS",
+        "url": "https://docs.google.com/spreadsheets/d/1eKKIuVCF8AbT3ELo6Af6ZLYGBx558b59p3zXPF1P0r0/edit?gid=0#gid=0"
+      }
+    ],
+    "roles": [
+      "HC",
+      "MA",
+      "RD",
+      "RN"
+    ],
+    "full_text": "| TODO-100 | CUSTOM TO DO  |\n| :---- | :---- |\n| PRIORITY | P3 |\n| TRIGGER | NA |\n| TRIGGERING CRITERIA | Manually added by the Care Team |\n| STEPS Reassign to: VUS team: Tanya Westfall  Krupa Parikh or Dominique Morris  Benise  Taylor (1/1/2026) RN: Kimberly Caswell Karisha Pruitt Maudie Roberts  Pharmacy: Denise MacKenzie RD: Robin Redd Admin Coordinator: Keri Patterson Alexia Thomson MA Belinda Taylor Jasmine Symonds Emily Sabacinski   | By default assigned to the user who creates custom to do Manually select/ reassign to another user, if needed Can be scheduled but can’t be rescheduled If you need to reschedule \\- resolve TO DO and add a new one CUSTOM TO DO Titles (add \\+ Note with details, if needed)  For VUS team (set as P1) (Until reassigning to dos to VUS team is fixed, report LP todos for VUS here: [Lightpath ToDos for VUS](https://docs.google.com/spreadsheets/d/1eKKIuVCF8AbT3ELo6Af6ZLYGBx558b59p3zXPF1P0r0/edit?gid=0#gid=0)):  Ship scale Troubleshoot scale Troubleshoot Console Complaint Phone Out of Service/ Engagement Email Engagement email/see note  Disenrollment letter Stop marketing emails  For RN: Review RN’s name (and reason for escalation or a Note if larger explanation is needed)   For Pharmacy: Review Denise For RD: Review Robin From MA MD visit PC visit completed AOM prescribed For HC: Check-in with Participant (set every 2-4 weeks) **Clinical note Onboarding** (this is when the RN greets member first) |",
+    "chunk_id": "lightpath_TODO-100_25"
+  },
+  {
+    "task_code": "TODO-100",
+    "task_name": "CUSTOM TO DO: End of AOM coverage MM/DD/YY",
+    "program": "lightpath",
+    "priority": "P3",
+    "trigger": "Manually scheduled 6 months ahead of end of coverage to indicate when members 2 year AOM coverage ends",
+    "triggering_criteria": "",
+    "steps": {
+      "general": "End of 2-year period within the next 6 months  Review with a member that their coverage of AOMs will be ending in the next few months. Offer Onduo PC appointment to discuss AOM options.  *Your benefit includes up to 24 covered refills of your weight loss medication. Once you have used all of your refills your coverage for this medication will end. If you would like to explore alternative treatment pathways and options please follow the link below to schedule a visit with a doctor from our affiliated clinic.*  [https://schedule.yosicare.com/bcf1185bade2331d4a296abaf852c31d](https://schedule.yosicare.com/bcf1185bade2331d4a296abaf852c31d)"
+    },
+    "message_templates": [
+      {
+        "language": "es",
+        "template": "Your benefit includes up to 24 covered refills of your weight loss medication. Once you have used all of your refills your coverage for this medication will end. If you would like to explore alternative treatment pathways and options please follow the link below to schedule a visit with a doctor from our affiliated clinic.",
+        "placeholders": []
+      }
+    ],
+    "links": [
+      {
+        "title": "https://schedule.yosicare.com/bcf1185bade2331d4a296abaf852c31d",
+        "url": "https://schedule.yosicare.com/bcf1185bade2331d4a296abaf852c31d"
+      }
+    ],
+    "roles": [],
+    "full_text": "| TODO-100 | CUSTOM TO DO: End of AOM coverage MM/DD/YY |\n| :---- | :---- |\n| PRIORITY | P3 |\n| TRIGGER | Manually scheduled 6 months ahead of end of coverage to indicate when members 2 year AOM coverage ends |\n| STEPS | End of 2-year period within the next 6 months  Review with a member that their coverage of AOMs will be ending in the next few months. Offer Onduo PC appointment to discuss AOM options.  *Your benefit includes up to 24 covered refills of your weight loss medication. Once you have used all of your refills your coverage for this medication will end. If you would like to explore alternative treatment pathways and options please follow the link below to schedule a visit with a doctor from our affiliated clinic.*  [https://schedule.yosicare.com/bcf1185bade2331d4a296abaf852c31d](https://schedule.yosicare.com/bcf1185bade2331d4a296abaf852c31d)   |",
+    "chunk_id": "lightpath_TODO-100_26"
+  },
+  {
+    "task_code": "TODO-100",
+    "task_name": "CUSTOM TO DO: Check-in",
+    "program": "lightpath",
+    "priority": "P1-P3",
+    "trigger": "Manually created by the VUS team to notify Care Team that Scale has been shipped. Tracking \\# should be added in the Notes section.",
+    "triggering_criteria": "",
+    "steps": {
+      "general": "Let the participant know scale has been shipped: *We have shipped your Weight Gurus Bluetooth Smart Scale. Your scale is a smart device that sends weight measurements to different mobile apps automatically. When it arrives, please carefully read and follow the included instructions to pair it with the Verily Me app. You’ll need approximately 30 minutes to complete this setup.  Here is tracking information for this shipment:* (Include tracking info from VUS team, if documented in the note, if not documented you can request tracking from the VUS team) Greater Goods Weight Scale [Device Instructions](https://drive.google.com/drive/folders/1jpuFP03lDPvgPPyO58Rfi_k0Gj0CCYsH) (do not send, these instructions are included with devices sent)"
+    },
+    "message_templates": [
+      {
+        "language": "es",
+        "template": "We have shipped your Weight Gurus Bluetooth Smart Scale. Your scale is a smart device that sends weight measurements to different mobile apps automatically. When it arrives, please carefully read and follow the included instructions to pair it with the Verily Me app. You’ll need approximately 30 minutes to complete this setup.  Here is tracking information for this shipment:",
+        "placeholders": []
+      }
+    ],
+    "links": [
+      {
+        "title": "Device Instructions",
+        "url": "https://drive.google.com/drive/folders/1jpuFP03lDPvgPPyO58Rfi_k0Gj0CCYsH"
+      }
+    ],
+    "roles": [],
+    "full_text": "| TODO-100 | CUSTOM TO DO: Check-in |\n| :---- | :---- |\n| PRIORITY | P1-P3 |\n| TRIGGER | Manually scheduled every 30 days |\n| STEPS | All: Answer participant messages Review Surveys (and document any relevant info in the Care Plan/ Notes) Look for Custom TO DOs  Follow up on goals/ progress Provide education, if needed Follow re-engagement protocol, if needed (add link)  |\n| TODO-100 | CUSTOM TO DO: Scale Shipped |\n| :---- | :---- |\n| PRIORITY | P1-P3 |\n| TRIGGER | Manually created by the VUS team to notify Care Team that Scale has been shipped. Tracking \\# should be added in the Notes section.  |\n| STEPS | Let the participant know scale has been shipped: *We have shipped your Weight Gurus Bluetooth Smart Scale. Your scale is a smart device that sends weight measurements to different mobile apps automatically. When it arrives, please carefully read and follow the included instructions to pair it with the Verily Me app. You’ll need approximately 30 minutes to complete this setup.  Here is tracking information for this shipment:* (Include tracking info from VUS team, if documented in the note, if not documented you can request tracking from the VUS team) Greater Goods Weight Scale [Device Instructions](https://drive.google.com/drive/folders/1jpuFP03lDPvgPPyO58Rfi_k0Gj0CCYsH) (do not send, these instructions are included with devices sent)  |",
+    "chunk_id": "lightpath_TODO-100_27"
+  },
+  {
+    "task_code": "TODO-100",
+    "task_name": "CUSTOM TO DO: Review Robin",
+    "program": "lightpath",
+    "priority": "P1-P3",
+    "trigger": "Manually created by the HC if RD referral criteria are met",
+    "triggering_criteria": "",
+    "steps": {
+      "general": "RD [Registered Dietitian]()"
+    },
+    "message_templates": [],
+    "links": [],
+    "roles": [
+      "RD"
+    ],
+    "full_text": "| TODO-100 | CUSTOM TO DO: Review Robin |\n| :---- | :---- |\n| PRIORITY | P1-P3 |\n| TRIGGER | Manually created by the HC if RD referral criteria are met  |\n| STEPS | RD [Registered Dietitian]()  |",
+    "chunk_id": "lightpath_TODO-100_28"
+  },
+  {
+    "task_code": "TODO-100",
+    "task_name": "CUSTOM TO DO: MD visit –/–/–",
+    "program": "lightpath",
+    "priority": "P1-P3",
+    "trigger": "Manually created and scheduled for 1-2 weeks prior to doctor’s visit",
+    "triggering_criteria": "",
+    "steps": {
+      "general": "**For External Visits:**  If not already noted, can ask the participant what type of doctor they are seeing (endo, PCP, cardiologist, etc).  Address the participant’s upcoming visit and provide them with support to prepare for it. This to do can be resolved once you have messaged to address this with the participant. *Is there anything in particular that you are hoping to discuss at this appointment?  Is there anything that you’d like to get out of this appointment?* Create a custom to do and schedule for the day after the visit to follow up and see how the appointment went/any new lifestyle goals to work on (do not ask about medications)  Add a note with with any information shared from member about appointment  Include date of appointment, what goals were discussed"
+    },
+    "message_templates": [
+      {
+        "language": "en",
+        "template": "For External Visits:",
+        "placeholders": []
+      },
+      {
+        "language": "en",
+        "template": "If not already noted, can ask the participant what type of doctor they are seeing (endo, PCP, cardiologist, etc).  Address the participant’s upcoming visit and provide them with support to prepare for it. This to do can be resolved once you have messaged to address this with the participant.",
+        "placeholders": []
+      }
+    ],
+    "links": [],
+    "roles": [],
+    "full_text": "| TODO-100 | CUSTOM TO DO: MD visit –/–/– |\n| :---- | :---- |\n| PRIORITY | P1-P3 |\n| TRIGGER | Manually created and scheduled for 1-2 weeks prior to doctor’s visit |\n| STEPS | **For External Visits:**  If not already noted, can ask the participant what type of doctor they are seeing (endo, PCP, cardiologist, etc).  Address the participant’s upcoming visit and provide them with support to prepare for it. This to do can be resolved once you have messaged to address this with the participant. *Is there anything in particular that you are hoping to discuss at this appointment?  Is there anything that you’d like to get out of this appointment?* Create a custom to do and schedule for the day after the visit to follow up and see how the appointment went/any new lifestyle goals to work on (do not ask about medications)  Add a note with with any information shared from member about appointment  Include date of appointment, what goals were discussed |",
+    "chunk_id": "lightpath_TODO-100_29"
+  },
+  {
+    "task_code": "TODO-100",
+    "task_name": "CUSTOM TO DO: Disenrollment",
+    "program": "lightpath",
+    "priority": "P1-P3",
+    "trigger": "Manually scheduled when member should be disenrolled",
+    "triggering_criteria": "",
+    "steps": {
+      "general": "[Disenrollment]() \\- Step 2: Final disenrollment steps"
+    },
+    "message_templates": [],
+    "links": [],
+    "roles": [],
+    "full_text": "| TODO-100 | CUSTOM TO DO: Disenrollment |\n| :---- | :---- |\n| PRIORITY | P1-P3 |\n| TRIGGER | Manually scheduled when member should be disenrolled |\n| STEPS | [Disenrollment]() \\- Step 2: Final disenrollment steps  |",
+    "chunk_id": "lightpath_TODO-100_30"
+  },
+  {
+    "task_code": "TODO-100",
+    "task_name": "CUSTOM TO DO: AOM prescribed",
+    "program": "lightpath",
+    "priority": "P1-P3",
+    "trigger": "Manually created by the clinic to notify the Care Team that a member has been prescribed AOM",
+    "triggering_criteria": "",
+    "steps": {
+      "general": "HC If it is a new AOM Rx: Create a custom to do: AOM Module 1 and schedule in 1-3 days"
+    },
+    "message_templates": [],
+    "links": [],
+    "roles": [
+      "HC"
+    ],
+    "full_text": "| TODO-100 | CUSTOM TO DO: AOM prescribed |\n| :---- | :---- |\n| PRIORITY | P1-P3 |\n| TRIGGER | Manually created by the clinic to notify the Care Team that a member has been prescribed AOM |\n| STEPS | HC If it is a new AOM Rx: Create a custom to do: AOM Module 1 and schedule in 1-3 days |",
+    "chunk_id": "lightpath_TODO-100_31"
+  },
+  {
+    "task_code": "TODO-100",
+    "task_name": "CUSTOM TO DO: AOM Telemedicine link",
+    "program": "lightpath",
+    "priority": "P1",
+    "trigger": "Manually created by the HC for members who need a Rx for AOM",
+    "triggering_criteria": "",
+    "steps": {
+      "general": "HC Send yosi link: *Moving forward your medication will be prescribed by our affiliated clinic. In order to continue to keep your medication benefit please follow the link below to schedule an initial visit.* [https://schedule.yosicare.com/bcf1185bade2331d4a296abaf852c31d](https://schedule.yosicare.com/bcf1185bade2331d4a296abaf852c31d)"
+    },
+    "message_templates": [
+      {
+        "language": "es",
+        "template": "Moving forward your medication will be prescribed by our affiliated clinic. In order to continue to keep your medication benefit please follow the link below to schedule an initial visit.",
+        "placeholders": []
+      }
+    ],
+    "links": [
+      {
+        "title": "https://schedule.yosicare.com/bcf1185bade2331d4a296abaf852c31d",
+        "url": "https://schedule.yosicare.com/bcf1185bade2331d4a296abaf852c31d"
+      }
+    ],
+    "roles": [
+      "HC"
+    ],
+    "full_text": "| TODO-100 | CUSTOM TO DO: AOM Telemedicine link |\n| :---- | :---- |\n| PRIORITY | P1 |\n| TRIGGER | Manually created by the HC for members who need a Rx for AOM |\n| STEPS | HC Send yosi link: *Moving forward your medication will be prescribed by our affiliated clinic. In order to continue to keep your medication benefit please follow the link below to schedule an initial visit.* [https://schedule.yosicare.com/bcf1185bade2331d4a296abaf852c31d](https://schedule.yosicare.com/bcf1185bade2331d4a296abaf852c31d) |",
+    "chunk_id": "lightpath_TODO-100_32"
+  },
+  {
+    "task_code": "TODO-100",
+    "task_name": "CUSTOM TO DO: On AOM Checklist",
+    "program": "lightpath",
+    "priority": "P1",
+    "trigger": "Manually created by the HC for members who are taking AOMs (at enrollment)",
+    "triggering_criteria": "",
+    "steps": {
+      "general": "HC Baseline weight before starting GLP-1: *I'd like to get a clear picture of your progress\\! Could you share your initial starting weight, the weight you were when you began taking the medication? Knowing your baseline helps me understand how far you've come on your weight loss journey.* Determine when the end of their 2 year coverage period will be (refer to the data file) End of 2-year period \\> 6 months away: Review with a member when their coverage of AOMs will be ending. *Your benefit includes up to 24 covered months of your weight loss medication. Once you have used all of your refills your coverage for this medication will end. Before your medication ends you will have the opportunity to consult with a doctor from our affiliate clinic to discuss your treatment options.*   Create custom to-do: mm/dd/yy for 6 months ahead of end of coverage period End of 2-year period within the next 6 months (i.e. coverage ends January, February, March, April, May, June 2026\\) Review with member that their coverage of AOMs will be ending in the next few months.  Offer Onduo PC appointment (if yosi link not already sent) to discuss AOM options, send Yosi link *Your benefit includes up to 24 covered months of your weight loss medication. Once you have used all of your refills your coverage for this medication will end. The doctors from our affiliated clinic can discuss treatment options to find what is best for you moving forward. Please follow the link below to schedule a visit:* [https://schedule.yosicare.com/bcf1185bade2331d4a296abaf852c31d](https://schedule.yosicare.com/bcf1185bade2331d4a296abaf852c31d) [Telemedicine]()"
+    },
+    "message_templates": [
+      {
+        "language": "en",
+        "template": "I'd like to get a clear picture of your progress\\! Could you share your initial starting weight, the weight you were when you began taking the medication? Knowing your baseline helps me understand how far you've come on your weight loss journey.",
+        "placeholders": []
+      },
+      {
+        "language": "en",
+        "template": "Your benefit includes up to 24 covered months of your weight loss medication. Once you have used all of your refills your coverage for this medication will end. Before your medication ends you will have the opportunity to consult with a doctor from our affiliate clinic to discuss your treatment options.",
+        "placeholders": []
+      },
+      {
+        "language": "es",
+        "template": "Your benefit includes up to 24 covered months of your weight loss medication. Once you have used all of your refills your coverage for this medication will end. The doctors from our affiliated clinic can discuss treatment options to find what is best for you moving forward. Please follow the link below to schedule a visit:",
+        "placeholders": []
+      }
+    ],
+    "links": [
+      {
+        "title": "https://schedule.yosicare.com/bcf1185bade2331d4a296abaf852c31d",
+        "url": "https://schedule.yosicare.com/bcf1185bade2331d4a296abaf852c31d"
+      }
+    ],
+    "roles": [
+      "HC"
+    ],
+    "full_text": "| TODO-100 | CUSTOM TO DO: On AOM Checklist |\n| :---- | :---- |\n| PRIORITY | P1 |\n| TRIGGER | Manually created by the HC for members who are taking AOMs (at enrollment) |\n| STEPS | HC Baseline weight before starting GLP-1: *I'd like to get a clear picture of your progress\\! Could you share your initial starting weight, the weight you were when you began taking the medication? Knowing your baseline helps me understand how far you've come on your weight loss journey.* Determine when the end of their 2 year coverage period will be (refer to the data file) End of 2-year period \\> 6 months away: Review with a member when their coverage of AOMs will be ending. *Your benefit includes up to 24 covered months of your weight loss medication. Once you have used all of your refills your coverage for this medication will end. Before your medication ends you will have the opportunity to consult with a doctor from our affiliate clinic to discuss your treatment options.*   Create custom to-do: mm/dd/yy for 6 months ahead of end of coverage period End of 2-year period within the next 6 months (i.e. coverage ends January, February, March, April, May, June 2026\\) Review with member that their coverage of AOMs will be ending in the next few months.  Offer Onduo PC appointment (if yosi link not already sent) to discuss AOM options, send Yosi link *Your benefit includes up to 24 covered months of your weight loss medication. Once you have used all of your refills your coverage for this medication will end. The doctors from our affiliated clinic can discuss treatment options to find what is best for you moving forward. Please follow the link below to schedule a visit:* [https://schedule.yosicare.com/bcf1185bade2331d4a296abaf852c31d](https://schedule.yosicare.com/bcf1185bade2331d4a296abaf852c31d) [Telemedicine]() |",
+    "chunk_id": "lightpath_TODO-100_33"
+  },
+  {
+    "task_code": "TODO-100",
+    "task_name": "AOM Module 1",
+    "program": "lightpath",
+    "priority": "P1",
+    "trigger": "Manual",
+    "triggering_criteria": "Prt answers \"Yes\" to taking AOM and \"Telehealth service\" to who's prescribing OR Prt progressed through AOM Prep \\-\\> scheduled Onduo PC appt \\-\\> schedule to-do for after AOM Rx confirmed",
+    "steps": {
+      "general": "*Our clinic team has prescribed weight loss medication for you. Here is some important information about what to expect when you first start the meds. Let me know if you have any questions about how to get the meds at the pharmacy, your first injection, or how to get started.* Send pdf: [Starting Weight Loss Medications](https://drive.google.com/drive/folders/1obEDwU1gZLAlBoxpgTT6hyY6lSgSfXjm) Add custom to do: AOM Module 2 and schedule in a week"
+    },
+    "message_templates": [
+      {
+        "language": "en",
+        "template": "Our clinic team has prescribed weight loss medication for you. Here is some important information about what to expect when you first start the meds. Let me know if you have any questions about how to get the meds at the pharmacy, your first injection, or how to get started.",
+        "placeholders": []
+      }
+    ],
+    "links": [
+      {
+        "title": "Starting Weight Loss Medications",
+        "url": "https://drive.google.com/drive/folders/1obEDwU1gZLAlBoxpgTT6hyY6lSgSfXjm"
+      }
+    ],
+    "roles": [],
+    "full_text": "| TODO-100 | AOM Module 1 |\n| :---- | :---- |\n| PRIORITY | P1 |\n| TRIGGER | Manual |\n| TRIGGERING CRITERIA | Prt answers \"Yes\" to taking AOM and \"Telehealth service\" to who's prescribing OR Prt progressed through AOM Prep \\-\\> scheduled Onduo PC appt \\-\\> schedule to-do for after AOM Rx confirmed |\n| STEPS | *Our clinic team has prescribed weight loss medication for you. Here is some important information about what to expect when you first start the meds. Let me know if you have any questions about how to get the meds at the pharmacy, your first injection, or how to get started.* Send pdf: [Starting Weight Loss Medications](https://drive.google.com/drive/folders/1obEDwU1gZLAlBoxpgTT6hyY6lSgSfXjm) Add custom to do: AOM Module 2 and schedule in a week |",
+    "chunk_id": "lightpath_TODO-100_34"
+  },
+  {
+    "task_code": "TODO-100",
+    "task_name": "AOM Module 2",
+    "program": "lightpath",
+    "priority": "P1",
+    "trigger": "Manual",
+    "triggering_criteria": "CUSTOM: 1 week after module 1",
+    "steps": {
+      "general": "*Hi\\!  I am checking in since you recently started your medication and I wanted to give you some information about common side effects and how to manage them. Let me know what you think and if you have any questions\\!* Send pdf: [Managing Early Side Effects](https://drive.google.com/drive/folders/1obEDwU1gZLAlBoxpgTT6hyY6lSgSfXjm) Add custom to do: AOM Module 3 and schedule in a week"
+    },
+    "message_templates": [
+      {
+        "language": "en",
+        "template": "Hi\\!  I am checking in since you recently started your medication and I wanted to give you some information about common side effects and how to manage them. Let me know what you think and if you have any questions\\!",
+        "placeholders": []
+      }
+    ],
+    "links": [
+      {
+        "title": "Managing Early Side Effects",
+        "url": "https://drive.google.com/drive/folders/1obEDwU1gZLAlBoxpgTT6hyY6lSgSfXjm"
+      }
+    ],
+    "roles": [],
+    "full_text": "| TODO-100 | AOM Module 2 |\n| :---- | :---- |\n| PRIORITY | P1 |\n| TRIGGER | Manual |\n| TRIGGERING CRITERIA | CUSTOM: 1 week after module 1 |\n| STEPS | *Hi\\!  I am checking in since you recently started your medication and I wanted to give you some information about common side effects and how to manage them. Let me know what you think and if you have any questions\\!* Send pdf: [Managing Early Side Effects](https://drive.google.com/drive/folders/1obEDwU1gZLAlBoxpgTT6hyY6lSgSfXjm) Add custom to do: AOM Module 3 and schedule in a week |",
+    "chunk_id": "lightpath_TODO-100_35"
+  },
+  {
+    "task_code": "TODO-100",
+    "task_name": "AOM Module 3",
+    "program": "lightpath",
+    "priority": "P1",
+    "trigger": "Manual",
+    "triggering_criteria": "CUSTOM: 1 week after module 2",
+    "steps": {
+      "general": "*Hi\\!  We are now in the third week of starting your new medication and I wanted to check in to make sure you are eating enough. Sometimes when people start these medications, their appetite goes way down and they actually don’t eat enough to fuel their system. I wanted to send you some information about this and what to look out for.* Send pdf: [Eating Well \\- and Enough](https://drive.google.com/drive/folders/1obEDwU1gZLAlBoxpgTT6hyY6lSgSfXjm) Add custom to do: AOM Module 4 and schedule in a week"
+    },
+    "message_templates": [
+      {
+        "language": "es",
+        "template": "Hi\\!  We are now in the third week of starting your new medication and I wanted to check in to make sure you are eating enough. Sometimes when people start these medications, their appetite goes way down and they actually don’t eat enough to fuel their system. I wanted to send you some information about this and what to look out for.",
+        "placeholders": []
+      }
+    ],
+    "links": [
+      {
+        "title": "Eating Well \\- and Enough",
+        "url": "https://drive.google.com/drive/folders/1obEDwU1gZLAlBoxpgTT6hyY6lSgSfXjm"
+      }
+    ],
+    "roles": [],
+    "full_text": "| TODO-100 | AOM Module 3 |\n| :---- | :---- |\n| PRIORITY | P1 |\n| TRIGGER | Manual |\n| TRIGGERING CRITERIA | CUSTOM: 1 week after module 2 |\n| STEPS | *Hi\\!  We are now in the third week of starting your new medication and I wanted to check in to make sure you are eating enough. Sometimes when people start these medications, their appetite goes way down and they actually don’t eat enough to fuel their system. I wanted to send you some information about this and what to look out for.* Send pdf: [Eating Well \\- and Enough](https://drive.google.com/drive/folders/1obEDwU1gZLAlBoxpgTT6hyY6lSgSfXjm) Add custom to do: AOM Module 4 and schedule in a week |",
+    "chunk_id": "lightpath_TODO-100_36"
+  },
+  {
+    "task_code": "TODO-100",
+    "task_name": "AOM Module 4",
+    "program": "lightpath",
+    "priority": "P1",
+    "trigger": "Manual",
+    "triggering_criteria": "CUSTOM: 1 week after module 3",
+    "steps": {
+      "general": "*Hi\\!  Depending on what your provider recommends, your dose may increase during your second month. This will help you get closer to a treatment dose of medication so that you can benefit the most from the medication. I am sending you info on titration and what to expect. Let me know if you have any questions\\!* Send pdf: [Finding the Best Dose for You](https://drive.google.com/drive/folders/1obEDwU1gZLAlBoxpgTT6hyY6lSgSfXjm) Add custom to do: AOM Module 5 and schedule in a week"
+    },
+    "message_templates": [
+      {
+        "language": "en",
+        "template": "Hi\\!  Depending on what your provider recommends, your dose may increase during your second month. This will help you get closer to a treatment dose of medication so that you can benefit the most from the medication. I am sending you info on titration and what to expect. Let me know if you have any questions\\!",
+        "placeholders": []
+      }
+    ],
+    "links": [
+      {
+        "title": "Finding the Best Dose for You",
+        "url": "https://drive.google.com/drive/folders/1obEDwU1gZLAlBoxpgTT6hyY6lSgSfXjm"
+      }
+    ],
+    "roles": [],
+    "full_text": "| TODO-100 | AOM Module 4 |\n| :---- | :---- |\n| PRIORITY | P1 |\n| TRIGGER | Manual |\n| TRIGGERING CRITERIA | CUSTOM: 1 week after module 3 |\n| STEPS | *Hi\\!  Depending on what your provider recommends, your dose may increase during your second month. This will help you get closer to a treatment dose of medication so that you can benefit the most from the medication. I am sending you info on titration and what to expect. Let me know if you have any questions\\!* Send pdf: [Finding the Best Dose for You](https://drive.google.com/drive/folders/1obEDwU1gZLAlBoxpgTT6hyY6lSgSfXjm) Add custom to do: AOM Module 5 and schedule in a week |",
+    "chunk_id": "lightpath_TODO-100_37"
+  },
+  {
+    "task_code": "TODO-100",
+    "task_name": "AOM Module 5",
+    "program": "lightpath",
+    "priority": "P1",
+    "trigger": "Manual",
+    "triggering_criteria": "CUSTOM: 1 week after module 4",
+    "steps": {
+      "general": "*Now that you are settling in, we need to talk about movement. Your weight loss medication reduces your appetite and that helps you lose weight, but you need to make sure that your energy and strength are also not lost. Please read this guide on how to start thinking about a movement routine.* Send pdf: [Strength Training](https://drive.google.com/drive/folders/1obEDwU1gZLAlBoxpgTT6hyY6lSgSfXjm) Add custom to do: AOM Module 6 and schedule in a week"
+    },
+    "message_templates": [
+      {
+        "language": "en",
+        "template": "Now that you are settling in, we need to talk about movement. Your weight loss medication reduces your appetite and that helps you lose weight, but you need to make sure that your energy and strength are also not lost. Please read this guide on how to start thinking about a movement routine.",
+        "placeholders": []
+      }
+    ],
+    "links": [
+      {
+        "title": "Strength Training",
+        "url": "https://drive.google.com/drive/folders/1obEDwU1gZLAlBoxpgTT6hyY6lSgSfXjm"
+      }
+    ],
+    "roles": [],
+    "full_text": "| TODO-100 | AOM Module 5 |\n| :---- | :---- |\n| PRIORITY | P1 |\n| TRIGGER | Manual |\n| TRIGGERING CRITERIA | CUSTOM: 1 week after module 4 |\n| STEPS | *Now that you are settling in, we need to talk about movement. Your weight loss medication reduces your appetite and that helps you lose weight, but you need to make sure that your energy and strength are also not lost. Please read this guide on how to start thinking about a movement routine.* Send pdf: [Strength Training](https://drive.google.com/drive/folders/1obEDwU1gZLAlBoxpgTT6hyY6lSgSfXjm) Add custom to do: AOM Module 6 and schedule in a week |",
+    "chunk_id": "lightpath_TODO-100_38"
+  },
+  {
+    "task_code": "TODO-100",
+    "task_name": "AOM Module 6",
+    "program": "lightpath",
+    "priority": "P1",
+    "trigger": "Manual",
+    "triggering_criteria": "CUSTOM: 1 week after module 5",
+    "steps": {
+      "general": "*Hi\\! I want to check in with you again about nutrition while on your weight loss medication. I would love for you to track your food this week so that we can talk about whether you are getting enough balance. When eating less, you can sometimes miss key nutrients and that could have a long term impact on your health.* Send pdf: [Eating Balanced Meals](https://drive.google.com/drive/folders/1obEDwU1gZLAlBoxpgTT6hyY6lSgSfXjm) Add custom to do: AOM Module 7 and schedule in a week"
+    },
+    "message_templates": [
+      {
+        "language": "es",
+        "template": "Hi\\! I want to check in with you again about nutrition while on your weight loss medication. I would love for you to track your food this week so that we can talk about whether you are getting enough balance. When eating less, you can sometimes miss key nutrients and that could have a long term impact on your health.",
+        "placeholders": []
+      }
+    ],
+    "links": [
+      {
+        "title": "Eating Balanced Meals",
+        "url": "https://drive.google.com/drive/folders/1obEDwU1gZLAlBoxpgTT6hyY6lSgSfXjm"
+      }
+    ],
+    "roles": [],
+    "full_text": "| TODO-100 | AOM Module 6 |\n| :---- | :---- |\n| PRIORITY | P1 |\n| TRIGGER | Manual |\n| TRIGGERING CRITERIA | CUSTOM: 1 week after module 5 |\n| STEPS | *Hi\\! I want to check in with you again about nutrition while on your weight loss medication. I would love for you to track your food this week so that we can talk about whether you are getting enough balance. When eating less, you can sometimes miss key nutrients and that could have a long term impact on your health.* Send pdf: [Eating Balanced Meals](https://drive.google.com/drive/folders/1obEDwU1gZLAlBoxpgTT6hyY6lSgSfXjm) Add custom to do: AOM Module 7 and schedule in a week |",
+    "chunk_id": "lightpath_TODO-100_39"
+  },
+  {
+    "task_code": "TODO-100",
+    "task_name": "AOM Module 7",
+    "program": "lightpath",
+    "priority": "P1",
+    "trigger": "Manual",
+    "triggering_criteria": "CUSTOM: 1 week after module 6",
+    "steps": {
+      "general": "*Hi\\! You have now been on the medication for several weeks and you may already be starting to lose weight. This is a physical change, but also an emotional one. I wanted to check in with you and see how you are feeling about things?* Send pdf: [Be Kind to Yourself](https://drive.google.com/drive/folders/1obEDwU1gZLAlBoxpgTT6hyY6lSgSfXjm) Add custom to do: AOM Module 8 and schedule in a week"
+    },
+    "message_templates": [
+      {
+        "language": "en",
+        "template": "Hi\\! You have now been on the medication for several weeks and you may already be starting to lose weight. This is a physical change, but also an emotional one. I wanted to check in with you and see how you are feeling about things?",
+        "placeholders": []
+      }
+    ],
+    "links": [
+      {
+        "title": "Be Kind to Yourself",
+        "url": "https://drive.google.com/drive/folders/1obEDwU1gZLAlBoxpgTT6hyY6lSgSfXjm"
+      }
+    ],
+    "roles": [],
+    "full_text": "| TODO-100 | AOM Module 7 |\n| :---- | :---- |\n| PRIORITY | P1 |\n| TRIGGER | Manual |\n| TRIGGERING CRITERIA | CUSTOM: 1 week after module 6 |\n| STEPS |  *Hi\\! You have now been on the medication for several weeks and you may already be starting to lose weight. This is a physical change, but also an emotional one. I wanted to check in with you and see how you are feeling about things?* Send pdf: [Be Kind to Yourself](https://drive.google.com/drive/folders/1obEDwU1gZLAlBoxpgTT6hyY6lSgSfXjm) Add custom to do: AOM Module 8 and schedule in a week |",
+    "chunk_id": "lightpath_TODO-100_40"
+  },
+  {
+    "task_code": "TODO-100",
+    "task_name": "AOM Module 8",
+    "program": "lightpath",
+    "priority": "P1",
+    "trigger": "Manual",
+    "triggering_criteria": "CUSTOM: 1 week after module 7",
+    "steps": {
+      "general": "*Hi\\! I wanted to check in to remind you to keep monitoring your weight each week while you are on the medication. If you are already on top of it \\- great work\\! If it’s been hard to do, check out this handout to get some motivation or tips.* Send pdf: [Self-Monitoring with a Scale](https://drive.google.com/drive/folders/1obEDwU1gZLAlBoxpgTT6hyY6lSgSfXjm) Add custom to do: End of AOM Modules and schedule in a week"
+    },
+    "message_templates": [
+      {
+        "language": "es",
+        "template": "Hi\\! I wanted to check in to remind you to keep monitoring your weight each week while you are on the medication. If you are already on top of it \\- great work\\! If it’s been hard to do, check out this handout to get some motivation or tips.",
+        "placeholders": []
+      }
+    ],
+    "links": [
+      {
+        "title": "Self-Monitoring with a Scale",
+        "url": "https://drive.google.com/drive/folders/1obEDwU1gZLAlBoxpgTT6hyY6lSgSfXjm"
+      }
+    ],
+    "roles": [],
+    "full_text": "| TODO-100 | AOM Module 8 |\n| :---- | :---- |\n| PRIORITY | P1 |\n| TRIGGER | Manual |\n| TRIGGERING CRITERIA | CUSTOM: 1 week after module 7 |\n| STEPS | *Hi\\! I wanted to check in to remind you to keep monitoring your weight each week while you are on the medication. If you are already on top of it \\- great work\\! If it’s been hard to do, check out this handout to get some motivation or tips.* Send pdf: [Self-Monitoring with a Scale](https://drive.google.com/drive/folders/1obEDwU1gZLAlBoxpgTT6hyY6lSgSfXjm) Add custom to do: End of AOM Modules and schedule in a week |",
+    "chunk_id": "lightpath_TODO-100_41"
+  },
+  {
+    "task_code": "ENG-110",
+    "task_name": "GREET NEW MEMBER \\- WL Program",
+    "program": "lightpath",
+    "priority": "P1",
+    "trigger": "Verily Me App NUX",
+    "triggering_criteria": "New member assigned to the Care Team",
+    "steps": {
+      "general": "Send welcome message, include:  Your name Role Working hours Program overview Open-ended question re: motivation, goals or what kind of support they are looking for from the Lightpath program Example:  **Thread: Welcome to the Lightpath Program** *Hi, thank you for joining\\! My name is (insert name) and I am looking forward to working with you.      Welcome to the Lightpath Program\\! I will be your coach. I’m available Monday \\- Friday and I usually respond within a couple business days.  Our program gives you access to tools and coaching to help you reach your health goals. A great way to start is by completing the surveys and missions on the home screen of your Verily Me app. This will help me to get to know you better and offer feedback. I’d also love to hear back from you here in the chat tab, what motivated you to join our program, and what would you like to focus on first? If you run into any issues please email care1support@verily.com or call 1-833-603-6667. Our support team is here Monday-Friday 9am \\- 6pm EST.*  Check the client.  If 7-Eleven or TCCC \\- complete onboarding steps: [Onboarding \\- Weight Loss]() If not 7-Eleven or TCCC \\- task/ ping Theresa"
+    },
+    "message_templates": [
+      {
+        "language": "en",
+        "template": "Thread: Welcome to the Lightpath Program",
+        "placeholders": []
+      },
+      {
+        "language": "es",
+        "template": "Hi, thank you for joining\\! My name is (insert name) and I am looking forward to working with you.      Welcome to the Lightpath Program\\! I will be your coach. I’m available Monday \\- Friday and I usually respond within a couple business days.  Our program gives you access to tools and coaching to help you reach your health goals. A great way to start is by completing the surveys and missions on the home screen of your Verily Me app. This will help me to get to know you better and offer feedback. I’d also love to hear back from you here in the chat tab, what motivated you to join our program, and what would you like to focus on first? If you run into any issues please email care1support@verily.com or call 1-833-603-6667. Our support team is here Monday-Friday 9am \\- 6pm EST.",
+        "placeholders": [
+          "(insert name)"
+        ]
+      }
+    ],
+    "links": [],
+    "roles": [],
+    "full_text": "| ENG-110 | GREET NEW MEMBER \\- WL Program |\n| :---- | :---- |\n| PRIORITY | P1 |\n| TRIGGER | Verily Me App NUX |\n| TRIGGERING CRITERIA | New member assigned to the Care Team |\n| STEPS  | Send welcome message, include:  Your name Role Working hours Program overview Open-ended question re: motivation, goals or what kind of support they are looking for from the Lightpath program Example:  **Thread: Welcome to the Lightpath Program** *Hi, thank you for joining\\! My name is (insert name) and I am looking forward to working with you.      Welcome to the Lightpath Program\\! I will be your coach. I’m available Monday \\- Friday and I usually respond within a couple business days.  Our program gives you access to tools and coaching to help you reach your health goals. A great way to start is by completing the surveys and missions on the home screen of your Verily Me app. This will help me to get to know you better and offer feedback. I’d also love to hear back from you here in the chat tab, what motivated you to join our program, and what would you like to focus on first? If you run into any issues please email care1support@verily.com or call 1-833-603-6667. Our support team is here Monday-Friday 9am \\- 6pm EST.*  Check the client.  If 7-Eleven or TCCC \\- complete onboarding steps: [Onboarding \\- Weight Loss]() If not 7-Eleven or TCCC \\- task/ ping Theresa   |",
+    "chunk_id": "lightpath_ENG-110_42"
+  },
+  {
+    "task_code": "PHQ-100",
+    "task_name": "Review \\- PHQ-9, question 9",
+    "program": "lightpath",
+    "priority": "P1",
+    "trigger": "Survey",
+    "triggering_criteria": "Prt selects answer 1, 2, or 3 on PHQ-9, question 9 self harm",
+    "steps": {
+      "general": "Escalate to RN \\+ contact ERT"
+    },
+    "message_templates": [],
+    "links": [],
+    "roles": [
+      "RN"
+    ],
+    "full_text": "| PHQ-100 | Review \\- PHQ-9, question 9 |\n| :---- | :---- |\n| PRIORITY | P1 |\n| TRIGGER | Survey |\n| TRIGGERING CRITERIA | Prt selects answer 1, 2, or 3 on PHQ-9, question 9 self harm |\n| STEPS | Escalate to RN \\+ contact ERT |",
+    "chunk_id": "lightpath_PHQ-100_43"
+  },
+  {
+    "task_code": "PHQ-101",
+    "task_name": "Review \\- PHQ-9 \\>/= 10",
+    "program": "lightpath",
+    "priority": "",
+    "trigger": "Promis-10 survey",
+    "triggering_criteria": "Prt responds \"poor\" to PROMIS-10 question 7; pain rating",
+    "steps": {
+      "general": "HC Review Promis-10 Survey Document any ‘fair/ poor’ responses in the Care Plan and follow up with participant, as needed [Lightpath Educational Content](https://docs.google.com/document/d/1-b5-XWl0l0HY1ly7AoBwX1jGzedOZ-PXXPNTH9KgbyU/edit?tab=t.t83fcms54zrx)"
+    },
+    "message_templates": [],
+    "links": [
+      {
+        "title": "Lightpath Educational Content",
+        "url": "https://docs.google.com/document/d/1-b5-XWl0l0HY1ly7AoBwX1jGzedOZ-PXXPNTH9KgbyU/edit?tab=t.t83fcms54zrx"
+      }
+    ],
+    "roles": [
+      "HC"
+    ],
+    "full_text": "| PHQ-101 | Review \\- PHQ-9 \\>/= 10 |\n| :---- | :---- |\n| PRIORITY | P2 |\n| TRIGGER | PHQ-9 Survey |\n| TRIGGERING CRITERIA | Prt score \\>/= 10 on PHQ-9 |\n| STEPS | Review PHQ-9 survey [Lightpath Educational Content](https://docs.google.com/document/d/1-b5-XWl0l0HY1ly7AoBwX1jGzedOZ-PXXPNTH9KgbyU/edit?tab=t.t83fcms54zrx) \\-ePROs → PHQ-9 |\n| PRM-101 | REVIEW PROMIS-10 Question 4 |\n| :---- | :---- |\n| PRIORITY |  |\n| TRIGGER | Promis-10 survey |\n| TRIGGERING CRITERIA | Prt responds \"poor\" to PROMIS-10 question 4, rating their mental health, mood |\n| STEPS | HC Review Promis-10 Survey Document any ‘fair/ poor’ responses in the Care Plan and follow up with participant, as needed [Lightpath Educational Content](https://docs.google.com/document/d/1-b5-XWl0l0HY1ly7AoBwX1jGzedOZ-PXXPNTH9KgbyU/edit?tab=t.t83fcms54zrx) |\n| PRM-102 | REVIEW PROMIS-10 Question 10 |\n| :---- | :---- |\n| PRIORITY |  |\n| TRIGGER | Promis-10 survey |\n| TRIGGERING CRITERIA | Prt responds \"often\" or \"always\" to PROMIS-10 question 10; feeling depressed, anxious, irritable |\n| STEPS | HC Review Promis-10 Survey Document any ‘fair/ poor’ responses in the Care Plan and follow up with participant, as needed [Lightpath Educational Content](https://docs.google.com/document/d/1-b5-XWl0l0HY1ly7AoBwX1jGzedOZ-PXXPNTH9KgbyU/edit?tab=t.t83fcms54zrx) |\n| PRM-103 | REVIEW PROMIS-10 Question 6 |\n| :---- | :---- |\n| PRIORITY |  |\n| TRIGGER | Promis-10 survey |\n| TRIGGERING CRITERIA | Prt responds \"not at all\" to PROMIS-10 question 6; ability to carry out physical ADLs |\n| STEPS | HC Review Promis-10 Survey Document any ‘fair/ poor’ responses in the Care Plan and follow up with participant, as needed [Lightpath Educational Content](https://docs.google.com/document/d/1-b5-XWl0l0HY1ly7AoBwX1jGzedOZ-PXXPNTH9KgbyU/edit?tab=t.t83fcms54zrx) |\n| PRM-104 | REVIEW PROMIS-10 Question 7 |\n| :---- | :---- |\n| PRIORITY |  |\n| TRIGGER | Promis-10 survey |\n| TRIGGERING CRITERIA | Prt responds \"poor\" to PROMIS-10 question 7; pain rating |\n| STEPS | HC Review Promis-10 Survey Document any ‘fair/ poor’ responses in the Care Plan and follow up with participant, as needed [Lightpath Educational Content](https://docs.google.com/document/d/1-b5-XWl0l0HY1ly7AoBwX1jGzedOZ-PXXPNTH9KgbyU/edit?tab=t.t83fcms54zrx) |",
+    "chunk_id": "lightpath_PHQ-101_44"
+  }
+]

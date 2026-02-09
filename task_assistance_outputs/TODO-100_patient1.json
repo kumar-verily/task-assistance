@@ -1,0 +1,112 @@
+{
+  "timestamp": "2026-02-03T21:51:34.242175",
+  "todo_id": "TODO-100",
+  "patient_index": 1,
+  "patient_name": "Marcus Thompson",
+  "detail_view": {
+    "task_title": "Sensor Replacement Reminder for Marcus Thompson",
+    "patient_name": "Marcus Thompson",
+    "patient_initial": "M",
+    "priority": "P2",
+    "ai_insight": {
+      "summary": "Marcus Thompson, a 45-year-old male with Type 1 Diabetes and hypoglycemia unawareness, experienced two hypoglycemic events recently, with the latest on 2025-11-20 at 2:15 AM, indicating potential issues with nocturnal glucose control. His CGM (FreeStyle Libre 3) is nearing the end of its sensor life on day 10, which may affect glucose monitoring accuracy and management.",
+      "key_points": [
+        "Bullet point 1: Two recent hypoglycemic events, one without warning symptoms.",
+        "Bullet point 2: Current CGM sensor (FreeStyle Libre 3) on day 10.",
+        "Bullet point 3: Time in range at 65%, with an average 7-day glucose of 142 mg/dL.",
+        "Bullet point 4: Last A1C was 6.8% on 2025-10-10."
+      ]
+    },
+    "participant_overview": {
+      "conditions": [
+        "Type 1 Diabetes",
+        "Hypoglycemia unawareness"
+      ],
+      "devices": [
+        "CGM (FreeStyle Libre 3)",
+        "Insulin pump (Tandem t:slim X2)"
+      ],
+      "clinic_member": "Yes",
+      "insulin_strategy": "Automated basal-IQ",
+      "other_relevant_info": [
+        "Experienced nocturnal hypoglycemia without warning symptoms",
+        "Concerns about sensor accuracy as it nears the end of its lifespan"
+      ]
+    },
+    "clinical_incident": {
+      "title": "Recent Hypoglycemic Events and CGM Sensor Lifecycle",
+      "timeline": [
+        {
+          "action": "Hypoglycemic event reported",
+          "details": "BG dropped to 48 mg/dL overnight, treated with 16g glucose tabs",
+          "timestamp": "2025-11-20T02:15:00"
+        },
+        {
+          "action": "Hypoglycemic event reported",
+          "details": "BG at 62 mg/dL before lunch, felt shaky, treated with 8g glucose tabs",
+          "timestamp": "2025-11-19T11:30:00"
+        },
+        {
+          "action": "Sensor replacement reminder",
+          "details": "CGM sensor (FreeStyle Libre 3) on day 10 of use",
+          "timestamp": "2025-11-20"
+        }
+      ]
+    },
+    "suggested_messages": [
+      {
+        "type": "patient_facing",
+        "category": "Follow-up",
+        "message": "Hi Marcus, it's time to replace your CGM sensor to ensure accurate glucose readings, especially important due to your recent overnight lows. Please let us know if you need assistance or have questions about the replacement process.",
+        "rationale": "Encourages timely replacement of CGM sensor to maintain accurate glucose monitoring, addressing recent hypoglycemic events and the patient's unawareness of hypoglycemia symptoms."
+      },
+      {
+        "type": "care_team_note",
+        "category": "Assessment",
+        "message": "Marcus Thompson's CGM sensor is on day 10; replacement reminder sent. Considering recent hypoglycemic events, review sensor data for accuracy issues and follow up on hypoglycemia management strategies.",
+        "rationale": "Ensures the care team is aware of the sensor lifecycle and recent clinical incidents to provide targeted care."
+      }
+    ],
+    "protocol_steps": [
+      "Step 1 from protocol, customized for this patient: Remind patient of upcoming sensor replacement due on day 10.",
+      "Step 2 with patient-specific details: Review glucose trends and time in range from CGM data for impact of sensor age on accuracy.",
+      "Step 3 with actual values and context: Assess patient's recent hypoglycemic events in relation to CGM data and sensor performance."
+    ],
+    "clinical_assessment": {
+      "severity": "Moderate",
+      "urgency": "Routine",
+      "trends": "Recent hypoglycemia with inadequate nocturnal glucose control",
+      "contributing_factors": [
+        "Sensor nearing end of lifespan",
+        "Possible nocturnal insulin dosing issues"
+      ],
+      "recommendations": [
+        "Ensure timely sensor replacement",
+        "Review insulin dosing with patient, considering recent hypoglycemic events"
+      ]
+    },
+    "relevant_data_points": [
+      {
+        "category": "Glucose",
+        "item": "Recent hypoglycemic event",
+        "value": "48 mg/dL",
+        "date": "2025-11-20",
+        "significance": "Indicates potential nocturnal glucose control issue."
+      },
+      {
+        "category": "Device",
+        "item": "CGM sensor age",
+        "value": "Day 10",
+        "date": "2025-11-20",
+        "significance": "Sensors are less accurate as they near the end of their lifespan."
+      }
+    ],
+    "protocol": {
+      "task_code": "TODO-100",
+      "task_name": "CUSTOM TO DO: Sensor Day 10",
+      "priority": "P1-P3",
+      "content": "Task: CUSTOM TO DO: Sensor Day 10\nCode: TODO-100\nPriority: P1-P3\nProgram: lightpath\nTrigger: Manually created by HC to track sensor use\nSteps (general): Sensor day 10  \\- [CGM Trial]()",
+      "full_text": "| TODO-100 | CUSTOM TO DO: Sensor Day 10 |\n| :---- | :---- |\n| PRIORITY | P1-P3 |\n| TRIGGER | Manually created by HC to track sensor use |\n| STEPS | Sensor day 10  \\- [CGM Trial]() |\n"
+    }
+  }
+}

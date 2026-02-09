@@ -1,0 +1,118 @@
+{
+  "timestamp": "2026-02-03T21:29:12.623780",
+  "todo_id": "BGM-104",
+  "patient_index": 1,
+  "patient_name": "Marcus Thompson",
+  "detail_view": {
+    "task_title": "Review of High Blood Glucose Incident",
+    "patient_name": "Marcus Thompson",
+    "patient_initial": "M",
+    "priority": "P1",
+    "ai_insight": {
+      "summary": "Marcus experienced a significant hypoglycemic event overnight on 11/20/25, with a BG reading of 48 mg/dL at 2:15 AM, treated with glucose tabs. Despite recent low events, his 7-day average BG is 142 mg/dL, and his last A1C was 6.8 on 10/10/25, indicating relatively good control. However, his message from 11/20/25 expresses concern over recurrent nocturnal hypoglycemia.",
+      "key_points": [
+        "Bullet point 1: Severe overnight hypoglycemia on 11/20/25 without preceding symptoms.",
+        "Bullet point 2: Recent A1C of 6.8 suggests overall good glucose management, but nocturnal events are a concern.",
+        "Bullet point 3: Patient self-treated with glucose tabs, indicating awareness but also highlighting risk of hypoglycemia unawareness.",
+        "Bullet point 4: Frequent nocturnal hypoglycemia may indicate a need for basal insulin adjustment."
+      ]
+    },
+    "participant_overview": {
+      "conditions": [
+        "Type 1 Diabetes",
+        "Hypoglycemia unawareness"
+      ],
+      "devices": [
+        "FreeStyle Libre 3",
+        "Tandem t:slim X2"
+      ],
+      "clinic_member": "Yes",
+      "insulin_strategy": "Automated basal-IQ via pump",
+      "other_relevant_info": [
+        "Recent DDAS score of 2.8 indicating distress",
+        "Recent PHQ9 score of 8 indicating mild depression"
+      ]
+    },
+    "clinical_incident": {
+      "title": "Overnight Hypoglycemia Events Timeline",
+      "timeline": [
+        {
+          "action": "Low BG Incident",
+          "details": "BG dropped to 48 mg/dL at 2:15 AM, treated with 16g glucose tabs.",
+          "timestamp": "2025-11-20T02:15:00"
+        },
+        {
+          "action": "BG Recheck",
+          "details": "Rechecked BG at 2:45 AM, showing 82 mg/dL.",
+          "timestamp": "2025-11-20T02:45:00"
+        },
+        {
+          "action": "Patient Message",
+          "details": "Expressed concern over third nocturnal low this week.",
+          "timestamp": "2025-11-20T09:00:00"
+        }
+      ]
+    },
+    "suggested_messages": [
+      {
+        "type": "patient_facing",
+        "category": "Education",
+        "message": "Hello Marcus, we've reviewed your recent glucose readings and noticed the overnight lows. It's great that you're taking steps to correct these, but let's explore why they might be happening and how we can prevent them. Are there any recent changes in your diet, exercise, or stress levels that might be affecting your blood sugar?",
+        "rationale": "Engages patient in self-reflection and identification of potential factors contributing to nocturnal hypoglycemia."
+      },
+      {
+        "type": "patient_facing",
+        "category": "Instruction",
+        "message": "Please ensure your CGM alerts are activated, especially for low glucose levels. This can help catch lows before they become severe, especially overnight.",
+        "rationale": "Encourages use of device features for early warning of hypoglycemia."
+      },
+      {
+        "type": "care_team_note",
+        "category": "Assessment",
+        "message": "Patient experiencing recurrent nocturnal hypoglycemia. Reviewed BG data and recent A1C shows good control, but patient's hypoglycemia unawareness and distress scores indicate a need for closer monitoring and potential basal rate evaluation.",
+        "rationale": "Summarizes situation and suggests next steps for the care team."
+      }
+    ],
+    "protocol_steps": [
+      "Step 1: Review recent CGM data for patterns of nocturnal hypoglycemia.",
+      "Step 2: Assess medication adherence and timing, particularly evening doses.",
+      "Step 3: Consider referral for diabetes education focusing on carb counting and insulin adjustment."
+    ],
+    "clinical_assessment": {
+      "severity": "Moderate",
+      "urgency": "Routine",
+      "trends": "Recurrent nocturnal hypoglycemia despite good overall control",
+      "contributing_factors": [
+        "Possible overly aggressive basal insulin dosing",
+        "Potential misalignment in insulin peak and carbohydrate intake"
+      ],
+      "recommendations": [
+        "Re-evaluate evening basal insulin dose",
+        "Schedule diabetes education session for carb counting and insulin management"
+      ]
+    },
+    "relevant_data_points": [
+      {
+        "category": "Glucose",
+        "item": "BG reading",
+        "value": "48 mg/dL",
+        "date": "2025-11-20",
+        "significance": "Indicates severe hypoglycemia event."
+      },
+      {
+        "category": "A1C",
+        "item": "Latest A1C result",
+        "value": "6.8",
+        "date": "2025-10-10",
+        "significance": "Suggests overall good glucose control, making the hypoglycemia events more concerning."
+      }
+    ],
+    "protocol": {
+      "task_code": "BGM-104",
+      "task_name": "REVIEW BG \\> 400",
+      "priority": "P1",
+      "content": "Task: REVIEW BG \\> 400\nCode: BGM-104\nPriority: P1\nProgram: lightpath\nTrigger: BGM\nCriteria: Triggered when a member has had 1 or more \\[BGM \\> 400 mg/dL in the last 24 hours\\]\nSteps (general): RN Review BG data, if available  Ask about medication adherence *We would like to support you with getting your glucose readings into range. Can you share with me if you ever forget to take your medications? If yes, how often have you missed a dose in the last week?* Educate on lifestyle factors impacting BG readings & hyperglycemia [NEW Draft Lightpath Educational Content](https://docs.google.com/document/d/1-b5-XWl0l0HY1ly7AoBwX1jGzedOZ-PXXPNTH9KgbyU/edit?tab=t.cx0jez7pifvh) Review readings and check to see if member had a recent visit with Onduo MD to determine if a patient case is needed **No** patient case needed if: Participant has a visit scheduled with Onduo MD or Pharmacist in the next 7 days  Participant had a visit with Onduo MD or Pharmacist in the last 14 days and meds were adjusted  If a participant shares that they have not filled their Rx yet, no patient case is needed If single reading of greater than 400 but there is a repeat reading within 5 minutes of \\<180 in range Resolve the to do (no note needed). **Yes** patient case is needed: create a \u2018custom to do: follow up on trigger\u2019 and schedule out 3 days  Once info has been collected from participant or it has been 3 days create the patient case in Athena and include any details you have for the MD If participant responded with info: Add to the \u2018Current Medications\u2019 section of patient case (within the macro) If member does not respond with info: Add to the \u2018Current medications\u2019 section of the patient case \u2018No response from member about meds\u2019 or \u2018Member is not responding to messages\u2019  Add a Note in Lightpath S: Symptoms/ causes O: BG:  A: NA P: Indicate that an Athena patient case was created and no action needed or a \u2018plan\u2019 for the HC with specific recommendations. [CS Athena Job Aid ](https://docs.google.com/document/d/1WwTMOMVY5IQw83Karzoj7158AnFFQx7CzpLULdBMXQc/edit#)\nRoles: HC, PharmD, RN",
+      "full_text": "| BGM-104 | REVIEW BG \\> 400 |\n| :---- | :---- |\n| PRIORITY | P1 |\n| TRIGGER | BGM |\n| TRIGGERING CRITERIA | Triggered when a member has had 1 or more \\[BGM \\> 400 mg/dL in the last 24 hours\\] |\n| STEPS | HC NA (RNs will search for this to do daily) |\n| STEPS \\- Non Clinic | RN If a single reading is greater than 400 but there is a repeat reading within 5 minutes of \\<180 in range no need to create a note. This task can be resolved. Educate on lifestyle factors impacting BG readings & hyperglycemia [NEW Draft Lightpath Educational Content](https://docs.google.com/document/d/1-b5-XWl0l0HY1ly7AoBwX1jGzedOZ-PXXPNTH9KgbyU/edit?tab=t.cx0jez7pifvh) Refer to local MD or offer MD Ref visit if needed |\n| STEPS \\- Clinic | RN Review BG data, if available  Ask about medication adherence *We would like to support you with getting your glucose readings into range. Can you share with me if you ever forget to take your medications? If yes, how often have you missed a dose in the last week?* Educate on lifestyle factors impacting BG readings & hyperglycemia [NEW Draft Lightpath Educational Content](https://docs.google.com/document/d/1-b5-XWl0l0HY1ly7AoBwX1jGzedOZ-PXXPNTH9KgbyU/edit?tab=t.cx0jez7pifvh) Review readings and check to see if member had a recent visit with Onduo MD to determine if a patient case is needed **No** patient case needed if: Participant has a visit scheduled with Onduo MD or Pharmacist in the next 7 days  Participant had a visit with Onduo MD or Pharmacist in the last 14 days and meds were adjusted  If a participant shares that they have not filled their Rx yet, no patient case is needed If single reading of greater than 400 but there is a repeat reading within 5 minutes of \\<180 in range Resolve the to do (no note needed). **Yes** patient case is needed: create a \u2018custom to do: follow up on trigger\u2019 and schedule out 3 days  Once info has been collected from participant or it has been 3 days create the patient case in Athena and include any details you have for the MD If participant responded with info: Add to the \u2018Current Medications\u2019 section of patient case (within the macro) If member does not respond with info: Add to the \u2018Current medications\u2019 section of the patient case \u2018No response from member about meds\u2019 or \u2018Member is not responding to messages\u2019  Add a Note in Lightpath S: Symptoms/ causes O: BG:  A: NA P: Indicate that an Athena patient case was created and no action needed or a \u2018plan\u2019 for the HC with specific recommendations. [CS Athena Job Aid ](https://docs.google.com/document/d/1WwTMOMVY5IQw83Karzoj7158AnFFQx7CzpLULdBMXQc/edit#) |\n"
+    }
+  }
+}

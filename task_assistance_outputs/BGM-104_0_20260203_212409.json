@@ -1,0 +1,130 @@
+{
+  "timestamp": "2026-02-03T21:24:09.539593",
+  "todo_id": "BGM-104",
+  "patient_index": 0,
+  "patient_name": "Silvia Jones",
+  "detail_view": {
+    "task_title": "Review Urgent Hyperglycemia >400 mg/dL",
+    "patient_name": "Silvia Jones",
+    "patient_initial": "S",
+    "priority": "P1",
+    "ai_insight": {
+      "summary": "Silvia Jones experienced two severe hyperglycemic events on 11/19/25, with glucose readings peaking at 455 mg/dL and 425 mg/dL post-meal. Despite taking correction doses of Humalog, her glucose levels remained high. Her average glucose over the past 7 days has been 185 mg/dL, with only 20% time in range. Recent labs show an A1C of 9.2%.",
+      "key_points": [
+        "Bullet point 1: Two severe hyperglycemic events on 11/19/25, with BG levels >400 mg/dL.",
+        "Bullet point 2: Humalog correction doses post-meals have been ineffective.",
+        "Bullet point 3: A1C at 9.2% as of 10/15/25 indicates poor glycemic control.",
+        "Bullet point 4: Only 20% time in glucose range over the past week."
+      ]
+    },
+    "participant_overview": {
+      "conditions": [
+        "Type 2 Diabetes",
+        "Hypertension",
+        "Hyperlipidemia"
+      ],
+      "devices": [
+        "OneTouch Ultra Mini",
+        "Omron BP7350",
+        "Dexcom G7"
+      ],
+      "clinic_member": "Yes",
+      "insulin_strategy": "Fixed dosing with Humalog",
+      "other_relevant_info": [
+        "Recent high carb meals contributing to glucose spikes",
+        "Struggles with medication adherence"
+      ]
+    },
+    "clinical_incident": {
+      "title": "Severe Hyperglycemic Episodes on 11/19/25",
+      "timeline": [
+        {
+          "action": "Dinner consumed (high carb)",
+          "details": "Potato soup, tomato meatball pasta, garlic bread",
+          "timestamp": "6:25 PM"
+        },
+        {
+          "action": "Humalog 8 units administered",
+          "details": "Pre-dinner insulin dose",
+          "timestamp": "6:25 PM"
+        },
+        {
+          "action": "BG spike to 455 mg/dL",
+          "details": "First post-meal glucose spike",
+          "timestamp": "6:40 PM"
+        },
+        {
+          "action": "Humalog 6 units administered",
+          "details": "Correction dose for high BG",
+          "timestamp": "7:28 PM"
+        },
+        {
+          "action": "BG spike to 425 mg/dL",
+          "details": "Second post-meal glucose spike",
+          "timestamp": "7:25 PM"
+        }
+      ]
+    },
+    "suggested_messages": [
+      {
+        "type": "patient_facing",
+        "category": "Follow-up",
+        "message": "Hello Silvia, we've noticed your glucose levels have been significantly high after your dinners, especially on 11/19. Can we discuss your current meal plan and insulin dosing? It's important for us to tackle these high readings together.",
+        "rationale": "Addressing the patient's recent severe hyperglycemic events and the need to review her meal plan and insulin dosing to improve glycemic control."
+      },
+      {
+        "type": "patient_facing",
+        "category": "Education",
+        "message": "It's also essential to consider the timing and dosage of your insulin around meals. Let's explore carb counting as a strategy to match your insulin dose to your carbohydrate intake more accurately.",
+        "rationale": "Educating the patient on carb counting to enhance insulin dosing accuracy and improve postprandial glucose control."
+      },
+      {
+        "type": "care_team_note",
+        "category": "Plan",
+        "message": "Patient experienced two hyperglycemic events >400 mg/dL on 11/19. Suggest reviewing her insulin regimen and considering a referral to a diabetes educator for carb counting training.",
+        "rationale": "Clinical rationale for adjusting the patient's insulin regimen and providing additional diabetes education to prevent future hyperglycemic events."
+      }
+    ],
+    "protocol_steps": [
+      "Step 1: Review recent BG data and confirm medication adherence.",
+      "Step 2: Educate on lifestyle factors impacting BG readings & hyperglycemia.",
+      "Step 3: Schedule a follow-up appointment with Onduo MD or Pharmacist within 7 days to review insulin regimen and consider medication adjustments."
+    ],
+    "clinical_assessment": {
+      "severity": "Severe",
+      "urgency": "Urgent",
+      "trends": "Worsening glycemic control indicated by recent A1C and frequent hyperglycemic episodes.",
+      "contributing_factors": [
+        "Ineffective insulin dosing regimen",
+        "High carbohydrate meal consumption"
+      ],
+      "recommendations": [
+        "Review and adjust insulin regimen",
+        "Diabetes education on carb counting and meal planning"
+      ]
+    },
+    "relevant_data_points": [
+      {
+        "category": "Glucose",
+        "item": "Hyperglycemic events",
+        "value": "455 mg/dL & 425 mg/dL",
+        "date": "2025-11-19",
+        "significance": "Indicates severe hyperglycemia requiring immediate attention and intervention."
+      },
+      {
+        "category": "A1C",
+        "item": "Latest A1C result",
+        "value": "9.2%",
+        "date": "2025-10-15",
+        "significance": "Reflects poor glycemic control over the past 2-3 months."
+      }
+    ],
+    "protocol": {
+      "task_code": "BGM-104",
+      "task_name": "REVIEW BG \\> 400",
+      "priority": "P1",
+      "content": "Task: REVIEW BG \\> 400\nCode: BGM-104\nPriority: P1\nProgram: lightpath\nTrigger: BGM\nCriteria: Triggered when a member has had 1 or more \\[BGM \\> 400 mg/dL in the last 24 hours\\]\nSteps (general): RN Review BG data, if available  Ask about medication adherence *We would like to support you with getting your glucose readings into range. Can you share with me if you ever forget to take your medications? If yes, how often have you missed a dose in the last week?* Educate on lifestyle factors impacting BG readings & hyperglycemia [NEW Draft Lightpath Educational Content](https://docs.google.com/document/d/1-b5-XWl0l0HY1ly7AoBwX1jGzedOZ-PXXPNTH9KgbyU/edit?tab=t.cx0jez7pifvh) Review readings and check to see if member had a recent visit with Onduo MD to determine if a patient case is needed **No** patient case needed if: Participant has a visit scheduled with Onduo MD or Pharmacist in the next 7 days  Participant had a visit with Onduo MD or Pharmacist in the last 14 days and meds were adjusted  If a participant shares that they have not filled their Rx yet, no patient case is needed If single reading of greater than 400 but there is a repeat reading within 5 minutes of \\<180 in range Resolve the to do (no note needed). **Yes** patient case is needed: create a \u2018custom to do: follow up on trigger\u2019 and schedule out 3 days  Once info has been collected from participant or it has been 3 days create the patient case in Athena and include any details you have for the MD If participant responded with info: Add to the \u2018Current Medications\u2019 section of patient case (within the macro) If member does not respond with info: Add to the \u2018Current medications\u2019 section of the patient case \u2018No response from member about meds\u2019 or \u2018Member is not responding to messages\u2019  Add a Note in Lightpath S: Symptoms/ causes O: BG:  A: NA P: Indicate that an Athena patient case was created and no action needed or a \u2018plan\u2019 for the HC with specific recommendations. [CS Athena Job Aid ](https://docs.google.com/document/d/1WwTMOMVY5IQw83Karzoj7158AnFFQx7CzpLULdBMXQc/edit#)\nRoles: HC, PharmD, RN",
+      "full_text": "| BGM-104 | REVIEW BG \\> 400 |\n| :---- | :---- |\n| PRIORITY | P1 |\n| TRIGGER | BGM |\n| TRIGGERING CRITERIA | Triggered when a member has had 1 or more \\[BGM \\> 400 mg/dL in the last 24 hours\\] |\n| STEPS | HC NA (RNs will search for this to do daily) |\n| STEPS \\- Non Clinic | RN If a single reading is greater than 400 but there is a repeat reading within 5 minutes of \\<180 in range no need to create a note. This task can be resolved. Educate on lifestyle factors impacting BG readings & hyperglycemia [NEW Draft Lightpath Educational Content](https://docs.google.com/document/d/1-b5-XWl0l0HY1ly7AoBwX1jGzedOZ-PXXPNTH9KgbyU/edit?tab=t.cx0jez7pifvh) Refer to local MD or offer MD Ref visit if needed |\n| STEPS \\- Clinic | RN Review BG data, if available  Ask about medication adherence *We would like to support you with getting your glucose readings into range. Can you share with me if you ever forget to take your medications? If yes, how often have you missed a dose in the last week?* Educate on lifestyle factors impacting BG readings & hyperglycemia [NEW Draft Lightpath Educational Content](https://docs.google.com/document/d/1-b5-XWl0l0HY1ly7AoBwX1jGzedOZ-PXXPNTH9KgbyU/edit?tab=t.cx0jez7pifvh) Review readings and check to see if member had a recent visit with Onduo MD to determine if a patient case is needed **No** patient case needed if: Participant has a visit scheduled with Onduo MD or Pharmacist in the next 7 days  Participant had a visit with Onduo MD or Pharmacist in the last 14 days and meds were adjusted  If a participant shares that they have not filled their Rx yet, no patient case is needed If single reading of greater than 400 but there is a repeat reading within 5 minutes of \\<180 in range Resolve the to do (no note needed). **Yes** patient case is needed: create a \u2018custom to do: follow up on trigger\u2019 and schedule out 3 days  Once info has been collected from participant or it has been 3 days create the patient case in Athena and include any details you have for the MD If participant responded with info: Add to the \u2018Current Medications\u2019 section of patient case (within the macro) If member does not respond with info: Add to the \u2018Current medications\u2019 section of the patient case \u2018No response from member about meds\u2019 or \u2018Member is not responding to messages\u2019  Add a Note in Lightpath S: Symptoms/ causes O: BG:  A: NA P: Indicate that an Athena patient case was created and no action needed or a \u2018plan\u2019 for the HC with specific recommendations. [CS Athena Job Aid ](https://docs.google.com/document/d/1WwTMOMVY5IQw83Karzoj7158AnFFQx7CzpLULdBMXQc/edit#) |\n"
+    }
+  }
+}

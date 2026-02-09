@@ -1,0 +1,35 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls:*)",
+      "Bash(python3:*)",
+      "Bash(export PATH=\"$HOME/.local/bin:$PATH\")",
+      "Bash(source .env)",
+      "Bash(export PINECONE_API_KEY:*)",
+      "Bash(pc index create:*)",
+      "Bash(chmod:*)",
+      "Bash(pc index describe:*)",
+      "Bash(source:*)",
+      "Bash(python load_protocols.py:*)",
+      "Bash(pip install:*)",
+      "Bash(python test_protocol_search.py:*)",
+      "Bash(python:*)",
+      "Bash(curl:*)",
+      "Bash(open http://localhost:5001)",
+      "Bash(lsof:*)",
+      "Bash(xargs:*)",
+      "Bash(pkill:*)",
+      "Bash(grep:*)",
+      "Bash(./start_todo_viewer_enhanced.sh:*)",
+      "mcp__plugin_pinecone_pinecone__search-records",
+      "Bash(node -c todo_viewer_enhanced.py)",
+      "Bash(node --check:*)",
+      "Bash(npm install:*)",
+      "Bash(sudo npm install:*)",
+      "Bash(wc:*)",
+      "Bash(brew install:*)",
+      "Bash(git remote add:*)",
+      "Bash(git add:*)"
+    ]
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "timestamp": "2026-02-04T21:59:58.786037",
+  "todo_id": "BGM-104",
+  "patient_index": 2,
+  "patient_name": "Patricia Martinez",
+  "detail_view": {
+    "task_title": "Review Critical Hyperglycemia Incident",
+    "patient_name": "Patricia Martinez",
+    "patient_initial": "P",
+    "priority": "P1",
+    "ai_insight": {
+      "summary": "Patricia experienced a significant hyperglycemic event with a BG reading over 400 mg/dL. Despite her efforts to manage her Type 2 Diabetes, hypertension, and Stage 3 CKD, her recent messages indicate challenges in controlling her blood pressure, potentially impacting her glucose management. Her last A1C from 09/20/2025 shows a value of 7.8%, indicating suboptimal glycemic control.",
+      "key_points": [
+        "Latest hyperglycemic event with BG >400 mg/dL",
+        "Recent BP readings significantly elevated, avg 165/92 over the last week",
+        "Good medication adherence reported, but occasional missed doses"
+      ]
+    },
+    "participant_overview": {
+      "conditions": [
+        "Type 2 Diabetes",
+        "Hypertension",
+        "Stage 3 CKD"
+      ],
+      "devices": [
+        "Contour Next One",
+        "Withings BPM Connect"
+      ],
+      "clinic_member": "No",
+      "insulin_strategy": "N/A",
+      "other_relevant_info": [
+        "Recent BP increase noted by patient",
+        "A1C value of 7.8% indicating suboptimal control"
+      ]
+    },
+    "clinical_incident": {
+      "title": "Hyperglycemic Event Analysis",
+      "timeline": [
+        {
+          "action": "Reported elevated BP",
+          "details": "Patient reported higher blood pressure than usual despite medication adherence",
+          "timestamp": "2025-11-19T08:00:00"
+        },
+        {
+          "action": "Hyperglycemic reading",
+          "details": "BG reading exceeded 400 mg/dL, specific reading not provided",
+          "timestamp": "Recent, exact time not provided"
+        }
+      ]
+    },
+    "suggested_messages": [
+      {
+        "type": "patient_facing",
+        "category": "Follow-up",
+        "message": "Hi Patricia, I noticed your recent blood pressure readings have been higher than usual, which can also affect your blood sugar levels. Can you share more about your current challenges? It's important to manage both to keep you feeling your best.",
+        "rationale": "Addressing the patient's recent concerns about elevated blood pressure and its potential impact on glucose management."
+      },
+      {
+        "type": "care_team_note",
+        "category": "Assessment",
+        "message": "Patient experiencing elevated BP and a critical hyperglycemic event. Patient adherence to medication is good with occasional missed doses. Consider evaluating medication effectiveness and potential need for adjustment.",
+        "rationale": "Highlighting the need for clinical review of patient's medication regimen in light of recent hypertension and hyperglycemia."
+      }
+    ],
+    "protocol_steps": [
+      "Review patient's recent glucose data for additional hyperglycemic events beyond the reported incident.",
+      "Educate on lifestyle factors impacting BG readings & hyperglycemia. Refer to [NEW Draft Lightpath Educational Content](https://docs.google.com/document/d/1-b5-XWl0l0HY1ly7AoBwX1jGzedOZ-PXXPNTH9KgbyU/edit?tab=t.cx0jez7pifvh).",
+      "Refer to local MD or offer MD Ref visit if needed, especially considering recent BP concerns and their potential impact on glucose management."
+    ],
+    "clinical_assessment": {
+      "severity": "Moderate",
+      "urgency": "Urgent",
+      "trends": "Increasing BP readings, recent hyperglycemic event",
+      "contributing_factors": [
+        "Suboptimal glycemic control",
+        "Hypertension management challenges"
+      ],
+      "recommendations": [
+        "Review and adjust medication as necessary",
+        "Enhance patient education on diet and lifestyle modifications"
+      ]
+    },
+    "relevant_data_points": [
+      {
+        "category": "BP",
+        "item": "Average 7-day BP",
+        "value": "165/92",
+        "date": "Recent, exact date not provided",
+        "significance": "Indicates uncontrolled hypertension, contributing to diabetes management difficulties"
+      },
+      {
+        "category": "Glucose",
+        "item": "Recent hyperglycemic event",
+        "value": ">400 mg/dL",
+        "date": "Recent, exact date not provided",
+        "significance": "Critical glucose level requiring immediate attention and action"
+      }
+    ],
+    "confidence": {
+      "decision": "show",
+      "internal_score": 85,
+      "caveats": [
+        "This summary may be missing information. VI could not find: Exact time and value of recent hyperglycemic event. Please refresh or review protocol.",
+        "Summary based on data last updated on 02/04/2026. If you believe this is out of date, please check the patient profile."
+      ],
+      "suppression_reason": ""
+    },
+    "protocol": {
+      "task_code": "BGM-104",
+      "task_name": "REVIEW BG \\> 400",
+      "priority": "P1",
+      "content": "Task: REVIEW BG \\> 400\nCode: BGM-104\nPriority: P1\nProgram: lightpath\nTrigger: BGM\nCriteria: Triggered when a member has had 1 or more \\[BGM \\> 400 mg/dL in the last 24 hours\\]\nSteps (general): HC NA (RNs will search for this to do daily)\nSteps (non_clinic): RN If a single reading is greater than 400 but there is a repeat reading within 5 minutes of \\<180 in range no need to create a note. This task can be resolved. Educate on lifestyle factors impacting BG readings & hyperglycemia [NEW Draft Lightpath Educational Content](https://docs.google.com/document/d/1-b5-XWl0l0HY1ly7AoBwX1jGzedOZ-PXXPNTH9KgbyU/edit?tab=t.cx0jez7pifvh) Refer to local MD or offer MD Ref visit if needed\nSteps (clinic): RN Review BG data, if available  Ask about medication adherence *We would like to support you with getting your glucose readings into range. Can you share with me if you ever forget to take your medications? If yes, how often have you missed a dose in the last week?* Educate on lifestyle factors impacting BG readings & hyperglycemia [NEW Draft Lightpath Educational Content](https://docs.google.com/document/d/1-b5-XWl0l0HY1ly7AoBwX1jGzedOZ-PXXPNTH9KgbyU/edit?tab=t.cx0jez7pifvh) Review readings and check to see if member had a recent visit with Onduo MD to determine if a patient case is needed **No** patient case needed if: Participant has a visit scheduled with Onduo MD or Pharmacist in the next 7 days  Participant had a visit with Onduo MD or Pharmacist in the last 14 days and meds were adjusted  If a participant shares that they have not filled their Rx yet, no patient case is needed If single reading of greater than 400 but there is a repeat reading within 5 minutes of \\<180 in range Resolve the to do (no note needed). **Yes** patient case is needed: create a \u2018custom to do: follow up on trigger\u2019 and schedule out 3 days  Once info has been collected from participant or it has been 3 days create the patient case in Athena and include any details you have for the MD If participant responded with info: Add to the \u2018Current Medications\u2019 section of patient case (within the macro) If member does not respond with info: Add to the \u2018Current medications\u2019 section of the patient case \u2018No response from member about meds\u2019 or \u2018Member is not responding to messages\u2019  Add a Note in Lightpath S: Symptoms/ causes O: BG:  A: NA P: Indicate that an Athena patient case was created and no action needed or a \u2018plan\u2019 for the HC with specific recommendations. [CS Athena Job Aid ](https://docs.google.com/document/d/1WwTMOMVY5IQw83Karzoj7158AnFFQx7CzpLULdBMXQc/edit#)\nRoles: HC, PharmD, RN",
+      "full_text": "| BGM-104 | REVIEW BG \\> 400 |\n| :---- | :---- |\n| PRIORITY | P1 |\n| TRIGGER | BGM |\n| TRIGGERING CRITERIA | Triggered when a member has had 1 or more \\[BGM \\> 400 mg/dL in the last 24 hours\\] |\n| STEPS | HC NA (RNs will search for this to do daily) |\n| STEPS \\- Non Clinic | RN If a single reading is greater than 400 but there is a repeat reading within 5 minutes of \\<180 in range no need to create a note. This task can be resolved. Educate on lifestyle factors impacting BG readings & hyperglycemia [NEW Draft Lightpath Educational Content](https://docs.google.com/document/d/1-b5-XWl0l0HY1ly7AoBwX1jGzedOZ-PXXPNTH9KgbyU/edit?tab=t.cx0jez7pifvh) Refer to local MD or offer MD Ref visit if needed |\n| STEPS \\- Clinic | RN Review BG data, if available  Ask about medication adherence *We would like to support you with getting your glucose readings into range. Can you share with me if you ever forget to take your medications? If yes, how often have you missed a dose in the last week?* Educate on lifestyle factors impacting BG readings & hyperglycemia [NEW Draft Lightpath Educational Content](https://docs.google.com/document/d/1-b5-XWl0l0HY1ly7AoBwX1jGzedOZ-PXXPNTH9KgbyU/edit?tab=t.cx0jez7pifvh) Review readings and check to see if member had a recent visit with Onduo MD to determine if a patient case is needed **No** patient case needed if: Participant has a visit scheduled with Onduo MD or Pharmacist in the next 7 days  Participant had a visit with Onduo MD or Pharmacist in the last 14 days and meds were adjusted  If a participant shares that they have not filled their Rx yet, no patient case is needed If single reading of greater than 400 but there is a repeat reading within 5 minutes of \\<180 in range Resolve the to do (no note needed). **Yes** patient case is needed: create a \u2018custom to do: follow up on trigger\u2019 and schedule out 3 days  Once info has been collected from participant or it has been 3 days create the patient case in Athena and include any details you have for the MD If participant responded with info: Add to the \u2018Current Medications\u2019 section of patient case (within the macro) If member does not respond with info: Add to the \u2018Current medications\u2019 section of the patient case \u2018No response from member about meds\u2019 or \u2018Member is not responding to messages\u2019  Add a Note in Lightpath S: Symptoms/ causes O: BG:  A: NA P: Indicate that an Athena patient case was created and no action needed or a \u2018plan\u2019 for the HC with specific recommendations. [CS Athena Job Aid ](https://docs.google.com/document/d/1WwTMOMVY5IQw83Karzoj7158AnFFQx7CzpLULdBMXQc/edit#) |\n"
+    },
+    "user_context": {
+      "role": "RN",
+      "clinic_context": "Non-Clinic",
+      "clinic_member": "No"
+    }
+  }
+}

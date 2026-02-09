@@ -1,0 +1,122 @@
+{
+  "timestamp": "2026-02-04T17:52:45.489910",
+  "todo_id": "BGM-104",
+  "patient_index": 10,
+  "patient_name": "Lisa Williams",
+  "detail_view": {
+    "task_title": "Review Urgent Hyperglycemic Event",
+    "patient_name": "Lisa Williams",
+    "patient_initial": "L",
+    "priority": "P1",
+    "ai_insight": {
+      "summary": "Lisa Williams experienced elevated glucose readings above the target range, with a 7-day average glucose level of 184 mg/dL and a time in range of only 55%. Her recent lab results indicate an A1C of 7.3, suggesting suboptimal glycemic control. Given her complex condition, including Type 2 Diabetes, Hypertension, Hyperlipidemia, and Stage 3 CKD, a thorough review of her medication adherence, lifestyle factors, and potential need for medication adjustment is warranted.",
+      "key_points": [
+        "Recent 7-day average glucose level at 184 mg/dL.",
+        "A1C level reported at 7.3 on 2026-01-07.",
+        "Current medications include Jardiance, Lisinopril, Atorvastatin, and Metformin.",
+        "Patient has secondary conditions that may impact glycemic control."
+      ]
+    },
+    "participant_overview": {
+      "conditions": [
+        "Type 2 Diabetes",
+        "Hypertension",
+        "Hyperlipidemia",
+        "Stage 3 CKD"
+      ],
+      "devices": [
+        "Contour Ultra Mini",
+        "Omron BP7350"
+      ],
+      "clinic_member": "Unknown",
+      "insulin_strategy": "N/A",
+      "other_relevant_info": [
+        "7-day average BP: 152/89",
+        "Time in glucose range: 55%"
+      ]
+    },
+    "clinical_incident": {
+      "title": "Recent Hyperglycemic Trends and Management Review",
+      "timeline": [
+        {
+          "action": "Observed elevated glucose levels",
+          "details": "7-day average glucose level recorded at 184 mg/dL, indicating consistent hyperglycemia.",
+          "timestamp": "Recent 7 days"
+        },
+        {
+          "action": "Reported A1C value",
+          "details": "A1C level of 7.3, suggesting suboptimal glycemic control.",
+          "timestamp": "2026-01-07"
+        }
+      ]
+    },
+    "suggested_messages": [
+      {
+        "type": "patient_facing",
+        "category": "Education",
+        "message": "Hi Lisa, I've noticed your glucose levels have been consistently higher than the target range. It's important for us to work together to get your levels back on track. Can you share if you've had any challenges taking your medications as prescribed? Understanding any barriers will help us support you better.",
+        "rationale": "Engaging the patient in a discussion about medication adherence to understand potential factors contributing to suboptimal glycemic control."
+      },
+      {
+        "type": "care_team_note",
+        "category": "Assessment",
+        "message": "Patient Lisa Williams showing signs of suboptimal glycemic control with a 7-day average glucose level of 184 mg/dL and recent A1C of 7.3. Need to assess medication adherence, lifestyle factors, and consider reviewing current diabetes management plan.",
+        "rationale": "Highlighting the need for a comprehensive review of the patient's diabetes management strategy."
+      }
+    ],
+    "protocol_steps": [
+      "Review BG data, if available.",
+      "Ask about medication adherence, specifically if Lisa has missed any doses of her medications in the last week.",
+      "Educate on lifestyle factors impacting BG readings & hyperglycemia. Provide access to [NEW Draft Lightpath Educational Content](https://docs.google.com/document/d/1-b5-XWl0l0HY1ly7AoBwX1jGzedOZ-PXXPNTH9KgbyU/edit?tab=t.cx0jez7pifvh).",
+      "Review recent readings and check if the patient had a recent visit with an Onduo MD to determine if a patient case is needed."
+    ],
+    "clinical_assessment": {
+      "severity": "Moderate",
+      "urgency": "Urgent",
+      "trends": "Consistent hyperglycemia with recent average glucose readings above target range.",
+      "contributing_factors": [
+        "Potential medication non-adherence",
+        "Lifestyle factors"
+      ],
+      "recommendations": [
+        "Assess for barriers to medication adherence and lifestyle factors contributing to hyperglycemia.",
+        "Consider medication adjustment or introduction of insulin therapy if necessary."
+      ]
+    },
+    "relevant_data_points": [
+      {
+        "category": "Glucose",
+        "item": "7-day average glucose level",
+        "value": "184 mg/dL",
+        "date": "Recent 7 days",
+        "significance": "Indicates consistent hyperglycemia, suggesting suboptimal glycemic control."
+      },
+      {
+        "category": "A1C",
+        "item": "Most recent A1C",
+        "value": "7.3",
+        "date": "2026-01-07",
+        "significance": "A1C level suggests suboptimal glycemic control."
+      },
+      {
+        "category": "Medication",
+        "item": "Current regimen",
+        "value": "Jardiance 25mg daily, Lisinopril 20mg daily, Atorvastatin 40mg daily, Metformin 1000mg twice daily",
+        "date": "As of last update",
+        "significance": "Comprehensive medication regimen aimed at managing diabetes, hypertension, and hyperlipidemia."
+      }
+    ],
+    "protocol": {
+      "task_code": "BGM-104",
+      "task_name": "REVIEW BG \\> 400",
+      "priority": "P1",
+      "content": "Task: REVIEW BG \\> 400\nCode: BGM-104\nPriority: P1\nProgram: lightpath\nTrigger: BGM\nCriteria: Triggered when a member has had 1 or more \\[BGM \\> 400 mg/dL in the last 24 hours\\]\nSteps (general): HC NA (RNs will search for this to do daily)\nSteps (non_clinic): RN If a single reading is greater than 400 but there is a repeat reading within 5 minutes of \\<180 in range no need to create a note. This task can be resolved. Educate on lifestyle factors impacting BG readings & hyperglycemia [NEW Draft Lightpath Educational Content](https://docs.google.com/document/d/1-b5-XWl0l0HY1ly7AoBwX1jGzedOZ-PXXPNTH9KgbyU/edit?tab=t.cx0jez7pifvh) Refer to local MD or offer MD Ref visit if needed\nSteps (clinic): RN Review BG data, if available  Ask about medication adherence *We would like to support you with getting your glucose readings into range. Can you share with me if you ever forget to take your medications? If yes, how often have you missed a dose in the last week?* Educate on lifestyle factors impacting BG readings & hyperglycemia [NEW Draft Lightpath Educational Content](https://docs.google.com/document/d/1-b5-XWl0l0HY1ly7AoBwX1jGzedOZ-PXXPNTH9KgbyU/edit?tab=t.cx0jez7pifvh) Review readings and check to see if member had a recent visit with Onduo MD to determine if a patient case is needed **No** patient case needed if: Participant has a visit scheduled with Onduo MD or Pharmacist in the next 7 days  Participant had a visit with Onduo MD or Pharmacist in the last 14 days and meds were adjusted  If a participant shares that they have not filled their Rx yet, no patient case is needed If single reading of greater than 400 but there is a repeat reading within 5 minutes of \\<180 in range Resolve the to do (no note needed). **Yes** patient case is needed: create a \u2018custom to do: follow up on trigger\u2019 and schedule out 3 days  Once info has been collected from participant or it has been 3 days create the patient case in Athena and include any details you have for the MD If participant responded with info: Add to the \u2018Current Medications\u2019 section of patient case (within the macro) If member does not respond with info: Add to the \u2018Current medications\u2019 section of the patient case \u2018No response from member about meds\u2019 or \u2018Member is not responding to messages\u2019  Add a Note in Lightpath S: Symptoms/ causes O: BG:  A: NA P: Indicate that an Athena patient case was created and no action needed or a \u2018plan\u2019 for the HC with specific recommendations. [CS Athena Job Aid ](https://docs.google.com/document/d/1WwTMOMVY5IQw83Karzoj7158AnFFQx7CzpLULdBMXQc/edit#)\nRoles: HC, PharmD, RN",
+      "full_text": "| BGM-104 | REVIEW BG \\> 400 |\n| :---- | :---- |\n| PRIORITY | P1 |\n| TRIGGER | BGM |\n| TRIGGERING CRITERIA | Triggered when a member has had 1 or more \\[BGM \\> 400 mg/dL in the last 24 hours\\] |\n| STEPS | HC NA (RNs will search for this to do daily) |\n| STEPS \\- Non Clinic | RN If a single reading is greater than 400 but there is a repeat reading within 5 minutes of \\<180 in range no need to create a note. This task can be resolved. Educate on lifestyle factors impacting BG readings & hyperglycemia [NEW Draft Lightpath Educational Content](https://docs.google.com/document/d/1-b5-XWl0l0HY1ly7AoBwX1jGzedOZ-PXXPNTH9KgbyU/edit?tab=t.cx0jez7pifvh) Refer to local MD or offer MD Ref visit if needed |\n| STEPS \\- Clinic | RN Review BG data, if available  Ask about medication adherence *We would like to support you with getting your glucose readings into range. Can you share with me if you ever forget to take your medications? If yes, how often have you missed a dose in the last week?* Educate on lifestyle factors impacting BG readings & hyperglycemia [NEW Draft Lightpath Educational Content](https://docs.google.com/document/d/1-b5-XWl0l0HY1ly7AoBwX1jGzedOZ-PXXPNTH9KgbyU/edit?tab=t.cx0jez7pifvh) Review readings and check to see if member had a recent visit with Onduo MD to determine if a patient case is needed **No** patient case needed if: Participant has a visit scheduled with Onduo MD or Pharmacist in the next 7 days  Participant had a visit with Onduo MD or Pharmacist in the last 14 days and meds were adjusted  If a participant shares that they have not filled their Rx yet, no patient case is needed If single reading of greater than 400 but there is a repeat reading within 5 minutes of \\<180 in range Resolve the to do (no note needed). **Yes** patient case is needed: create a \u2018custom to do: follow up on trigger\u2019 and schedule out 3 days  Once info has been collected from participant or it has been 3 days create the patient case in Athena and include any details you have for the MD If participant responded with info: Add to the \u2018Current Medications\u2019 section of patient case (within the macro) If member does not respond with info: Add to the \u2018Current medications\u2019 section of the patient case \u2018No response from member about meds\u2019 or \u2018Member is not responding to messages\u2019  Add a Note in Lightpath S: Symptoms/ causes O: BG:  A: NA P: Indicate that an Athena patient case was created and no action needed or a \u2018plan\u2019 for the HC with specific recommendations. [CS Athena Job Aid ](https://docs.google.com/document/d/1WwTMOMVY5IQw83Karzoj7158AnFFQx7CzpLULdBMXQc/edit#) |\n"
+    },
+    "user_context": {
+      "role": "RN",
+      "clinic_context": "Unknown",
+      "clinic_member": "Unknown"
+    }
+  }
+}

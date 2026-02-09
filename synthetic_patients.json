@@ -1,0 +1,1166 @@
+[
+  {
+    "conditions": {
+      "icd10_codes": [
+        "E11.9",
+        "I10",
+        "E78.5"
+      ],
+      "primary_diagnosis": "Type 2 Diabetes",
+      "secondary_conditions": [
+        "Hypertension",
+        "Hyperlipidemia"
+      ]
+    },
+    "demographics": {
+      "age": 52,
+      "dob": "1971-08-15",
+      "email": "silvia.jones@email.com",
+      "gender": "Female",
+      "name": "Silvia Jones",
+      "phone": "(555) 234-5678"
+    },
+    "devices": {
+      "bgm": {
+        "brand": "OneTouch",
+        "model": "Ultra Mini"
+      },
+      "bp_monitor": {
+        "brand": "Omron",
+        "model": "BP7350"
+      },
+      "cgm": {
+        "brand": "Dexcom",
+        "model": "G7",
+        "sensor_number": "SN-2024-1234"
+      }
+    },
+    "labs": {
+      "a1c": [
+        {
+          "date": "2025-10-15",
+          "value": 9.2
+        },
+        {
+          "date": "2025-07-20",
+          "value": 8.8
+        }
+      ],
+      "lipids": {
+        "hdl": 38,
+        "ldl": 142,
+        "triglycerides": 220
+      }
+    },
+    "medications": [
+      {
+        "dose": "1000mg",
+        "frequency": "twice daily",
+        "name": "Metformin"
+      },
+      {
+        "dose": "Variable",
+        "frequency": "with meals",
+        "name": "Humalog",
+        "type": "Fixed dosing"
+      },
+      {
+        "dose": "10mg",
+        "frequency": "once daily",
+        "name": "Lisinopril"
+      }
+    ],
+    "messages": [
+      {
+        "content": "My sugar has been really high after dinner. I'm following my meal plan but it keeps spiking over 400.",
+        "date": "2025-11-18",
+        "from": "patient"
+      },
+      {
+        "content": "Thank you for letting me know. Can you tell me what you typically eat for dinner and when you take your insulin?",
+        "date": "2025-11-18",
+        "from": "care_team"
+      }
+    ],
+    "metadata": {
+      "last_modified": "2026-02-04T22:21:21.169032"
+    },
+    "participant_overview": {
+      "clinic_member": "Yes"
+    },
+    "recent_events": {
+      "avg_glucose_7day": 185,
+      "hyperglycemic_events": [
+        {
+          "bg_value": 425,
+          "context": "Post-dinner (potato soup, tomato meatball pasta, garlic bread)",
+          "correction": "Humalog 6 units at 7:28 PM",
+          "date": "2025-11-19",
+          "insulin_taken": "Humalog 8 units at 6:25 PM",
+          "time": "7:25 PM"
+        },
+        {
+          "bg_value": 455,
+          "context": "Post-meal spike",
+          "correction": "Humalog 8 units",
+          "date": "2025-11-19",
+          "time": "6:40 PM"
+        }
+      ],
+      "time_in_range": "20%"
+    },
+    "surveys": {
+      "ddas": {
+        "date": "2025-11-01",
+        "score": 3.2
+      },
+      "phq9": {
+        "date": "2025-11-01",
+        "score": 12
+      }
+    }
+  },
+  {
+    "demographics": {
+      "name": "Marcus Thompson",
+      "age": 45,
+      "gender": "Male",
+      "dob": "1978-03-22",
+      "phone": "(555) 345-6789",
+      "email": "m.thompson@email.com"
+    },
+    "conditions": {
+      "primary_diagnosis": "Type 1 Diabetes",
+      "secondary_conditions": [
+        "Hypoglycemia unawareness"
+      ],
+      "icd10_codes": [
+        "E10.9",
+        "E16.2"
+      ]
+    },
+    "devices": {
+      "cgm": {
+        "brand": "FreeStyle",
+        "model": "Libre 3",
+        "sensor_number": "SN-2024-5678"
+      },
+      "insulin_pump": {
+        "brand": "Tandem",
+        "model": "t:slim X2"
+      }
+    },
+    "recent_events": {
+      "hypoglycemic_events": [
+        {
+          "date": "2025-11-20",
+          "time": "2:15 AM",
+          "bg_value": 48,
+          "context": "Overnight, no warning symptoms",
+          "treatment": "16g glucose tabs, rechecked at 2:45 AM: 82 mg/dL"
+        },
+        {
+          "date": "2025-11-19",
+          "time": "11:30 AM",
+          "bg_value": 62,
+          "context": "Before lunch, felt shaky",
+          "treatment": "8g glucose tabs"
+        }
+      ],
+      "time_in_range": "65%",
+      "avg_glucose_7day": 142
+    },
+    "medications": [
+      {
+        "name": "Insulin via pump",
+        "dose": "Basal 24u/day",
+        "type": "Automated basal-IQ"
+      },
+      {
+        "name": "Glucagon",
+        "dose": "1mg",
+        "frequency": "as needed"
+      }
+    ],
+    "labs": {
+      "a1c": [
+        {
+          "value": 6.8,
+          "date": "2025-10-10"
+        },
+        {
+          "value": 7.1,
+          "date": "2025-07-15"
+        }
+      ]
+    },
+    "messages": [
+      {
+        "date": "2025-11-20",
+        "from": "patient",
+        "content": "Had another low at 2am last night. Didn't feel it coming. This is the 3rd one this week."
+      }
+    ],
+    "surveys": {
+      "ddas": {
+        "score": 2.8,
+        "date": "2025-10-28"
+      },
+      "phq9": {
+        "score": 8,
+        "date": "2025-10-28"
+      }
+    },
+    "metadata": {
+      "last_modified": "2026-02-04T22:21:21.169032"
+    },
+    "participant_overview": {
+      "clinic_member": "Yes"
+    }
+  },
+  {
+    "conditions": {
+      "icd10_codes": [
+        "E11.9",
+        "I10",
+        "N18.3"
+      ],
+      "primary_diagnosis": "Type 2 Diabetes",
+      "secondary_conditions": [
+        "Hypertension",
+        "Stage 3 CKD"
+      ]
+    },
+    "demographics": {
+      "age": 68,
+      "dob": "1955-12-10",
+      "email": "p.martinez@email.com",
+      "gender": "Female",
+      "name": "Patricia Martinez",
+      "phone": "(555) 456-7890"
+    },
+    "devices": {
+      "bgm": {
+        "brand": "Contour",
+        "model": "Next One"
+      },
+      "bp_monitor": {
+        "brand": "Withings",
+        "model": "BPM Connect"
+      }
+    },
+    "labs": {
+      "a1c": [
+        {
+          "date": "2025-09-20",
+          "value": 7.8
+        }
+      ],
+      "kidney": {
+        "creatinine": 1.4,
+        "egfr": 48
+      }
+    },
+    "medications": [
+      {
+        "dose": "25mg",
+        "frequency": "once daily",
+        "name": "Jardiance"
+      },
+      {
+        "dose": "10mg",
+        "frequency": "once daily",
+        "name": "Amlodipine"
+      },
+      {
+        "dose": "100mg",
+        "frequency": "once daily",
+        "name": "Losartan"
+      }
+    ],
+    "messages": [
+      {
+        "content": "My blood pressure has been higher than usual this week, even though I'm taking my medicines.",
+        "date": "2025-11-19",
+        "from": "patient"
+      }
+    ],
+    "metadata": {
+      "last_modified": "2026-02-04T22:21:21.169032"
+    },
+    "participant_overview": {
+      "clinic_member": "No"
+    },
+    "recent_events": {
+      "avg_bp_7day": "165/92",
+      "hypertensive_events": [
+        {
+          "bp_value": "178/98",
+          "context": "Morning reading, after medication",
+          "date": "2025-11-19",
+          "time": "8:00 AM"
+        },
+        {
+          "bp_value": "182/102",
+          "context": "Evening, had salty dinner",
+          "date": "2025-11-18",
+          "time": "7:30 PM"
+        }
+      ]
+    },
+    "surveys": {
+      "medication_adherence": {
+        "score": "Good - occasional missed doses"
+      }
+    }
+  },
+  {
+    "demographics": {
+      "name": "Thomas Davis",
+      "age": 73,
+      "gender": "Female",
+      "dob": "1953-02-21",
+      "phone": "(555) 980-4481",
+      "email": "thomas.davis@email.com"
+    },
+    "conditions": {
+      "primary_diagnosis": "Type 2 Diabetes",
+      "secondary_conditions": [],
+      "icd10_codes": [
+        "E11.9"
+      ]
+    },
+    "devices": {},
+    "recent_events": {
+      "enrollment_date": "2026-02-01",
+      "status": "Pending initial setup"
+    },
+    "medications": [
+      {
+        "name": "Metformin",
+        "dose": "500mg",
+        "frequency": "once daily"
+      }
+    ],
+    "labs": {
+      "a1c": [
+        {
+          "value": 8.0,
+          "date": "2025-12-28"
+        }
+      ]
+    },
+    "metadata": {
+      "last_modified": "2026-02-04T22:21:21.169032"
+    },
+    "participant_overview": {
+      "clinic_member": "No"
+    }
+  },
+  {
+    "demographics": {
+      "name": "Jennifer Hernandez",
+      "age": 59,
+      "gender": "Male",
+      "dob": "1967-02-18",
+      "phone": "(555) 838-4022",
+      "email": "jennifer.hernandez@email.com"
+    },
+    "conditions": {
+      "primary_diagnosis": "Type 1 Diabetes",
+      "secondary_conditions": [
+        "Hypoglycemia unawareness"
+      ],
+      "icd10_codes": [
+        "E10.9"
+      ]
+    },
+    "devices": {
+      "cgm": {
+        "brand": "Dexcom",
+        "model": "G7",
+        "sensor_number": "SN-2024-1515"
+      },
+      "insulin_pump": {
+        "brand": "Tandem",
+        "model": "DASH"
+      }
+    },
+    "recent_events": {
+      "hypoglycemic_events": [
+        {
+          "date": "2026-02-02",
+          "time": "3:12 AM",
+          "bg_value": 63,
+          "context": "Overnight, no warning symptoms",
+          "treatment": "15g glucose tabs"
+        }
+      ],
+      "avg_glucose_7day": 150,
+      "time_in_range": "59%"
+    },
+    "medications": [
+      {
+        "name": "Insulin via pump",
+        "dose": "Basal 20u/day",
+        "type": "Automated basal-IQ"
+      },
+      {
+        "name": "Glucagon",
+        "dose": "1mg",
+        "frequency": "as needed"
+      }
+    ],
+    "labs": {
+      "a1c": [
+        {
+          "value": 6.7,
+          "date": "2025-12-29"
+        }
+      ]
+    },
+    "messages": [
+      {
+        "date": "2026-02-01",
+        "from": "patient",
+        "content": "I missed a few doses because I ran out of medication."
+      }
+    ],
+    "metadata": {
+      "last_modified": "2026-02-04T22:21:21.169032"
+    },
+    "participant_overview": {
+      "clinic_member": "Yes"
+    }
+  },
+  {
+    "demographics": {
+      "name": "William Anderson",
+      "age": 47,
+      "gender": "Female",
+      "dob": "1979-02-15",
+      "phone": "(555) 703-5683",
+      "email": "william.anderson@email.com"
+    },
+    "conditions": {
+      "primary_diagnosis": "Type 2 Diabetes",
+      "secondary_conditions": [
+        "Hypertension",
+        "Hyperlipidemia",
+        "Stage 3 CKD"
+      ],
+      "icd10_codes": [
+        "E11.9",
+        "I10",
+        "E78.5",
+        "N18.3"
+      ]
+    },
+    "devices": {
+      "bgm": {
+        "brand": "Contour",
+        "model": "Ultra Mini"
+      },
+      "bp_monitor": {
+        "brand": "Omron",
+        "model": "BP7350"
+      }
+    },
+    "recent_events": {
+      "avg_glucose_7day": 178,
+      "avg_bp_7day": "142/93",
+      "time_in_range": "45%"
+    },
+    "medications": [
+      {
+        "name": "Jardiance",
+        "dose": "25mg",
+        "frequency": "once daily"
+      },
+      {
+        "name": "Lisinopril",
+        "dose": "20mg",
+        "frequency": "once daily"
+      },
+      {
+        "name": "Atorvastatin",
+        "dose": "40mg",
+        "frequency": "once daily"
+      },
+      {
+        "name": "Metformin",
+        "dose": "1000mg",
+        "frequency": "twice daily"
+      }
+    ],
+    "labs": {
+      "a1c": [
+        {
+          "value": 8.5,
+          "date": "2025-12-26"
+        }
+      ],
+      "kidney": {
+        "egfr": 45,
+        "creatinine": 1.5
+      },
+      "lipids": {
+        "hdl": 39,
+        "ldl": 113,
+        "triglycerides": 181
+      }
+    },
+    "metadata": {
+      "last_modified": "2026-02-04T22:21:21.169032"
+    },
+    "participant_overview": {
+      "clinic_member": "Yes"
+    }
+  },
+  {
+    "demographics": {
+      "name": "Helen Perez",
+      "age": 66,
+      "gender": "Female",
+      "dob": "1960-02-20",
+      "phone": "(555) 534-2357",
+      "email": "helen.perez@email.com"
+    },
+    "conditions": {
+      "primary_diagnosis": "Type 2 Diabetes",
+      "secondary_conditions": [
+        "Depression",
+        "Anxiety"
+      ],
+      "icd10_codes": [
+        "E11.9",
+        "F33.1",
+        "F41.1"
+      ]
+    },
+    "devices": {
+      "bgm": {
+        "brand": "OneTouch",
+        "model": "Ultra"
+      }
+    },
+    "recent_events": {
+      "avg_glucose_7day": 151,
+      "medication_adherence": "Poor - frequent missed doses"
+    },
+    "medications": [
+      {
+        "name": "Metformin",
+        "dose": "1000mg",
+        "frequency": "twice daily"
+      },
+      {
+        "name": "Sertraline",
+        "dose": "10mg",
+        "frequency": "once daily"
+      }
+    ],
+    "surveys": {
+      "phq9": {
+        "score": 11,
+        "date": "2026-02-02"
+      },
+      "ddas": {
+        "score": 4.4,
+        "date": "2026-01-27"
+      }
+    },
+    "labs": {
+      "a1c": [
+        {
+          "value": 9.4,
+          "date": "2025-12-05"
+        }
+      ]
+    },
+    "metadata": {
+      "last_modified": "2026-02-04T22:21:21.169032"
+    },
+    "participant_overview": {
+      "clinic_member": "Yes"
+    }
+  },
+  {
+    "demographics": {
+      "name": "Matthew Thomas",
+      "age": 38,
+      "gender": "Female",
+      "dob": "1988-02-13",
+      "phone": "(555) 394-7115",
+      "email": "matthew.thomas@email.com"
+    },
+    "conditions": {
+      "primary_diagnosis": "Type 1 Diabetes",
+      "secondary_conditions": [],
+      "icd10_codes": [
+        "E10.9"
+      ]
+    },
+    "devices": {
+      "cgm": {
+        "brand": "Dexcom",
+        "model": "Libre 3",
+        "sensor_number": "SN-2024-7901"
+      },
+      "insulin_pump": {
+        "brand": "Medtronic",
+        "model": "770G"
+      }
+    },
+    "recent_events": {
+      "hypoglycemic_events": [
+        {
+          "date": "2026-02-03",
+          "time": "3:11 AM",
+          "bg_value": 61,
+          "context": "Overcorrection from meal bolus",
+          "treatment": "15g glucose tabs"
+        }
+      ],
+      "avg_glucose_7day": 136,
+      "time_in_range": "71%"
+    },
+    "medications": [
+      {
+        "name": "Insulin via pump",
+        "dose": "Basal 20u/day",
+        "type": "Automated basal-IQ"
+      },
+      {
+        "name": "Glucagon",
+        "dose": "1mg",
+        "frequency": "as needed"
+      }
+    ],
+    "labs": {
+      "a1c": [
+        {
+          "value": 6.6,
+          "date": "2025-11-16"
+        }
+      ]
+    },
+    "messages": [
+      {
+        "date": "2026-02-03",
+        "from": "patient",
+        "content": "Had some questions about the new device."
+      }
+    ],
+    "metadata": {
+      "last_modified": "2026-02-04T22:21:21.169032"
+    },
+    "participant_overview": {
+      "clinic_member": "No"
+    }
+  },
+  {
+    "demographics": {
+      "name": "Robert Thompson",
+      "age": 52,
+      "gender": "Male",
+      "dob": "1974-02-16",
+      "phone": "(555) 700-6290",
+      "email": "robert.thompson@email.com"
+    },
+    "conditions": {
+      "primary_diagnosis": "Type 2 Diabetes",
+      "secondary_conditions": [
+        "Hypertension",
+        "Hyperlipidemia",
+        "Stage 3 CKD"
+      ],
+      "icd10_codes": [
+        "E11.9",
+        "I10",
+        "E78.5",
+        "N18.3"
+      ]
+    },
+    "devices": {
+      "bgm": {
+        "brand": "Contour",
+        "model": "Ultra Mini"
+      },
+      "bp_monitor": {
+        "brand": "Omron",
+        "model": "BP7350"
+      }
+    },
+    "recent_events": {
+      "avg_glucose_7day": 167,
+      "avg_bp_7day": "140/95",
+      "time_in_range": "53%"
+    },
+    "medications": [
+      {
+        "name": "Jardiance",
+        "dose": "25mg",
+        "frequency": "once daily"
+      },
+      {
+        "name": "Lisinopril",
+        "dose": "20mg",
+        "frequency": "once daily"
+      },
+      {
+        "name": "Atorvastatin",
+        "dose": "40mg",
+        "frequency": "once daily"
+      },
+      {
+        "name": "Metformin",
+        "dose": "1000mg",
+        "frequency": "twice daily"
+      }
+    ],
+    "labs": {
+      "a1c": [
+        {
+          "value": 8.1,
+          "date": "2026-01-12"
+        }
+      ],
+      "kidney": {
+        "egfr": 49,
+        "creatinine": 1.4
+      },
+      "lipids": {
+        "hdl": 41,
+        "ldl": 135,
+        "triglycerides": 223
+      }
+    },
+    "metadata": {
+      "last_modified": "2026-02-04T22:21:21.169032"
+    },
+    "participant_overview": {
+      "clinic_member": "Yes"
+    }
+  },
+  {
+    "demographics": {
+      "name": "Donna Gonzalez",
+      "age": 45,
+      "gender": "Female",
+      "dob": "1981-02-14",
+      "phone": "(555) 993-7158",
+      "email": "donna.gonzalez@email.com"
+    },
+    "conditions": {
+      "primary_diagnosis": "Type 2 Diabetes",
+      "secondary_conditions": [
+        "Hypertension",
+        "Hyperlipidemia"
+      ],
+      "icd10_codes": [
+        "E11.9",
+        "I10",
+        "E78.5"
+      ]
+    },
+    "devices": {
+      "bp_monitor": {
+        "brand": "Withings",
+        "model": "Track"
+      }
+    },
+    "recent_events": {
+      "hypertensive_events": [
+        {
+          "date": "2026-02-01",
+          "time": "9:38 AM",
+          "bp_value": "164/103",
+          "context": "Morning reading, after medication"
+        }
+      ],
+      "avg_bp_7day": "154/98"
+    },
+    "medications": [
+      {
+        "name": "Amlodipine",
+        "dose": "5mg",
+        "frequency": "once daily"
+      },
+      {
+        "name": "Metformin",
+        "dose": "500mg",
+        "frequency": "twice daily"
+      }
+    ],
+    "labs": {
+      "a1c": [
+        {
+          "value": 8.0,
+          "date": "2025-12-31"
+        }
+      ]
+    },
+    "metadata": {
+      "last_modified": "2026-02-04T22:21:21.169032"
+    },
+    "participant_overview": {
+      "clinic_member": "Yes"
+    }
+  },
+  {
+    "conditions": {
+      "icd10_codes": [
+        "E11.9",
+        "I10",
+        "E78.5",
+        "N18.3"
+      ],
+      "primary_diagnosis": "Type 2 Diabetes",
+      "secondary_conditions": [
+        "Hypertension",
+        "Hyperlipidemia",
+        "Stage 3 CKD"
+      ]
+    },
+    "demographics": {
+      "age": 41,
+      "dob": "1985-02-13",
+      "email": "lisa.williams@email.com",
+      "gender": "Female",
+      "name": "Lisa Williams",
+      "phone": "(555) 457-5102"
+    },
+    "devices": {
+      "bgm": {
+        "brand": "Contour",
+        "model": "Ultra Mini"
+      },
+      "bp_monitor": {
+        "brand": "Omron",
+        "model": "BP7350"
+      }
+    },
+    "labs": {
+      "a1c": [
+        {
+          "date": "2026-01-07",
+          "value": 7.3
+        }
+      ],
+      "kidney": {
+        "creatinine": 1.3,
+        "egfr": 50
+      },
+      "lipids": {
+        "hdl": 43,
+        "ldl": 126,
+        "triglycerides": 187
+      }
+    },
+    "medications": [
+      {
+        "dose": "25mg",
+        "frequency": "once daily",
+        "name": "Jardiance"
+      },
+      {
+        "dose": "20mg",
+        "frequency": "once daily",
+        "name": "Lisinopril"
+      },
+      {
+        "dose": "40mg",
+        "frequency": "once daily",
+        "name": "Atorvastatin"
+      },
+      {
+        "dose": "1000mg",
+        "frequency": "twice daily",
+        "name": "Metformin"
+      }
+    ],
+    "metadata": {
+      "last_modified": "2026-02-04T22:21:21.169032"
+    },
+    "participant_overview": {
+      "clinic_member": "Unknown"
+    },
+    "recent_events": {
+      "avg_bp_7day": "152/89",
+      "avg_glucose_7day": 184,
+      "time_in_range": "55%"
+    }
+  },
+  {
+    "demographics": {
+      "name": "Matthew Lee",
+      "age": 49,
+      "gender": "Female",
+      "dob": "1977-02-15",
+      "phone": "(555) 943-4830",
+      "email": "matthew.lee@email.com"
+    },
+    "conditions": {
+      "primary_diagnosis": "Type 1 Diabetes",
+      "secondary_conditions": [
+        "Celiac disease"
+      ],
+      "icd10_codes": [
+        "E10.9"
+      ]
+    },
+    "devices": {
+      "cgm": {
+        "brand": "FreeStyle",
+        "model": "Libre 3",
+        "sensor_number": "SN-2024-4419"
+      },
+      "insulin_pump": {
+        "brand": "Omnipod",
+        "model": "t:slim X2"
+      }
+    },
+    "recent_events": {
+      "hypoglycemic_events": [
+        {
+          "date": "2026-02-03",
+          "time": "3:36 AM",
+          "bg_value": 61,
+          "context": "After exercise",
+          "treatment": "16g glucose tabs"
+        }
+      ],
+      "avg_glucose_7day": 141,
+      "time_in_range": "69%"
+    },
+    "medications": [
+      {
+        "name": "Insulin via pump",
+        "dose": "Basal 22u/day",
+        "type": "Automated basal-IQ"
+      },
+      {
+        "name": "Glucagon",
+        "dose": "1mg",
+        "frequency": "as needed"
+      }
+    ],
+    "labs": {
+      "a1c": [
+        {
+          "value": 6.9,
+          "date": "2025-12-27"
+        }
+      ]
+    },
+    "metadata": {
+      "last_modified": "2026-02-04T22:21:21.169032"
+    },
+    "participant_overview": {
+      "clinic_member": "No"
+    }
+  },
+  {
+    "demographics": {
+      "name": "Michael Perez",
+      "age": 35,
+      "gender": "Male",
+      "dob": "1991-02-12",
+      "phone": "(555) 754-7510",
+      "email": "michael.perez@email.com"
+    },
+    "conditions": {
+      "primary_diagnosis": "Type 2 Diabetes",
+      "secondary_conditions": [
+        "Hypertension",
+        "Hyperlipidemia",
+        "Stage 3 CKD"
+      ],
+      "icd10_codes": [
+        "E11.9",
+        "I10",
+        "E78.5",
+        "N18.3"
+      ]
+    },
+    "devices": {
+      "bgm": {
+        "brand": "OneTouch",
+        "model": "Ultra Mini"
+      },
+      "bp_monitor": {
+        "brand": "Omron",
+        "model": "BP7350"
+      }
+    },
+    "recent_events": {
+      "avg_glucose_7day": 199,
+      "avg_bp_7day": "160/93",
+      "time_in_range": "56%"
+    },
+    "medications": [
+      {
+        "name": "Jardiance",
+        "dose": "25mg",
+        "frequency": "once daily"
+      },
+      {
+        "name": "Lisinopril",
+        "dose": "20mg",
+        "frequency": "once daily"
+      },
+      {
+        "name": "Atorvastatin",
+        "dose": "40mg",
+        "frequency": "once daily"
+      },
+      {
+        "name": "Metformin",
+        "dose": "1000mg",
+        "frequency": "twice daily"
+      }
+    ],
+    "labs": {
+      "a1c": [
+        {
+          "value": 8.3,
+          "date": "2025-12-20"
+        }
+      ],
+      "kidney": {
+        "egfr": 43,
+        "creatinine": 1.6
+      },
+      "lipids": {
+        "hdl": 40,
+        "ldl": 140,
+        "triglycerides": 182
+      }
+    },
+    "messages": [
+      {
+        "date": "2026-02-02",
+        "from": "patient",
+        "content": "I missed a few doses because I ran out of medication."
+      }
+    ],
+    "metadata": {
+      "last_modified": "2026-02-04T22:21:21.169032"
+    },
+    "participant_overview": {
+      "clinic_member": "Yes"
+    }
+  },
+  {
+    "demographics": {
+      "name": "Helen Moore",
+      "age": 40,
+      "gender": "Male",
+      "dob": "1986-02-13",
+      "phone": "(555) 577-4307",
+      "email": "helen.moore@email.com"
+    },
+    "conditions": {
+      "primary_diagnosis": "Type 2 Diabetes",
+      "secondary_conditions": [],
+      "icd10_codes": [
+        "E11.9"
+      ]
+    },
+    "devices": {},
+    "recent_events": {
+      "enrollment_date": "2026-01-29",
+      "status": "Pending initial setup"
+    },
+    "medications": [
+      {
+        "name": "Metformin",
+        "dose": "500mg",
+        "frequency": "once daily"
+      }
+    ],
+    "labs": {
+      "a1c": [
+        {
+          "value": 7.0,
+          "date": "2025-11-16"
+        }
+      ]
+    },
+    "metadata": {
+      "last_modified": "2026-02-04T22:21:21.169032"
+    },
+    "participant_overview": {
+      "clinic_member": "No"
+    }
+  },
+  {
+    "demographics": {
+      "name": "Jennifer Johnson",
+      "age": 41,
+      "gender": "Female",
+      "dob": "1985-02-13",
+      "phone": "(555) 506-2825",
+      "email": "jennifer.johnson@email.com"
+    },
+    "conditions": {
+      "primary_diagnosis": "Type 2 Diabetes",
+      "secondary_conditions": [
+        "Hypertension"
+      ],
+      "icd10_codes": [
+        "E11.9",
+        "I10"
+      ]
+    },
+    "devices": {
+      "bgm": {
+        "brand": "OneTouch",
+        "model": "Next One"
+      },
+      "bp_monitor": {
+        "brand": "Withings",
+        "model": "BPM Connect"
+      }
+    },
+    "recent_events": {
+      "hyperglycemic_events": [
+        {
+          "date": "2026-02-02",
+          "time": "8:14 PM",
+          "bg_value": 447,
+          "context": "After high-carb meal"
+        }
+      ],
+      "avg_glucose_7day": 198,
+      "time_in_range": "36%"
+    },
+    "medications": [
+      {
+        "name": "Metformin",
+        "dose": "1000mg",
+        "frequency": "twice daily"
+      },
+      {
+        "name": "Jardiance",
+        "dose": "1.5mg",
+        "frequency": "once daily"
+      }
+    ],
+    "labs": {
+      "a1c": [
+        {
+          "value": 9.2,
+          "date": "2026-01-07"
+        }
+      ]
+    },
+    "metadata": {
+      "last_modified": "2026-02-04T22:21:21.169032"
+    },
+    "participant_overview": {
+      "clinic_member": "Yes"
+    }
+  }
+]

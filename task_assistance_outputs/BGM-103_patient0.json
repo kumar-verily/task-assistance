@@ -1,0 +1,125 @@
+{
+  "timestamp": "2026-02-03T21:32:17.912131",
+  "todo_id": "BGM-103",
+  "patient_index": 0,
+  "patient_name": "Silvia Jones",
+  "detail_view": {
+    "task_title": "Review and Manage Post-Dinner Hyperglycemia",
+    "patient_name": "Silvia Jones",
+    "patient_initial": "S",
+    "priority": "P2",
+    "ai_insight": {
+      "summary": "Silvia Jones experienced significant post-dinner hyperglycemic events on 11/19/25, with glucose readings of 425 and 455 mg/dL. Despite following her meal plan and administering correction doses of Humalog, her glucose levels have been consistently high. Recent labs show an A1C of 9.2%, indicating poor glycemic control.",
+      "key_points": [
+        "Bullet point 1: BG readings of 425 and 455 mg/dL on 11/19/25 post-dinner.",
+        "Bullet point 2: A1C level of 9.2% as of 10/15/25.",
+        "Bullet point 3: Patient reports adherence to meal plan.",
+        "Bullet point 4: Currently on Humalog with fixed dosing regimen."
+      ]
+    },
+    "participant_overview": {
+      "conditions": [
+        "Type 2 Diabetes",
+        "Hypertension",
+        "Hyperlipidemia"
+      ],
+      "devices": [
+        "OneTouch Ultra Mini",
+        "Omron BP7350",
+        "Dexcom G7"
+      ],
+      "clinic_member": "Yes",
+      "insulin_strategy": "Fixed dosing",
+      "other_relevant_info": [
+        "Recent DDAS score of 3.2 indicating distress",
+        "PHQ9 score of 12 suggesting moderate depression"
+      ]
+    },
+    "clinical_incident": {
+      "title": "Hyperglycemic Events: Detailed Timeline",
+      "timeline": [
+        {
+          "action": "Pre-dinner insulin administration",
+          "details": "Humalog 8 units at 6:25 PM",
+          "timestamp": "2025-11-19T18:25:00"
+        },
+        {
+          "action": "Post-meal BG spike",
+          "details": "BG reached 455 mg/dL",
+          "timestamp": "2025-11-19T18:40:00"
+        },
+        {
+          "action": "Correction dose",
+          "details": "Humalog 8 units post-meal spike",
+          "timestamp": "2025-11-19"
+        },
+        {
+          "action": "Second post-dinner BG spike",
+          "details": "BG reached 425 mg/dL, corrected with Humalog 6 units at 7:28 PM",
+          "timestamp": "2025-11-19T19:25:00"
+        }
+      ]
+    },
+    "suggested_messages": [
+      {
+        "type": "patient_facing",
+        "category": "Education",
+        "message": "Hi Silvia, we've noticed your after-dinner glucose levels have been quite high, even after taking insulin. It's important we address this to help you feel better and manage your diabetes more effectively. Could we discuss your current meal plan and see if there are any adjustments we can make?",
+        "rationale": "Educating and engaging the patient about their post-dinner hyperglycemia to encourage self-management and adherence to dietary advice."
+      },
+      {
+        "type": "patient_facing",
+        "category": "Question",
+        "message": "Could you share more about the types of food you're eating for dinner? Understanding your meal composition can help us tailor your insulin dosing more closely to your needs.",
+        "rationale": "Gathering more detailed dietary information to assess potential causes of post-dinner hyperglycemia."
+      },
+      {
+        "type": "care_team_note",
+        "category": "Assessment",
+        "message": "Patient experiences significant post-dinner hyperglycemia. Recent events include BG levels over 400 mg/dL. A1C at 9.2%. Discuss potential for adjusting insulin regimen and consider CGM data for a more comprehensive review.",
+        "rationale": "Highlighting the need for a potential insulin regimen adjustment and the value of CGM data in managing the patient's hyperglycemia."
+      }
+    ],
+    "protocol_steps": [
+      "Review recent CGM data for patterns of hyperglycemia, particularly post-prandial.",
+      "Educate Silvia on the importance of meal composition and its impact on post-prandial glucose levels.",
+      "Assess insulin dosing regimen and consider adjustments based on meal composition and CGM data insights."
+    ],
+    "clinical_assessment": {
+      "severity": "Severe",
+      "urgency": "Urgent",
+      "trends": "Worsening post-prandial hyperglycemia",
+      "contributing_factors": [
+        "Inadequate post-prandial insulin dosing",
+        "Possible dietary mismanagement"
+      ],
+      "recommendations": [
+        "Consider insulin regimen adjustment",
+        "Dietary review and education"
+      ]
+    },
+    "relevant_data_points": [
+      {
+        "category": "Glucose",
+        "item": "Post-dinner BG levels",
+        "value": "425 and 455 mg/dL",
+        "date": "2025-11-19",
+        "significance": "Indicates severe post-prandial hyperglycemia, suggesting insulin regimen may be inadequate."
+      },
+      {
+        "category": "Lab",
+        "item": "A1C",
+        "value": "9.2%",
+        "date": "2025-10-15",
+        "significance": "Reflects poor glycemic control over the past 3 months."
+      }
+    ],
+    "protocol": {
+      "task_code": "BGM-103",
+      "task_name": "REVIEW BG \\> 250",
+      "priority": "P2",
+      "content": "Task: REVIEW BG \\> 250\nCode: BGM-103\nPriority: P2\nProgram: lightpath\nTrigger: BGM\nCriteria: Triggered when a member has had 1 or more \\[BGM \\> 250 mg/dL in the last 24 hours\\]\nSteps (general): HC Check for any higher priority BG triggers (BGM \\- 100, 101, 104\\) \\- if these exists \\- reassign this to do to RN If no higher BG triggers, follow the steps below: Educate participant about hyperglycemia, assess what might be causing high BG and set goals to lower BG, if applicable Encourage logging meals If no A1c \\- [A1c & A1c LGC Kit](https://docs.google.com/document/d/1qB4IHB-eePakH4R3tdjrxQMcM6CZDPs20YfkPMo8Yg0/edit?pli=1&tab=t.xu8hpvpc97rk) [Offer CGM](https://docs.google.com/document/d/1qB4IHB-eePakH4R3tdjrxQMcM6CZDPs20YfkPMo8Yg0/edit?pli=1&tab=t.988lmkgpa188) (if not offered yet) Set goals once identified specific time/ food/ activity when BG is high [NEW Draft Lightpath Educational Content](https://docs.google.com/document/d/1-b5-XWl0l0HY1ly7AoBwX1jGzedOZ-PXXPNTH9KgbyU/edit?tab=t.cx0jez7pifvh)\nRoles: HC, RN",
+      "full_text": "| BGM-103 | REVIEW BG \\> 250 |\n| :---- | :---- |\n| PRIORITY | P2 |\n| TRIGGER | BGM |\n| TRIGGERING CRITERIA | Triggered when a member has had 1 or more \\[BGM \\> 250 mg/dL in the last 24 hours\\]  |\n| STEPS | HC Check for any higher priority BG triggers (BGM \\- 100, 101, 104\\) \\- if these exists \\- reassign this to do to RN If no higher BG triggers, follow the steps below: Educate participant about hyperglycemia, assess what might be causing high BG and set goals to lower BG, if applicable Encourage logging meals If no A1c \\- [A1c & A1c LGC Kit](https://docs.google.com/document/d/1qB4IHB-eePakH4R3tdjrxQMcM6CZDPs20YfkPMo8Yg0/edit?pli=1&tab=t.xu8hpvpc97rk) [Offer CGM](https://docs.google.com/document/d/1qB4IHB-eePakH4R3tdjrxQMcM6CZDPs20YfkPMo8Yg0/edit?pli=1&tab=t.988lmkgpa188) (if not offered yet) Set goals once identified specific time/ food/ activity when BG is high [NEW Draft Lightpath Educational Content](https://docs.google.com/document/d/1-b5-XWl0l0HY1ly7AoBwX1jGzedOZ-PXXPNTH9KgbyU/edit?tab=t.cx0jez7pifvh) |\n"
+    }
+  }
+}

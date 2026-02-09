@@ -1,0 +1,48 @@
+{
+  "firestore": {
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
+  },
+  "hosting": {
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/api/todos",
+        "function": "get_todos"
+      },
+      {
+        "source": "/api/patients",
+        "function": "get_patients"
+      },
+      {
+        "source": "/api/patient",
+        "function": "get_patient"
+      },
+      {
+        "source": "/api/check-cached-tasks",
+        "function": "check_cached_tasks"
+      },
+      {
+        "source": "/api/get-protocol",
+        "function": "get_protocol"
+      },
+      {
+        "source": "/api/generate-detail",
+        "function": "generate_detail"
+      },
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  },
+  "functions": {
+    "source": "functions",
+    "runtime": "python311"
+  }
+}

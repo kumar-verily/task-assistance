@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinical ToDo Viewer - Static Demo</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+            background: #f5f7fa;
+            color: #2c3e50;
+            line-height: 1.6;
+        }
+        .app-container {
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .sidebar {
+            width: 320px;
+            background: white;
+            border-right: 1px solid #e1e8ed;
+            display: flex;
+            flex-direction: column;
+        }
+        .tasks-pane {
+            width: 400px;
+            background: white;
+            border-right: 1px solid #e1e8ed;
+            display: flex;
+            flex-direction: column;
+        }
+        .main-content {
+            flex: 1;
+            overflow-y: auto;
+            background: #f5f7fa;
+        }
+        .sidebar-header {
+            padding: 24px;
+            border-bottom: 1px solid #e1e8ed;
+        }
+        .sidebar-header h1 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+        .pickers-section {
+            padding: 20px;
+            flex: 1;
+            overflow-y: auto;
+        }
+        .picker-group {
+            margin-bottom: 24px;
+        }
+        .picker-label {
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: #64748b;
+            margin-bottom: 8px;
+        }
+        .picker-select {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            font-size: 14px;
+            background: white;
+            cursor: pointer;
+        }
+        .edit-patient-btn {
+            padding: 8px 16px;
+            background: #f1f5f9;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            font-size: 13px;
+            cursor: pointer;
+            width: 100%;
+        }
+        .edit-patient-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        .todo-list {
+            margin-top: 20px;
+            background: #f8fafc;
+            border-radius: 8px;
+            padding: 12px;
+        }
+        .todo-list-header {
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: #64748b;
+            margin-bottom: 8px;
+        }
+        .patient-item {
+            padding: 14px 16px;
+            background: white;
+            border-radius: 6px;
+            margin-bottom: 6px;
+            cursor: pointer;
+            border: 1px solid #e2e8f0;
+            transition: all 0.2s;
+        }
+        .patient-item:hover {
+            border-color: #3b82f6;
+            background: #f8fafc;
+        }
+        .patient-item.selected {
+            border-color: #3b82f6;
+            background: #eff6ff;
+        }
+        .patient-item-name {
+            font-size: 14px;
+            font-weight: 500;
+            color: #1e293b;
+        }
+        .patient-item-info {
+            font-size: 12px;
+            color: #64748b;
+        }
+        .todo-item {
+            padding: 12px;
+            background: white;
+            border-radius: 6px;
+            margin-bottom: 8px;
+            cursor: pointer;
+            border: 1px solid #e2e8f0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .todo-item:hover {
+            border-color: #3b82f6;
+        }
+        .todo-item.selected {
+            background: #eff6ff;
+            border-color: #3b82f6;
+        }
+        .todo-item.cached {
+            background: #d1fae5;
+            border-color: #10b981;
+        }
+        .cached-badge {
+            background: #059669;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-size: 10px;
+            font-weight: 600;
+        }
+        .priority-badge {
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+        .priority-p0 { background: #fee2e2; color: #991b1b; }
+        .priority-p1 { background: #fef3c7; color: #92400e; }
+        .priority-p2 { background: #e0e7ff; color: #3730a3; }
+        .category-header {
+            font-size: 11px;
+            font-weight: 600;
+            color: #64748b;
+            margin: 16px 8px 8px 8px;
+            text-transform: uppercase;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 6px;
+        }
+        .empty-state {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            color: #64748b;
+            padding: 40px;
+            text-align: center;
+        }
+        .demo-badge {
+            padding: 4px 12px;
+            background: #fef3c7;
+            color: #92400e;
+            border-radius: 6px;
+            font-size: 11px;
+            font-weight: 600;
+            margin-left: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h1>Patients <span class="demo-badge">STATIC DEMO</span></h1>
+                <p style="font-size: 13px; color: #64748b;">3 sample patients</p>
+            </div>
+            <div class="pickers-section">
+                <div class="picker-group">
+                    <div class="picker-label">Your Role</div>
+                    <select id="roleSelect" class="picker-select">
+                        <option value="RN">RN - Registered Nurse</option>
+                        <option value="HC">HC - Health Coach</option>
+                    </select>
+                </div>
+                <button id="editPatientBtn" class="edit-patient-btn" disabled>
+                    View Patient Chart (Disabled)
+                </button>
+                <div class="todo-list">
+                    <div class="todo-list-header">All Patients</div>
+                    <div id="patientListContainer"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tasks-pane">
+            <div class="sidebar-header">
+                <h1>Tasks</h1>
+                <p style="font-size: 13px; color: #64748b;" id="tasksSubheader">Select a patient</p>
+            </div>
+            <div class="pickers-section">
+                <div class="todo-list">
+                    <div class="todo-list-header">Clinical Tasks</div>
+                    <div id="todoListContainer"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content" id="mainContent">
+            <div class="empty-state">
+                <h2>Welcome to Clinical ToDo Viewer</h2>
+                <p>Select a patient and task to view details</p>
+                <div style="margin-top: 24px; padding: 16px; background: #fef3c7; border-radius: 8px; max-width: 500px;">
+                    <strong>Static Demo:</strong> This version uses hardcoded data. Full version requires backend for AI generation.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Sample data
+        const patients = [
+            { demographics: { name: "Silvia Jones", age: 52, gender: "Female" }, participant_overview: { clinic_member: "Yes" } },
+            { demographics: { name: "Marcus Thompson", age: 45, gender: "Male" }, participant_overview: { clinic_member: "Yes" } },
+            { demographics: { name: "Patricia Martinez", age: 68, gender: "Female" }, participant_overview: { clinic_member: "No" } }
+        ];
+
+        const todos = [
+            { id: "BGM-104", name: "Hyperglycemia > 400, daily", priority: "P0", category: "Hyperglycemia" },
+            { id: "BGM-100", name: "Hypoglycemia < 54", priority: "P0", category: "Hypoglycemia" },
+            { id: "BGM-103", name: "Hyperglycemia > 250", priority: "P2", category: "Hyperglycemia" },
+            { id: "BP-105", name: "Hypertension (High): BP > 180/120", priority: "P0", category: "Hypertension" }
+        ];
+
+        let selectedPatient = null;
+        let selectedPatientIndex = null;
+        let selectedTodo = null;
+
+        // Render patients
+        function renderPatients() {
+            const container = document.getElementById('patientListContainer');
+            container.innerHTML = '';
+            patients.forEach((patient, index) => {
+                const div = document.createElement('div');
+                div.className = 'patient-item';
+                div.innerHTML = `
+                    <div class="patient-item-name">${patient.demographics.name}</div>
+                    <div class="patient-item-info">Age ${patient.demographics.age}, ${patient.demographics.gender}</div>
+                `;
+                div.onclick = () => selectPatient(index);
+                container.appendChild(div);
+            });
+        }
+
+        function selectPatient(index) {
+            selectedPatientIndex = index;
+            selectedPatient = patients[index];
+            document.querySelectorAll('.patient-item').forEach((item, i) => {
+                item.classList.toggle('selected', i === index);
+            });
+            document.getElementById('tasksSubheader').textContent = `Tasks for ${selectedPatient.demographics.name}`;
+            document.getElementById('editPatientBtn').disabled = false;
+            renderTodos();
+        }
+
+        function renderTodos() {
+            const container = document.getElementById('todoListContainer');
+            if (!selectedPatient) {
+                container.innerHTML = '<div style="padding: 20px; text-align: center; color: #64748b; font-size: 13px;">Select a patient</div>';
+                return;
+            }
+            container.innerHTML = '';
+            const priorityOrder = ['P0', 'P2'];
+            priorityOrder.forEach(priority => {
+                const items = todos.filter(t => t.priority === priority);
+                if (items.length > 0) {
+                    const header = document.createElement('div');
+                    header.className = 'category-header';
+                    header.textContent = `Priority ${priority}`;
+                    container.appendChild(header);
+                    items.forEach(todo => {
+                        const isCached = (selectedPatientIndex === 0 && todo.id === 'BGM-104');
+                        const div = document.createElement('div');
+                        div.className = 'todo-item' + (isCached ? ' cached' : '');
+                        div.innerHTML = `
+                            <div style="flex: 1;">
+                                <span>${todo.name}</span>
+                                ${isCached ? '<span class="cached-badge">✓ Cached</span>' : ''}
+                            </div>
+                            <span class="priority-badge priority-${todo.priority.toLowerCase()}">${todo.priority}</span>
+                        `;
+                        div.onclick = () => selectTodo(todo);
+                        container.appendChild(div);
+                    });
+                }
+            });
+        }
+
+        function selectTodo(todo) {
+            selectedTodo = todo;
+            document.querySelectorAll('.todo-item').forEach(item => {
+                item.classList.remove('selected');
+            });
+            event.currentTarget.classList.add('selected');
+            showTaskDetails();
+        }
+
+        function showTaskDetails() {
+            const mainContent = document.getElementById('mainContent');
+            mainContent.innerHTML = `
+                <div style="padding: 32px;">
+                    <div style="background: white; padding: 24px; border-radius: 12px; margin-bottom: 24px;">
+                        <h2 style="font-size: 24px; margin-bottom: 8px;">${selectedTodo.name}</h2>
+                        <p style="color: #64748b;">Patient: ${selectedPatient.demographics.name}</p>
+                    </div>
+                    <div style="background: white; padding: 24px; border-radius: 12px;">
+                        <h3 style="margin-bottom: 16px;">Demo Information</h3>
+                        <p style="color: #64748b; line-height: 1.6;">
+                            This is a static demo. In the full version, this would show:<br><br>
+                            • AI-generated clinical insights<br>
+                            • Protocol steps with assistance buttons<br>
+                            • Suggested messages<br>
+                            • Patient overview and timeline<br><br>
+                            The full version requires a backend with Pinecone and OpenAI integration.
+                        </p>
+                    </div>
+                </div>
+            `;
+        }
+
+        // Initialize
+        renderPatients();
+        renderTodos();
+    </script>
+</body>
+</html>

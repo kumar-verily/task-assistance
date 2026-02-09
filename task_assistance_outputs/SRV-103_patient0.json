@@ -1,0 +1,132 @@
+{
+  "timestamp": "2026-02-03T21:37:22.005219",
+  "todo_id": "SRV-103",
+  "patient_index": 0,
+  "patient_name": "Silvia Jones",
+  "detail_view": {
+    "task_title": "Review Nutrition and Glycemic Control for Silvia Jones",
+    "patient_name": "Silvia Jones",
+    "patient_initial": "S",
+    "priority": "P3",
+    "ai_insight": {
+      "summary": "Silvia Jones has experienced significant post-dinner hyperglycemic events on 11/19/25, with glucose values peaking at 455 and 425 mg/dL. Recent messages indicate struggles with managing glucose levels despite adherence to her meal plan. Her A1C as of 10/15/25 was 9.2%, indicating suboptimal glycemic control. Current insulin regimen includes fixed dosing of Humalog with meals, which may require reassessment.",
+      "key_points": [
+        "Bullet point 1: Two severe hyperglycemic events noted on 11/19/25 post-dinner.",
+        "Bullet point 2: A1C value of 9.2% on 10/15/25 suggests poor glycemic control.",
+        "Bullet point 3: Patient's self-reported adherence to meal plan yet experiencing spikes.",
+        "Bullet point 4: Current insulin therapy (Humalog) may need adjustment or patient education on carbohydrate counting."
+      ]
+    },
+    "participant_overview": {
+      "conditions": [
+        "Type 2 Diabetes",
+        "Hypertension",
+        "Hyperlipidemia"
+      ],
+      "devices": [
+        "OneTouch Ultra Mini",
+        "Omron BP7350",
+        "Dexcom G7"
+      ],
+      "clinic_member": "Yes",
+      "insulin_strategy": "Fixed dosing with meals",
+      "other_relevant_info": [
+        "Recent high post-dinner glucose readings",
+        "Struggles with dietary management despite efforts",
+        "Needs reassessment of insulin regimen"
+      ]
+    },
+    "clinical_incident": {
+      "title": "Hyperglycemic Events Post-Dinner",
+      "timeline": [
+        {
+          "action": "Patient reported high sugar post-dinner",
+          "details": "Reported following meal plan but experienced glucose spike over 400",
+          "timestamp": "2025-11-18"
+        },
+        {
+          "action": "Glucose reading",
+          "details": "BG reached 455 mg/dL post-meal",
+          "timestamp": "2025-11-19 6:40 PM"
+        },
+        {
+          "action": "Insulin correction taken",
+          "details": "Humalog 8 units administered",
+          "timestamp": "2025-11-19 shortly after 6:40 PM reading"
+        },
+        {
+          "action": "Second glucose reading",
+          "details": "BG reached 425 mg/dL after dinner",
+          "timestamp": "2025-11-19 7:25 PM"
+        },
+        {
+          "action": "Second insulin correction",
+          "details": "Humalog 6 units administered at 7:28 PM",
+          "timestamp": "2025-11-19"
+        }
+      ]
+    },
+    "suggested_messages": [
+      {
+        "type": "patient_facing",
+        "category": "Education",
+        "message": "Hi Silvia, we've noticed your recent glucose levels have been high after dinner, even with your meal plan. Let's work together to review your meals and insulin timing to find a strategy that works better for you.",
+        "rationale": "Addressing Silvia's concerns about post-dinner spikes and offering support for better management."
+      },
+      {
+        "type": "patient_facing",
+        "category": "Follow-up",
+        "message": "Could you share a detailed record of your dinner meals and insulin dosing over the next week? This will help us understand how to adjust your insulin regimen effectively.",
+        "rationale": "Gathering more data for a tailored insulin adjustment plan."
+      },
+      {
+        "type": "care_team_note",
+        "category": "Assessment",
+        "message": "Silvia's recent hyperglycemic events post-dinner and current A1C suggest her insulin regimen may need adjustment. Consider carbohydrate counting education and possible basal insulin review.",
+        "rationale": "Clinical reasoning for potential adjustments in insulin therapy and education."
+      }
+    ],
+    "protocol_steps": [
+      "Step 1 from protocol, customized for this patient: Review recent hyperglycemic events and dietary habits in detail.",
+      "Step 2 with patient-specific details: Assess confidence in making food choices and frequency of eating out to manage weight and diabetes.",
+      "Step 3 with actual values and context: Based on Silvia's responses and recent glucose control challenges, consider referral to RD for a personalized nutrition and insulin management plan."
+    ],
+    "clinical_assessment": {
+      "severity": "Moderate",
+      "urgency": "Routine",
+      "trends": "Worsening glycemic control indicated by recent A1C and frequent post-dinner hyperglycemic events.",
+      "contributing_factors": [
+        "Insufficient insulin dosing or timing",
+        "Potential gaps in nutrition education or carbohydrate counting"
+      ],
+      "recommendations": [
+        "Consider carbohydrate counting education",
+        "Review and potentially adjust insulin regimen",
+        "Referral to RD for personalized nutrition plan"
+      ]
+    },
+    "relevant_data_points": [
+      {
+        "category": "Glucose",
+        "item": "Post-dinner hyperglycemic events",
+        "value": "455 mg/dL, 425 mg/dL",
+        "date": "2025-11-19",
+        "significance": "Indicates significant postprandial glucose excursions, suggesting a need for insulin regimen reassessment."
+      },
+      {
+        "category": "A1C",
+        "item": "Latest A1C Result",
+        "value": "9.2%",
+        "date": "2025-10-15",
+        "significance": "Confirms poor glycemic control, underscoring the need for therapeutic adjustments and education."
+      }
+    ],
+    "protocol": {
+      "task_code": "SRV-103",
+      "task_name": "REVIEW NUTRITION BASELINE",
+      "priority": "P3",
+      "content": "Task: REVIEW NUTRITION BASELINE\nCode: SRV-103\nPriority: P3\nProgram: lightpath\nTrigger: Verily Me App:  Mission: Tell us about your nutrition: Step 1: Share your eating habits\nCriteria: Member has completed Share your eating habits survey\nSteps (general): Coach Review Nutrition baseline survey Document any relevant information in the Care Plan If someone answers:  **\"somewhat confident\" or \"not at all confident\"** to \u201c**How confident are you about making food choices** to manage your weight\u201d  **AND**  if they answer **\u201cI eat out most of my meals**\u201d  create a custom to do: RD referral and reassign to RD (if she is listed under member\u2019s Care team)\nRoles: RD",
+      "full_text": "| SRV-103 | REVIEW NUTRITION BASELINE |\n| :---- | :---- |\n| PRIORITY | P3 |\n| TRIGGER | Verily Me App:  Mission: Tell us about your nutrition: Step 1: Share your eating habits |\n| TRIGGERING CRITERIA | Member has completed Share your eating habits survey |\n| STEPS | Coach Review Nutrition baseline survey Document any relevant information in the Care Plan If someone answers:  **\"somewhat confident\" or \"not at all confident\"** to \u201c**How confident are you about making food choices** to manage your weight\u201d  **AND**  if they answer **\u201cI eat out most of my meals**\u201d  create a custom to do: RD referral and reassign to RD (if she is listed under member\u2019s Care team) |\n"
+    }
+  }
+}

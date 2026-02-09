@@ -1,0 +1,140 @@
+{
+  "timestamp": "2026-02-04T22:22:02.354351",
+  "todo_id": "PHQ-101",
+  "patient_index": 0,
+  "patient_name": "Silvia Jones",
+  "detail_view": {
+    "task_title": "Review - Elevated PHQ-9 Score",
+    "patient_name": "Silvia Jones",
+    "patient_initial": "S",
+    "priority": "P2",
+    "ai_insight": {
+      "summary": "Silvia Jones reported a PHQ-9 score of 12 on 2025-11-01, indicating moderate depression. This is coupled with recent challenges in managing her Type 2 Diabetes, as evidenced by post-dinner hyperglycemic events and an A1C of 9.2% on 2025-10-15. Her recent messages and glucose readings suggest potential areas for intervention.",
+      "key_points": [
+        "PHQ-9 score of 12 on 2025-11-01 indicates moderate depression.",
+        "Recent post-dinner hyperglycemic events with readings over 400 mg/dL.",
+        "A1C level of 9.2% on 2025-10-15 shows suboptimal glucose control.",
+        "Patient expressed concern over high post-dinner glucose values."
+      ]
+    },
+    "participant_overview": {
+      "conditions": [
+        "Type 2 Diabetes",
+        "Hypertension",
+        "Hyperlipidemia"
+      ],
+      "devices": [
+        "OneTouch Ultra Mini",
+        "Omron BP7350",
+        "Dexcom G7"
+      ],
+      "clinic_member": "Yes",
+      "insulin_strategy": "Fixed dosing with variable Humalog doses with meals",
+      "other_relevant_info": [
+        "Recent meal plans not effectively preventing post-dinner spikes."
+      ]
+    },
+    "clinical_incident": {
+      "title": "Recent Hyperglycemic Episodes and Depression Correlation",
+      "timeline": [
+        {
+          "action": "PHQ-9 Survey completed",
+          "details": "Score of 12 indicating moderate depression",
+          "timestamp": "2025-11-01"
+        },
+        {
+          "action": "Post-dinner hyperglycemic event",
+          "details": "BG reached 425 mg/dL after dinner including potato soup, tomato meatball pasta, garlic bread. Humalog 8 units taken at 6:25 PM, corrected with 6 units at 7:28 PM.",
+          "timestamp": "2025-11-19 7:25 PM"
+        },
+        {
+          "action": "Post-meal hyperglycemic spike",
+          "details": "BG spiked to 455 mg/dL, corrected with Humalog 8 units.",
+          "timestamp": "2025-11-19 6:40 PM"
+        }
+      ]
+    },
+    "suggested_messages": [
+      {
+        "type": "patient_facing",
+        "category": "Education",
+        "message": "Hi Silvia, I noticed your recent PHQ-9 score is 12, which could mean you're experiencing some symptoms of depression. It's not uncommon for this to affect blood sugar levels. Can we discuss your current challenges and feelings, and perhaps explore some strategies to help manage both your mood and glucose levels?",
+        "rationale": "Addressing the link between emotional wellbeing and diabetes management is crucial for holistic care."
+      },
+      {
+        "type": "patient_facing",
+        "category": "Follow-up",
+        "message": "Could you share more about your evening meals? Understanding your meal content and timing can help us tailor your insulin dosing more effectively to prevent those post-dinner spikes.",
+        "rationale": "Gaining insight into meal composition and timing can inform personalized dietary and insulin adjustments."
+      },
+      {
+        "type": "care_team_note",
+        "category": "Assessment",
+        "message": "Patient reported a PHQ-9 score of 12, indicating moderate depression. This may be impacting her diabetes management and contributing to post-dinner hyperglycemic events. Recommend collaborative review of her treatment plan with a focus on mental health support and dietary education.",
+        "rationale": "Integrating mental health and diabetes care can improve patient outcomes."
+      }
+    ],
+    "protocol_steps": [
+      "Review PHQ-9 survey results with Silvia, focusing on any specific areas of concern she has.",
+      "Discuss the impact of emotional wellbeing on glucose control and explore strategies to manage stress and depression.",
+      "Revisit Silvia's current meal plans, especially dinner, to identify any adjustments that could help mitigate post-dinner glucose spikes."
+    ],
+    "clinical_assessment": {
+      "severity": "Moderate",
+      "urgency": "Routine",
+      "trends": "Worsening glucose control and elevated PHQ-9 score",
+      "contributing_factors": [
+        "Moderate depression",
+        "Suboptimal post-dinner insulin dosing"
+      ],
+      "recommendations": [
+        "Consider mental health referral or support",
+        "Review and adjust insulin dosing and meal planning"
+      ]
+    },
+    "relevant_data_points": [
+      {
+        "category": "PHQ-9",
+        "item": "Depression score",
+        "value": "12",
+        "date": "2025-11-01",
+        "significance": "Indicates moderate depression."
+      },
+      {
+        "category": "Glucose",
+        "item": "Post-dinner BG levels",
+        "value": "425 mg/dL and 455 mg/dL",
+        "date": "2025-11-19",
+        "significance": "Significant post-dinner hyperglycemia."
+      },
+      {
+        "category": "A1C",
+        "item": "Latest A1C result",
+        "value": "9.2%",
+        "date": "2025-10-15",
+        "significance": "Indicates poor glycemic control."
+      }
+    ],
+    "confidence": {
+      "decision": "show",
+      "internal_score": 85,
+      "caveats": [
+        "This summary may be missing information. VI could not find: Recent dietary logs. Please refresh or review protocol.",
+        "Summary based on data last updated on 2026-02-04. If you believe this is out of date, please check the patient profile."
+      ],
+      "suppression_reason": ""
+    },
+    "protocol": {
+      "task_code": "PHQ-101",
+      "task_name": "Review \\- PHQ-9 \\>/= 10",
+      "priority": "P2",
+      "content": "Task: Review \\- PHQ-9 \\>/= 10\nCode: PHQ-101\nPriority: P2\nProgram: lightpath\nTrigger: PHQ-9 Survey\nCriteria: Prt score \\>/= 10 on PHQ-9\nSteps (general): Review PHQ-9 survey [Lightpath Educational Content](https://docs.google.com/document/d/1-b5-XWl0l0HY1ly7AoBwX1jGzedOZ-PXXPNTH9KgbyU/edit?tab=t.t83fcms54zrx) \\-ePROs \u2192 PHQ-9",
+      "full_text": "| PHQ-101 | Review \\- PHQ-9 \\>/= 10 |\n| :---- | :---- |\n| PRIORITY | P2 |\n| TRIGGER | PHQ-9 Survey |\n| TRIGGERING CRITERIA | Prt score \\>/= 10 on PHQ-9 |\n| STEPS | Review PHQ-9 survey [Lightpath Educational Content](https://docs.google.com/document/d/1-b5-XWl0l0HY1ly7AoBwX1jGzedOZ-PXXPNTH9KgbyU/edit?tab=t.t83fcms54zrx) \\-ePROs \u2192 PHQ-9 |\n"
+    },
+    "user_context": {
+      "role": "HC",
+      "clinic_context": "Clinic",
+      "clinic_member": "Yes"
+    }
+  }
+}

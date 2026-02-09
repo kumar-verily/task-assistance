@@ -1,0 +1,131 @@
+{
+  "timestamp": "2026-02-04T10:53:38.402016",
+  "todo_id": "TODO-100",
+  "patient_index": 0,
+  "patient_name": "Silvia Jones",
+  "detail_view": {
+    "task_title": "CGM Sensor Replacement Reminder",
+    "patient_name": "Silvia Jones",
+    "patient_initial": "S",
+    "priority": "P2",
+    "ai_insight": {
+      "summary": "Silvia Jones has shown significant hyperglycemic events post-dinner with blood glucose levels reaching 425 mg/dL and 455 mg/dL on 11/19/2025, despite taking corrective doses of Humalog. Her last A1C was 9.2 on 10/15/2025, indicating poor glycemic control. CGM data is crucial for ongoing monitoring and management.",
+      "key_points": [
+        "Bullet point 1: Recent hyperglycemic events with BG exceeding 400 mg/dL.",
+        "Bullet point 2: Poor glycemic control indicated by last A1C of 9.2.",
+        "Bullet point 3: High dinner-time carbohydrate intake noted.",
+        "Bullet point 4: CGM sensor replacement is due, critical for continuous glucose monitoring."
+      ]
+    },
+    "participant_overview": {
+      "conditions": [
+        "Type 2 Diabetes",
+        "Hypertension",
+        "Hyperlipidemia"
+      ],
+      "devices": [
+        "OneTouch Ultra Mini",
+        "Omron BP7350",
+        "Dexcom G7"
+      ],
+      "clinic_member": "Yes",
+      "insulin_strategy": "Fixed dosing",
+      "other_relevant_info": [
+        "Recent high carb meal intake",
+        "Struggling with post-dinner hyperglycemia"
+      ]
+    },
+    "clinical_incident": {
+      "title": "Recent Hyperglycemic Events and Management",
+      "timeline": [
+        {
+          "action": "Dinner intake",
+          "details": "Consumed potato soup, tomato meatball pasta, garlic bread",
+          "timestamp": "2025-11-19 6:25 PM"
+        },
+        {
+          "action": "Insulin administration",
+          "details": "Humalog 8 units taken",
+          "timestamp": "2025-11-19 6:25 PM"
+        },
+        {
+          "action": "Glucose reading",
+          "details": "BG level 455 mg/dL",
+          "timestamp": "2025-11-19 6:40 PM"
+        },
+        {
+          "action": "Correction dose",
+          "details": "Humalog 6 units administered",
+          "timestamp": "2025-11-19 7:28 PM"
+        },
+        {
+          "action": "Glucose reading",
+          "details": "BG level rose to 425 mg/dL, post-correction",
+          "timestamp": "2025-11-19 7:25 PM"
+        }
+      ]
+    },
+    "suggested_messages": [
+      {
+        "type": "patient_facing",
+        "category": "Instruction",
+        "message": "Dear Silvia, it's time to replace your CGM sensor to ensure continuous and accurate glucose monitoring. Please replace it by the end of today to avoid any data gaps. Let us know if you need any assistance.",
+        "rationale": "Ensuring continuous glucose monitoring is crucial for Silvia's diabetes management, especially given her recent hyperglycemic events and the need for close monitoring."
+      },
+      {
+        "type": "care_team_note",
+        "category": "Plan",
+        "message": "Silvia Jones is due for her CGM sensor replacement. Recent glucose readings have shown significant fluctuations, making continuous monitoring essential for her diabetes management.",
+        "rationale": "Continuous glucose data is vital for adjusting Silvia's diabetes treatment plan, especially in the context of recent hyperglycemic events."
+      }
+    ],
+    "protocol_steps": [
+      "Step 1: Send a reminder to Silvia about replacing her CGM sensor today.",
+      "Step 2: Review glucose data from the new sensor for any significant patterns or changes.",
+      "Step 3: Schedule a follow-up to assess Silvia's glucose control and insulin regimen adjustment if necessary."
+    ],
+    "clinical_assessment": {
+      "severity": "Moderate",
+      "urgency": "Routine",
+      "trends": "Worsening glucose control, evident from recent hyperglycemic events and A1C trend.",
+      "contributing_factors": [
+        "High carbohydrate intake at dinner",
+        "Suboptimal insulin dosing"
+      ],
+      "recommendations": [
+        "Educate on carbohydrate counting and meal planning",
+        "Reevaluate insulin regimen and dosing strategy"
+      ]
+    },
+    "relevant_data_points": [
+      {
+        "category": "Glucose",
+        "item": "Post-dinner BG levels",
+        "value": "425-455 mg/dL",
+        "date": "2025-11-19",
+        "significance": "Indicates severe postprandial hyperglycemia, requiring intervention."
+      },
+      {
+        "category": "Medication",
+        "item": "Humalog dosing",
+        "value": "Variable, with meals",
+        "date": "Recent use",
+        "significance": "Current dosing strategy may not be optimal; requires reassessment."
+      },
+      {
+        "category": "Lab",
+        "item": "A1C",
+        "value": "9.2%",
+        "date": "2025-10-15",
+        "significance": "Reflects poor glycemic control over the past 2-3 months."
+      }
+    ],
+    "protocol": {
+      "task_code": "TODO-100",
+      "task_name": "CUSTOM TO DO: Sensor Day 10",
+      "priority": "P1-P3",
+      "content": "Task: CUSTOM TO DO: Sensor Day 10\nCode: TODO-100\nPriority: P1-P3\nProgram: lightpath\nTrigger: Manually created by HC to track sensor use\nSteps (general): Sensor day 10  \\- [CGM Trial]()",
+      "full_text": "| TODO-100 | CUSTOM TO DO: Sensor Day 10 |\n| :---- | :---- |\n| PRIORITY | P1-P3 |\n| TRIGGER | Manually created by HC to track sensor use |\n| STEPS | Sensor day 10  \\- [CGM Trial]() |\n"
+    }
+  }
+}

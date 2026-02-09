@@ -1,0 +1,138 @@
+{
+  "timestamp": "2026-02-04T22:16:03.006500",
+  "todo_id": "ENG-100",
+  "patient_index": 0,
+  "patient_name": "Silvia Jones",
+  "detail_view": {
+    "task_title": "Welcome New Clinic Member with Diabetes Management Focus",
+    "patient_name": "Silvia Jones",
+    "patient_initial": "S",
+    "priority": "P1",
+    "ai_insight": {
+      "summary": "Silvia Jones, a 52-year-old female with Type 2 Diabetes, Hypertension, and Hyperlipidemia, experienced severe post-dinner hyperglycemic events on 11/19/25, with glucose levels reaching up to 455 mg/dL. Recent A1C (9.2 on 10/15/25) indicates poor glycemic control. She uses a combination of Metformin, Humalog, and Lisinopril with recent concerns about high postprandial glucose levels.",
+      "key_points": [
+        "Bullet point 1: A1C at 9.2 indicates poor glycemic control.",
+        "Bullet point 2: Recent severe hyperglycemic events post-dinner.",
+        "Bullet point 3: Patient on Metformin, Humalog (variable dosing), and Lisinopril.",
+        "Bullet point 4: Expressed frustration and need for support in managing post-dinner spikes."
+      ]
+    },
+    "participant_overview": {
+      "conditions": [
+        "Type 2 Diabetes",
+        "Hypertension",
+        "Hyperlipidemia"
+      ],
+      "devices": [
+        "OneTouch Ultra Mini",
+        "Omron BP7350",
+        "Dexcom G7"
+      ],
+      "clinic_member": "Yes",
+      "insulin_strategy": "Fixed dosing with variable mealtime Humalog",
+      "other_relevant_info": [
+        "Recent mealtime insulin adjustments have not prevented post-dinner spikes."
+      ]
+    },
+    "clinical_incident": {
+      "title": "Hyperglycemic incidents post-dinner",
+      "timeline": [
+        {
+          "action": "Humalog taken pre-dinner",
+          "details": "8 units of Humalog taken at 6:25 PM before dinner.",
+          "timestamp": "2025-11-19 6:25 PM"
+        },
+        {
+          "action": "Post-dinner glucose reading",
+          "details": "Glucose level reached 455 mg/dL.",
+          "timestamp": "2025-11-19 6:40 PM"
+        },
+        {
+          "action": "Correction dose of Humalog",
+          "details": "Additional 6 units of Humalog administered at 7:28 PM.",
+          "timestamp": "2025-11-19 7:28 PM"
+        },
+        {
+          "action": "Glucose reading post-correction",
+          "details": "Glucose level reached 425 mg/dL despite correction dose.",
+          "timestamp": "2025-11-19 7:25 PM"
+        }
+      ]
+    },
+    "suggested_messages": [
+      {
+        "type": "patient_facing",
+        "category": "Education",
+        "message": "Hi Silvia, thank you for sharing your concerns with us. It sounds like managing your sugar levels, especially after dinner, has been challenging. Let's explore how we can adjust your mealtime routine and insulin strategy to better manage these spikes. Could you share more about your dinner portions and timing of your insulin? Understanding more will help us tailor a plan that works for you.",
+        "rationale": "Engagement and education focusing on mealtime insulin adjustments and dietary habits to manage post-dinner hyperglycemia."
+      },
+      {
+        "type": "patient_facing",
+        "category": "Follow-up",
+        "message": "Also, have you noticed any patterns in your glucose levels on days when you're more active versus less active? Any information you can share will help us create a more complete picture of your health.",
+        "rationale": "Encourages patient to think about and share other potential factors affecting glucose levels, promoting self-awareness and data collection."
+      },
+      {
+        "type": "care_team_note",
+        "category": "Plan",
+        "message": "Plan to review Silvia's insulin dosing strategy and dietary habits, particularly her post-dinner routine. Consider potential adjustments to her insulin regimen and discuss carbohydrate counting or mealtime adjustments.",
+        "rationale": "Clinical reasoning for focusing on insulin regimen and mealtime habits to address post-dinner hyperglycemia."
+      }
+    ],
+    "protocol_steps": [
+      "Step 1: Review recent glucose readings and insulin dosing with Silvia, focusing on post-dinner spikes.",
+      "Step 2: Discuss Silvia's current mealtime habits, portion sizes, and timing of insulin administration.",
+      "Step 3: Educate on carbohydrate counting and potential adjustments to insulin regimen based on meal content and timing."
+    ],
+    "clinical_assessment": {
+      "severity": "Severe",
+      "urgency": "Routine",
+      "trends": "Worsening postprandial control, particularly after dinner.",
+      "contributing_factors": [
+        "Possible under-dosing of mealtime insulin",
+        "Insufficient carbohydrate counting and meal planning"
+      ],
+      "recommendations": [
+        "Consider referral to a dietitian for personalized meal planning",
+        "Review and adjust insulin regimen based on detailed meal and glucose log"
+      ]
+    },
+    "relevant_data_points": [
+      {
+        "category": "Glucose",
+        "item": "Post-dinner glucose spike",
+        "value": "455 mg/dL",
+        "date": "2025-11-19",
+        "significance": "Indicates severe hyperglycemia and potential risk for acute complications."
+      },
+      {
+        "category": "Medication",
+        "item": "Humalog dosing",
+        "value": "Variable, with meals",
+        "date": "Recent communication",
+        "significance": "Variable dosing may need adjustment based on meal content and timing."
+      }
+    ],
+    "confidence": {
+      "decision": "show",
+      "internal_score": 85,
+      "caveats": [
+        "This summary is based on patient self-reported data and recent communications. Please verify insulin doses and glucose readings in patient profile.",
+        "Summary based on data last updated on 11/19/2025. If you believe this is out of date, please check the patient profile."
+      ],
+      "suppression_reason": ""
+    },
+    "protocol": {
+      "task_code": "ENG-100",
+      "task_name": "GREET NEW MEMBER",
+      "priority": "P1",
+      "content": "Task: GREET NEW MEMBER\nCode: ENG-100\nPriority: P1\nProgram: lightpath\nTrigger: Verily Me App NUX\nCriteria: New member assigned to the Care Team\nSteps (general): Send welcome message, include:  Your name Role Working hours Program overview Open-ended question re: motivation, goals or what kind of support they are looking for from the Lightpath program Example:  **Thread: Welcome to the Lightpath Program** *Hi, thank you for joining\\! My name is (insert name) and I am looking forward to working with you.      Welcome to the Lightpath Program\\! I will be your coach. I\u2019m available Monday \\- Friday and I usually respond within a couple business days.  Our program gives you access to tools and coaching to help you reach your health goals. A great way to start is by completing the surveys and missions on the home screen of your Verily Me app. This will help me to get to know you better and offer feedback. I\u2019d also love to hear back from you here in the chat tab, what motivated you to join our program, and what would you like to focus on first? If you run into any issues please email care1support@verily.com or call 1-833-603-6667. Our support team is here Monday-Friday 9am \\- 6pm EST.*   Complete onboarding steps: [Onboarding]() RN If you greet new member (and you are not assigned as a HC) \\- create a custom to do for the HC: continue onboarding HC name\nRoles: HC, RN",
+      "full_text": "| ENG-100 | GREET NEW MEMBER |\n| :---- | :---- |\n| PRIORITY | P1 |\n| TRIGGER | Verily Me App NUX |\n| TRIGGERING CRITERIA | New member assigned to the Care Team |\n| STEPS | Send welcome message, include:  Your name Role Working hours Program overview Open-ended question re: motivation, goals or what kind of support they are looking for from the Lightpath program Example:  **Thread: Welcome to the Lightpath Program** *Hi, thank you for joining\\! My name is (insert name) and I am looking forward to working with you.      Welcome to the Lightpath Program\\! I will be your coach. I\u2019m available Monday \\- Friday and I usually respond within a couple business days.  Our program gives you access to tools and coaching to help you reach your health goals. A great way to start is by completing the surveys and missions on the home screen of your Verily Me app. This will help me to get to know you better and offer feedback. I\u2019d also love to hear back from you here in the chat tab, what motivated you to join our program, and what would you like to focus on first? If you run into any issues please email care1support@verily.com or call 1-833-603-6667. Our support team is here Monday-Friday 9am \\- 6pm EST.*   Complete onboarding steps: [Onboarding]() RN If you greet new member (and you are not assigned as a HC) \\- create a custom to do for the HC: continue onboarding HC name |\n"
+    },
+    "user_context": {
+      "role": "HC",
+      "clinic_context": "Clinic",
+      "clinic_member": "Yes"
+    }
+  }
+}

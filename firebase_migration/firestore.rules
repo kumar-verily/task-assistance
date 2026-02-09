@@ -1,0 +1,27 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Patients collection
+    match /patients/{patientId} {
+      // Allow read for all (you can add auth later)
+      allow read: if true;
+      // Only Cloud Functions can write
+      allow write: if false;
+    }
+
+    // Task assistance cache
+    match /task_assistance/{docId} {
+      // Allow read for all
+      allow read: if true;
+      // Only Cloud Functions can write
+      allow write: if false;
+    }
+
+    // Todos collection (if you decide to store in Firestore)
+    match /todos/{todoId} {
+      allow read: if true;
+      allow write: if false;
+    }
+  }
+}
